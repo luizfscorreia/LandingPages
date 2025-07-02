@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <base href="https://click.hr-path.com/brasil/onboarding-2" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Simplifique o processo de integração de novos colaboradores com a solução SAP Onboarding. Garanta uma jornada eficiente, digital e acolhedora desde o primeiro dia." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://click.hr-path.com/brasil/onboarding-2" />
+    <link rel="preload" href="https://storage.pardot.com/707483/1743030437yfAzi8Tu/bg.jpg" as="image" />
+
+    <meta property="og:title" content="SAP Onboarding - Integração de Novos Talentos | HR Path Brasil" />
+    <meta property="og:description"
+        content="Simplifique a integração de novos colaboradores com SAP Onboarding. Ofereça uma experiência moderna, digital e eficaz desde o primeiro dia." />
+    <meta property="og:image"
+        content="https://go.pardot.com/l/707483/2025-03-26/3lcxy1/707483/1743030437C4CmAGWz/bg2.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="HR Path Brasil" />
+    <meta property="og:url" content="https://click.hr-path.com/brasil/onboarding-2" />
+    <title>SAP Onboarding - Integração de Novos Talentos | HR Path Brasil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LandingPage",
+  "name": "SAP Onboarding - Integração de Novos Talentos | HR Path Brasil",
+  "description": "Simplifique o processo de integração de novos colaboradores com a solução SAP Onboarding. Garanta uma jornada eficiente, digital e acolhedora desde o primeiro dia.",
+  "url": "https://click.hr-path.com/brasil/onboarding-2",
+  "image": "https://go.pardot.com/l/707483/2025-03-26/3lcxy1/707483/1743030437C4CmAGWz/bg2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "HR Path Brasil",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://go.pardot.com/l/707483/2025-03-26/3lcxxx/707483/1743030437yGArSe7T/logo_medium_dark.webp"
+    }
+  },
+  "potentialAction": {
+    "@type": "Action",
+    "name": "Fale com um especialista",
+    "target": "https://click.hr-path.com/brasil/onboarding-2#hero-form"
+  }
+}
+</script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-WVV39X6");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+        :root {
+            --blue: #141A3A;
+            --blue-rgba: rgba(20, 26, 58, 0.8);
+            --blue-rgbafull: rgba(20, 26, 58, 1);
+            --orange: #ffcb05;
+            --gray: #e6e6e6;
+
+            --wrapper-width: calc(100vw - (48px));
+            --wrapper-padding: 64px 24px;
+            --max-width: 1200px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-block: 0;
+        }
+
+        html,
+        body {
+            font-family: "Urbanist", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 0;
+            padding-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            line-height: 1.3;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.25rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.35;
+            margin-top: 0.5rem;
+            margin-bottom: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: 500;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            max-width: 800px;
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                font-weight: 800;
+            }
+
+            h2 {
+                font-size: 2rem;
+                line-height: 1.35;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }
+
+            h4 {
+                font-size: 1.25rem;
+                line-height: 1.45;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding: 0;
+            font-weight: 400;
+        }
+
+        .cta {
+            all: unset;
+            display: block;
+            width: fit-content;
+            padding: 12px 16px;
+            font-size: 1rem;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: var(--orange);
+            transition: all 0.2sease-in-out;
+            outline: 1px solid transparent;
+            transition: 0.2s ease-in-out all;
+        }
+
+        .cta:hover {
+            outline: 2px solid var(--orange);
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>
+        <!-- Google Tag Manager (noscript) -->
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe>
+    </noscript>
+
+    <style>
+        #floating-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--wrapper-width);
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+            bottom: 0;
+            padding: 18px 24px;
+            text-align: center;
+            color: white;
+            background-color: var(--orange);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 2s;
+        }
+
+        .show {
+            visibility: visible !important;
+            animation: fadeIn 0.5s ease-in-out forwards !important;
+        }
+
+        .hide {
+            animation: fadeOut 0.5s ease-in-out forwards;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0 !important;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Fade-out animation */
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <div id="floating-wrapper" class="scroll">Quero modernizar meus processos!</div>
+
+    <!-- Hero -->
+    <style>
+        #hero-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            max-width: var(--wrapper-width);
+            padding: var(--wrapper-padding);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to bottom,
+                    var(--blue-rgbafull) 0%,
+                    var(--blue-rgba) 100%);
+            overflow: hidden !important;
+        }
+
+        #hero-wrapper::after {
+            content: " ";
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            z-index: 1;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -25%;
+            background-color: var(--orange);
+            outline: 20px solid var(--orange);
+            outline-offset: 20px;
+            filter: opacity(0.8);
+        }
+
+        #hero {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 36px;
+            width: 100%;
+            max-width: var(--max-width);
+            z-index: 2;
+        }
+
+        #hero-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            color: white;
+        }
+
+        #hero-content h1 {
+            color: white;
+        }
+
+
+        #hero-content h2 {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 0 12px 0;
+        }
+
+        #hero-content p {
+            max-width: 600px;
+        }
+
+        #hero-content .featured {
+            font-size: 1.2rem;
+            font-weight: bold;
+
+            width: fit-content;
+            padding: 6px 12px;
+            margin-bottom: 16px;
+
+            background-color: var(--gray);
+            color: var(--orange);
+        }
+
+        #hero-content img {
+            width: 300px;
+            padding: 24px;
+            background-color: white;
+        }
+
+        #hero-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            width: calc(100% - (64px));
+            height: fit-content;
+            background-color: white;
+            padding: 32px;
+            color: var(--blue);
+        }
+
+        #hero-form h2 {
+            font-size: 1.7rem;
+            line-height: 1;
+            text-align: center;
+            margin: 0;
+            color: var(--orange);
+        }
+
+        #hero-form p {
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 32px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #hero-content .featured {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            #hero-wrapper::after {
+                bottom: -25%;
+                left: -25%;
+                display: none;
+            }
+
+            #hero {
+                flex-direction: column;
+            }
+        }
+
+        #pardot-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        #pardot-form p {
+            all: unset;
+            display: flex;
+            flex-direction: column;
+            font-weight: normal;
+        }
+
+        #pardot-form label {
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        #pardot-form input,
+        #pardot-form select {
+            all: unset;
+            text-align: left;
+            font-size: 0.9rem;
+            padding: 8px;
+            border: 1px solid var(--blue);
+            background-color: white;
+        }
+
+        #pardot-form input[type="submit"] {
+            all: unset;
+            display: block;
+            width: calc(100% - (32px));
+            padding: 12px 16px;
+            font-size: 1rem;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: var(--orange);
+            transition: all 0.2sease-in-out;
+            outline: 1px solid transparent;
+            transition: 0.2s ease-in-out all;
+        }
+
+        #pardot-form input[type="submit"]:hover {
+            outline: 2px solid var(--orange);
+            outline-offset: 4px;
+            transform: scale(1.02);
+        }
+
+        #pardot-form .error {
+            margin-top: -1rem;
+            color: white;
+            font-size: 0.8rem;
+            padding: 6px 0;
+            background-color: red;
+
+            display: none;
+        }
+    </style>
+    <div id="hero-wrapper">
+        <div id="hero">
+            <div id="hero-content">
+                <h1>
+                    Atualize para o Onboarding 2.0 com a HR Path
+                </h1>
+                <h2>Migração tranquila. Experiência moderna. Tudo pronto para o futuro.</h2>
+                <p>
+                    A SAP deixará de oferecer suporte ao Onboarding 1.0 em novembro de 2025.
+                    Garanta uma transição segura, rápida e eficaz com quem é referência em SAP SuccessFactors.
+                </p>
+                <p><b> 👉 Quer saber mais? Cadastre-se e receba um eBook gratuito.</b></p>
+
+            </div>
+            <div id="hero-form">
+                <h2>Fale com um especialista!</h2>
+                <p>Prepare sua empresa para o futuro!</p>
+                <form id="pardot-form">%%content%%</form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #tpc-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: var(--gray);
+        }
+
+        #tpc {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--max-width);
+            color: var(--blue);
+            gap: 42px;
+        }
+
+        #tpc-topics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            text-align: left;
+            margin-top: 12px;
+
+        }
+
+        #tpc-topics li {
+            list-style: none;
+            background-color: white;
+            font-weight: bold;
+            padding: 12px;
+        }
+
+        #tpc-topics div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            color: #3f608e;
+            padding: 24px;
+        }
+
+        #tpc-topics img {
+            max-width: 60px;
+            margin-bottom: 12px;
+        }
+
+        @media screen and (max-width: 900px) {
+            #tpc {
+                flex-direction: column;
+            }
+
+            #tpc-topics {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- Topics -->
+    <div id="tpc-wrapper">
+        <div id="tpc">
+            <div>
+                <h2>Onboarding 2.0: uma nova era de integração de talentos</h2>
+                <p class="subtitle">
+                    O SAP SuccessFactors Onboarding 2.0 é a nova geração da experiência de integração de colaboradores.
+                    Com uma interface moderna, automações inteligentes e integração completa com o ecossistema SAP, ele
+                    permite uma jornada mais rápida, segura e envolvente desde o pré-onboarding até o primeiro&nbsp;dia
+                    de
+                    trabalho. <br /><br /> Ideal para empresas que desejam oferecer uma experiência de excelência
+                    aos&nbsp;novos talentos e garantir conformidade com as mudanças da SAP.
+
+                </p>
+            </div>
+            <div id="tpc-topics">
+                <li>Interface moderna e intuitiva, ideal para equipes híbridas</li>
+                <li>Fluxos de trabalho inteligentes<br />e automatizados</li>
+                <li>Integração com toda a suíte SAP SuccessFactors</li>
+                <li>Pré-onboarding colaborativo e comunicação fluida</li>
+                <li>Análises em tempo real com a ferramenta People Stories</li>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Na prática -->
+    <style>
+        #desafios-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: #f7f7f7;
+        }
+
+        #desafios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: var(--max-width);
+            color: var(--blue);
+            width: 100%;
+            text-align: center;
+        }
+
+        #desafios>div:first-child {
+            margin-bottom: 48px;
+        }
+
+        #desafios h2 {
+            margin-bottom: 12px;
+        }
+
+        #desafios-title {
+            margin: 0 0 24px 0 !important;
+        }
+
+        #desafios-title p {
+            max-width: 1000px;
+        }
+
+        #desafios p.subtitle {
+            color: #555;
+            font-weight: 400;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        #desafios-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        #desafios-list span {
+            padding: 12px;
+            border-radius: 6px;
+            background-color: var(--blue-rgba);
+            color: white;
+        }
+    </style>
+    <div id="desafios-wrapper">
+        <div id="desafios">
+            <div id="desafios-title">
+                <h2>Por que fazer com a HR Path</h2>
+                <p>
+                    A HR Path é parceira global da SAP e referência em projetos de migração e implementação do
+                    SAP SuccessFactors. Com mais de 1000 consultores especializados, ferramentas proprietárias e uma
+                    metodologia comprovada, garantimos uma transição ágil, segura e alinhada às necessidades do seu
+                    negócio. Unimos expertise técnica e conhecimento do mercado local para entregar resultados reais
+                    do planejamento ao Go-live.
+                </p>
+            </div>
+
+            <div id="desafios-list">
+                <span>🌍 +1000 consultores SAP HCM & SuccessFactors em todo o mundo</span>
+                <span>🛠️ Ferramentas exclusivas como test4success e Codebot</span>
+                <span>📊 Metodologia comprovada de implementação em 10 semanas</span>
+                <span>📞 Suporte local com alcance global</span>
+                <span>🤝 Abordagem colaborativa para construir sua solução ideal</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <style>
+        #footer-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--wrapper-width);
+            padding: 36px 24px;
+            background-color: var(--blue);
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: var(--max-width);
+        }
+
+        #footer-brand {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            gap: 12px;
+            color: white;
+        }
+
+        #footer-brand .brand-bg {
+            background-color: white;
+            padding: 14px;
+            border-radius: 4px;
+        }
+
+        #footer-brand img {
+            width: 130px;
+        }
+
+        #footer-socials {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            gap: 24px;
+        }
+
+        #footer-socials img {
+            height: 20px;
+            transition: 0.3s all ease-in-out;
+        }
+
+        #footer-socials img:hover {
+            filter: opacity(0.6);
+        }
+
+        @media (max-width: 768px) {
+            #footer {
+                flex-direction: column-reverse;
+                gap: 32px;
+            }
+
+            #footer-brand {
+                font-size: 1rem;
+                flex-direction: column;
+            }
+
+            #footer-brand img {
+                width: 80%;
+            }
+
+            #footer-socials {
+                gap: 12px;
+                justify-content: center;
+            }
+
+            #footer-socials img {
+                padding: 24px;
+            }
+        }
+    </style>
+    <footer id="footer-wrapper">
+        <div id="footer">
+            <div id="footer-brand">
+                <img class="brand-bg"
+                    src="https://go.pardot.com/l/707483/2025-03-19/3kzyhw/707483/1742401539WWGG25UU/itz_brazil.png"
+                    alt="Logotipo Intelligenza a HR Path Brasil Company" />
+                Intelligenza IT is an HR Path Company
+                <br />
+                © HR Path Brasil, all rights reserved.
+            </div>
+
+            <div id="footer-socials">
+                <a title="HR Path Brasil no Facebook" id="social-facebook" href="https://www.facebook.com/HRPath/">
+                    <img src="https://i.ibb.co/KKsMqTw/facebook.png" alt="Icone Facebook" />
+                </a>
+
+                <a title="HR Path Brasil no Instagram" id="social-instagram"
+                    href="https://www.instagram.com/hr_path_brasil/">
+                    <img src="https://i.ibb.co/r79gk13/instagram.png" alt="Icone Instagram" />
+                </a>
+
+                <a title="HR Path Brasil no Linkedin" id="social-linkedin"
+                    href="https://www.linkedin.com/company/hr-path">
+                    <img src="https://i.ibb.co/2NKPN6L/linkedin.png" alt="Icone Linkedin" />
+                </a>
+
+                <a title="HR Path Brasil no Youtube" id="social-youtube" href="https://www.youtube.com/@intelligenzait">
+                    <img src="https://i.ibb.co/82RkjXY/youtube.png" alt="Icone Youtube" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const scroll = document.querySelectorAll(".scroll");
+        scroll.forEach(function (cta) {
+            cta.addEventListener("click", function () {
+                document
+                    .getElementById("pardot-form")
+                    .scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        var floating = document.getElementById("floating-wrapper");
+        var startElement = document.getElementById("hero-wrapper");
+        var footer = document.getElementById("footer");
+
+        window.addEventListener("scroll", function () {
+            if (
+                startElement &&
+                window.screen.width <= 768 &&
+                window.scrollY >
+                startElement.getBoundingClientRect().bottom + window.scrollY
+            ) {
+                floating.classList.remove("hide");
+                floating.classList.add("show");
+                footer.style.marginBottom = floating.offsetHeight + "px";
+            } else {
+                floating.classList.remove("show");
+                floating.classList.add("hide");
+                footer.style.marginBottom = 0;
+            }
+        });
+
+        var questions = document.querySelectorAll(".question");
+        questions.forEach(function (question) {
+            question.addEventListener("click", function () {
+                var answer = this.nextElementSibling;
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
