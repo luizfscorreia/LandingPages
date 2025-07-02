@@ -321,8 +321,14 @@
             font-weight: bold;
         }
 
+        #hero-content {
+            max-width: 550px;
+
+        }
+
         #hero-content h1 {
             color: white;
+            line-height: 2.5rem;
         }
 
 
@@ -463,29 +469,27 @@
     <div id="hero-wrapper">
         <div id="hero">
             <div id="hero-content">
-                <div id="hero-date">Início das aulas: Agosto</div>
+                <div id="hero-date">Início das aulas: 25 de Agosto</div>
                 <h1>
-                    <span style="color: var(--orange);">Curso de WorkForce Software:</span><br /> dê o primeiro passo na
-                    sua
-                    carreira em RH digital.
+
+                    <span style="color: var(--orange);">Aprenda WorkForce Software </span><br />
+                    Dê este passo e alavanque a sua carreira
+
                 </h1>
-                <h2>Quer se destacar no mercado de RH e tecnologia? Essa é a sua change!</h2>
+                <h2>Já pensou em se destacar nos mercados de RH e Tecnologia, com uma solução Global?
+                </h2>
                 <p>
-                    A HR Path Brasil criou um programa educacional completo sobre o WorkForce
-                    Software, um sistema global usado para gestão de tempo e frequência por empresas de grande porte em
-                    mais de 80 países.
+                    Confira o programa educacional que a HR Path preparou deste sistema que é destaque mundial para
+                    gestão de tempo e frequência em empresas de grande porte.
                     <br /><br />
-                    Com uma abordagem prática, direta ao ponto e conduzida por especialistas atuantes no mercado, o
-                    curso oferece uma excelente porta de entrada para quem quer se conectar ao universo das soluções de
-                    RH digital. Você aprende com profissionais que vivem o tema no dia a dia, recebe certificação e se
-                    aproxima de um mercado em plena transformação. E o melhor: é gratuito.
+                    Com conteúdo objetivo, ministrado por especialistas, esse treinamento oferece uma iniciação para
+                    quem deseja aprender sobre esta solução presente em mais de 80 países.
                 </p>
-                <p><b> 👉 Inscreva-se e comece a construir seu futuro agora.</b></p>
+                <p><b> 👉 Inscreva-se gratuitamente e amplie suas oportunidades.</b></p>
 
             </div>
             <div id="hero-form">
                 <h2>Inscreva-se gratuitamente!</h2>
-                <p>O futuro da sua carreira começa agora!</p>
                 <form id="pardot-form">%%content%%</form>
             </div>
         </div>
@@ -568,16 +572,16 @@
             <div>
                 <h2>Por que participar do programa de treinamento?</h2>
                 <p class="subtitle">
-                    Mais do que um curso gratuito, esta é uma oportunidade concreta de transformar sua trajetória
-                    profissional. O Programa Educacional da HR Path Brasil foi pensado <b>para quem quer dar os
+                    Mais do que um curso gratuito, esta é uma oportunidade de agregar conhecimento em sua trajetória
+                    profissional. Este programa da HR Path Brasil Brasil foi pensado <b>para quem quer dar os
                         primeiros passos e construir autoridade</b> no ecossistema SAP (frequentemente integrado ao
-                    Workforce) e iniciar uma carreira promissora no universo do RH Digital. &nbsp;
+                    Workforce) ou iniciar uma carreira promissora no universo do RH Digital. &nbsp;
 
                 </p>
             </div>
             <div id="tpc-topics">
-                <li><span>✅</span> Curso 100% gratuito com início previsto para agosto</li>
-                <li><span>🎓</span> Certificação de Conclusão com reconhecimento no mercado</li>
+                <li><span>✅</span> Curso 100% gratuito, início em 25 de Agosto</li>
+                <li><span>🎓</span> Entrega de certificado digital de participação e conclusão</li>
                 <li><span>🌎</span> Conteúdo rico e exclusivo sobre WorkForce Software</li>
                 <li><span>👩‍🏫</span> Aulas com especialistas atuantes em projetos no Brasil e no exterior</li>
                 <li><span>🚀</span> Destaque no mercado de RH Tech, com foco em Time & Attendance</li>
@@ -638,12 +642,8 @@
                 </h2>
             </div>
             <p>
-                O Programa Educacional da HR Path é gratuito e exclusivo para quem deseja dar o primeiro passo em
-                uma carreira promissora com WorkForce Software. Como é a primeira turma, as vagas são limitadas e as
-                inscrições encerram em breve. <br /><br />Aproveite a chance de aprender com especialistas premiados e
-                se
-                destacar em um mercado em crescimento. Não deixe para depois, as vagas podem acabar a qualquer
-                momento!
+                O Programa Educacional da HR Path é gratuito e exclusivo para quem deseja dar este passo em direção a
+                uma carreira promissora com WorkForce Software. Vagas limitadas: participe da primeira turma!
             </p>
 
             <div class="cta scroll">Garanta sua vaga!</div>
@@ -770,16 +770,16 @@
                     <!-- Slides -->
                     <div class="lesson-box swiper-slide">
                         <div class="lesson-thumbnail">
-                            <span class="overlay">🔒 Em agosto</span>
+                            <span class="overlay">🔒 25 de Agosto</span>
                             <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
                                 alt="Introdução ao WorkForce e seus principais módulos">
                         </div>
-                        <h3>Introdução ao WorkForce e seus principais módulos</h3>
+                        <h3>Introdução ao WorkForce Software e seus principais módulos</h3>
                     </div>
 
                     <div class="lesson-box swiper-slide">
                         <div class="lesson-thumbnail">
-                            <span class="overlay">🔒 Em agosto</span>
+                            <span class="overlay">🔒 25 de Agosto</span>
                             <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
                                 alt="Soft & Tech Skills essenciais para projetos de tecnologia">
                         </div>
@@ -788,7 +788,7 @@
 
                     <div class="lesson-box swiper-slide">
                         <div class="lesson-thumbnail">
-                            <span class="overlay">🔒 Em agosto</span>
+                            <span class="overlay">🔒 25 de Agosto</span>
                             <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
                                 alt="Especialização em Time & Attendance na prática">
                         </div>
@@ -797,7 +797,7 @@
 
                     <div class="lesson-box swiper-slide">
                         <div class="lesson-thumbnail">
-                            <span class="overlay">🔒 Em agosto</span>
+                            <span class="overlay">🔒 25 de Agosto</span>
                             <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
                                 alt="Ciclo de vida de um projeto com WorkForce Software">
                         </div>
@@ -806,7 +806,7 @@
 
                     <div class="lesson-box swiper-slide">
                         <div class="lesson-thumbnail">
-                            <span class="overlay">🔒 Em agosto</span>
+                            <span class="overlay">🔒 25 de Agosto</span>
                             <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
                                 alt="Sustentação e suporte contínuo (AMS)">
                         </div>
@@ -815,7 +815,7 @@
 
                     <div class="lesson-box swiper-slide">
                         <div class="lesson-thumbnail">
-                            <span class="overlay">🔒 Em agosto</span>
+                            <span class="overlay">🔒 25 de Agosto</span>
                             <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
                                 alt="Integrações com outros sistemas e ERPs">
                         </div>
@@ -824,7 +824,7 @@
 
                     <div class="lesson-box swiper-slide">
                         <div class="lesson-thumbnail">
-                            <span class="overlay">🔒 Em agosto</span>
+                            <span class="overlay">🔒 25 de Agosto</span>
                             <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
                                 alt="Relatórios, dashboards e análise de dados">
                         </div>
@@ -833,7 +833,7 @@
 
                     <div class="lesson-box swiper-slide">
                         <div class="lesson-thumbnail">
-                            <span class="overlay">🔒 Em agosto</span>
+                            <span class="overlay">🔒 25 de Agosto</span>
                             <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
                                 alt="Dicas de carreira e próximos passos na área">
                         </div>
@@ -842,7 +842,7 @@
 
                     <div class="lesson-box swiper-slide">
                         <div class="lesson-thumbnail">
-                            <span class="overlay">🔒 Em agosto</span>
+                            <span class="overlay">🔒 25 de Agosto</span>
                             <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
                                 alt="Desafios reais e como se preparar para o mercado">
                         </div>
