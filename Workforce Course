@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <base href="https://click.hr-path.com/brasil/programa-educacional-workforce" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Participe gratuitamente do Programa Educacional da HR Path e aprenda tudo sobre a solução WorkForce Software para gestão de jornada. Curso online, com certificado e aulas ministradas por especialistas do setor." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://click.hr-path.com/brasil/programa-educacional-workforce" />
+    <link rel="preload" href="https://storage.pardot.com/707483/1743030437yfAzi8Tu/bg.jpg" as="image" />
+
+    <meta property="og:title" content="Curso Gratuito sobre WorkForce Software | HR Path Brasil" />
+    <meta property="og:description"
+        content="Inscreva-se no Programa Educacional da HR Path e mergulhe na solução WorkForce Software. Aulas gravadas, certificação gratuita e conteúdo exclusivo sobre Time & Attendance." />
+    <meta property="og:image"
+        content="https://go.pardot.com/l/707483/2025-03-26/3lcxy1/707483/1743030437C4CmAGWz/bg2.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="HR Path Brasil" />
+    <meta property="og:url" content="https://click.hr-path.com/brasil/programa-educacional-workforce" />
+
+    <title>Curso Gratuito WorkForce Software | HR Path Brasil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Programa Educacional HR Path - WorkForce Software",
+  "description": "Curso gratuito sobre a solução WorkForce Software focado em Time & Attendance. Voltado para estudantes, profissionais de RH e interessados em tecnologia aplicada à gestão de pessoas.",
+  "url": "https://click.hr-path.com/brasil/programa-educacional-workforce",
+  "image": "https://go.pardot.com/l/707483/2025-03-26/3lcxy1/707483/1743030437C4CmAGWz/bg2.jpg",
+  "provider": {
+    "@type": "Organization",
+    "name": "HR Path Brasil",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://go.pardot.com/l/707483/2025-03-26/3lcxxx/707483/1743030437yGArSe7T/logo_medium_dark.webp"
+    }
+  },
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "student"
+  }
+}
+</script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-WVV39X6");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+        :root {
+            --blue: #141A3A;
+            --blue-rgba: rgba(20, 26, 58, 0.8);
+            --blue-rgbafull: rgba(20, 26, 58, 1);
+            --orange: #ffcb05;
+            --gray: #e6e6e6;
+
+            --wrapper-width: calc(100vw - (48px));
+            --wrapper-padding: 64px 24px;
+            --max-width: 1200px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-block: 0;
+        }
+
+        html,
+        body {
+            font-family: "Urbanist", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 0;
+            padding-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            line-height: 1.3;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.25rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.35;
+            margin-top: 0.5rem;
+            margin-bottom: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: 500;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            max-width: 800px;
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                font-weight: 800;
+            }
+
+            h2 {
+                font-size: 2rem;
+                line-height: 1.35;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }
+
+            h4 {
+                font-size: 1.25rem;
+                line-height: 1.45;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            padding: 0;
+            font-weight: 400;
+        }
+
+        .cta {
+            all: unset;
+            display: block;
+            width: fit-content;
+            padding: 12px 16px;
+            font-size: 1rem;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: var(--orange);
+            transition: all 0.2sease-in-out;
+            outline: 1px solid transparent;
+            transition: 0.2s ease-in-out all;
+        }
+
+        .cta:hover {
+            outline: 2px solid var(--orange);
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>
+        <!-- Google Tag Manager (noscript) -->
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe>
+    </noscript>
+
+    <style>
+        #floating-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--wrapper-width);
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+            bottom: 0;
+            padding: 18px 24px;
+            text-align: center;
+            color: white;
+            background-color: var(--orange);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 2s;
+        }
+
+        .show {
+            visibility: visible !important;
+            animation: fadeIn 0.5s ease-in-out forwards !important;
+        }
+
+        .hide {
+            animation: fadeOut 0.5s ease-in-out forwards;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0 !important;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Fade-out animation */
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <div id="floating-wrapper" class="scroll">Garanta sua vaga!</div>
+
+    <!-- Hero -->
+    <style>
+        #hero-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            max-width: var(--wrapper-width);
+            padding: var(--wrapper-padding);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to bottom,
+                    var(--blue-rgbafull) 0%,
+                    var(--blue-rgba) 100%);
+            overflow: hidden !important;
+        }
+
+        #hero-wrapper::after {
+            content: " ";
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            z-index: 1;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -25%;
+            background-color: var(--orange);
+            outline: 20px solid var(--orange);
+            outline-offset: 20px;
+            filter: opacity(0.8);
+        }
+
+        #hero {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 36px;
+            width: 100%;
+            max-width: var(--max-width);
+            z-index: 2;
+        }
+
+        #hero-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            color: white;
+            max-width: 650px;
+        }
+
+        #hero-date {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: var(--orange);
+            color: var(--blue);
+            width: fit-content;
+            font-weight: bold;
+        }
+
+        #hero-content h1 {
+            color: white;
+        }
+
+
+        #hero-content h2 {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 0 12px 0;
+        }
+
+        #hero-content p {
+            max-width: 600px;
+        }
+
+        #hero-content .featured {
+            font-size: 1.2rem;
+            font-weight: bold;
+
+            width: fit-content;
+            padding: 6px 12px;
+            margin-bottom: 16px;
+
+            background-color: var(--gray);
+            color: var(--orange);
+        }
+
+        #hero-content img {
+            width: 300px;
+            padding: 24px;
+            background-color: white;
+        }
+
+        #hero-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            width: calc(100% - (64px));
+            height: fit-content;
+            background-color: white;
+            padding: 32px;
+            color: var(--blue);
+        }
+
+        #hero-form h2 {
+            font-size: 1.7rem;
+            line-height: 1;
+            text-align: center;
+            margin: 0;
+            color: var(--orange);
+        }
+
+        #hero-form p {
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 32px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #hero-content .featured {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            #hero-wrapper::after {
+                bottom: -25%;
+                left: -25%;
+                display: none;
+            }
+
+            #hero {
+                flex-direction: column;
+            }
+        }
+
+        #pardot-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        #pardot-form p {
+            all: unset;
+            display: flex;
+            flex-direction: column;
+            font-weight: normal;
+        }
+
+        #pardot-form label {
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        #pardot-form input,
+        #pardot-form select {
+            all: unset;
+            text-align: left;
+            font-size: 0.9rem;
+            padding: 8px;
+            border: 1px solid var(--blue);
+            background-color: white;
+        }
+
+        #pardot-form input[type="submit"] {
+            all: unset;
+            display: block;
+            width: calc(100% - (32px));
+            padding: 12px 16px;
+            font-size: 1rem;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: var(--orange);
+            transition: all 0.2sease-in-out;
+            outline: 1px solid transparent;
+            transition: 0.2s ease-in-out all;
+        }
+
+        #pardot-form input[type="submit"]:hover {
+            outline: 2px solid var(--orange);
+            outline-offset: 4px;
+            transform: scale(1.02);
+        }
+
+        #pardot-form .error {
+            margin-top: -1rem;
+            color: white;
+            font-size: 0.8rem;
+            padding: 6px 0;
+            background-color: red;
+
+            display: none;
+        }
+    </style>
+    <div id="hero-wrapper">
+        <div id="hero">
+            <div id="hero-content">
+                <div id="hero-date">Início das aulas: Agosto</div>
+                <h1>
+                    <span style="color: var(--orange);">Curso de WorkForce Software:</span><br /> dê o primeiro passo na
+                    sua
+                    carreira em RH digital.
+                </h1>
+                <h2>Quer se destacar no mercado de RH e tecnologia? Essa é a sua change!</h2>
+                <p>
+                    A HR Path Brasil criou um programa educacional completo sobre o WorkForce
+                    Software, um sistema global usado para gestão de tempo e frequência por empresas de grande porte em
+                    mais de 80 países.
+                    <br /><br />
+                    Com uma abordagem prática, direta ao ponto e conduzida por especialistas atuantes no mercado, o
+                    curso oferece uma excelente porta de entrada para quem quer se conectar ao universo das soluções de
+                    RH digital. Você aprende com profissionais que vivem o tema no dia a dia, recebe certificação e se
+                    aproxima de um mercado em plena transformação. E o melhor: é gratuito.
+                </p>
+                <p><b> 👉 Inscreva-se e comece a construir seu futuro agora.</b></p>
+
+            </div>
+            <div id="hero-form">
+                <h2>Inscreva-se gratuitamente!</h2>
+                <p>O futuro da sua carreira começa agora!</p>
+                <form id="pardot-form">%%content%%</form>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        #tpc-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: var(--gray);
+        }
+
+        #tpc {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--max-width);
+            color: var(--blue);
+            gap: 42px;
+        }
+
+        #tpc-topics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            text-align: left;
+            margin-top: 12px;
+
+        }
+
+        #tpc-topics li {
+            position: relative;
+            list-style: none;
+            font-weight: bold;
+            background-color: white;
+            padding: 12px 12px 12px 20px;
+            margin-left: 15px;
+        }
+
+        #tpc-topics li span {
+            position: absolute;
+            left: -20px;
+            top: calc(50% - (20px));
+            background-color: white;
+            padding: 8px;
+            border-radius: 100px;
+        }
+
+        #tpc-topics div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: white;
+            color: #3f608e;
+            padding: 24px;
+        }
+
+        #tpc-topics img {
+            max-width: 60px;
+            margin-bottom: 12px;
+        }
+
+        @media screen and (max-width: 900px) {
+            #tpc {
+                flex-direction: column;
+            }
+
+            #tpc-topics {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- Topics -->
+    <div id="tpc-wrapper">
+        <div id="tpc">
+            <div>
+                <h2>Por que participar do programa de treinamento?</h2>
+                <p class="subtitle">
+                    Mais do que um curso gratuito, esta é uma oportunidade concreta de transformar sua trajetória
+                    profissional. O Programa Educacional da HR Path Brasil foi pensado <b>para quem quer aprender com
+                        profundidade, construir autoridade</b> no ecossistema SAP (frequentemente integrado ao
+                    Workforce) e iniciar uma carreira promissora no universo do RH Digital. &nbsp;
+
+                </p>
+            </div>
+            <div id="tpc-topics">
+                <li><span>✅</span> Curso 100% gratuito com início previsto para agosto</li>
+                <li><span>🎓</span> Certificação de Conclusão com reconhecimento no mercado</li>
+                <li><span>🌎</span> Conteúdo rico e exclusivo sobre WorkForce Software</li>
+                <li><span>👩‍🏫</span> Aulas com especialistas atuantes em projetos no Brasil e no exterior</li>
+                <li><span>🚀</span> Destaque no mercado de RH Tech, com foco em Time & Attendance</li>
+                <li><span>📈</span> Formação prática e direcionada para quem busca inserção rápida</li>
+                <li><span>🤝</span> Conexão com o ecossistema SAP e profissionais da área</li>
+                <li><span>🔒</span> Vagas limitadas para garantir qualidade e acompanhamento</li>
+
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        #desafios-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: #f7f7f7;
+        }
+
+        #desafios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 700px;
+            color: var(--blue);
+            width: 100%;
+            text-align: center;
+        }
+
+        #desafios p.subtitle {
+            color: #555;
+            font-weight: 400;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        #desafios-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        #desafios-list span {
+            padding: 12px;
+            border-radius: 6px;
+            background-color: var(--blue-rgba);
+            color: white;
+        }
+    </style>
+    <div id="desafios-wrapper">
+        <div id="desafios">
+            <div id="desafios-title">
+                <h2>Vagas limitadas para a primeira turma, garanta já o seu lugar!
+                </h2>
+            </div>
+            <p>
+                O Programa Educacional da HR Path é gratuito e exclusivo para quem deseja dar o primeiro passo em
+                uma carreira promissora com WorkForce Software. Como é a primeira turma, as vagas são limitadas e as
+                inscrições encerram em breve. <br /><br />Aproveite a chance de aprender com especialistas premiados e
+                se
+                destacar em um mercado em crescimento. Não deixe para depois, as vagas podem acabar a qualquer
+                momento!
+            </p>
+
+            <div class="cta scroll">Garanta sua vaga!</div>
+
+        </div>
+    </div>
+
+    <!-- Course Lessons -->
+    <style>
+        #lessons-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: var(--gray);
+        }
+
+        #lessons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            color: var(--blue);
+        }
+
+        .swiper {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            padding: 24px 0;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            max-width: 100%;
+
+        }
+
+        .swiper-slide {
+            flex-shrink: 0;
+            width: auto;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: var(--blue);
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .swiper-button-prev {
+            left: -30px;
+            /* Afasta a seta da borda do swiper */
+        }
+
+        .swiper-button-next {
+            right: -30px;
+        }
+
+        .lesson-box {
+            position: relative;
+        }
+
+        @media screen and (max-width: 768px) {
+            .swiper {
+                padding: 0;
+            }
+
+            .lesson-box {
+                max-width: 100%;
+            }
+        }
+
+        .lesson-box h3 {
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .lesson-thumbnail {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lesson-thumbnail img {
+            width: 100%;
+            height: 100%;
+            filter: blur(6px);
+        }
+
+        .overlay {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            z-index: 9;
+        }
+    </style>
+    <div id="lessons-wrapper">
+        <div id="lessons">
+            <div id="lessons-title">
+                <h2>Desenvolva habilidades reais com <br /> foco no WorkForce Software</h2>
+                <p>Nosso programa educacional foi criado para te preparar para o mercado de forma prática e estratégica.
+                    Cada módulo foca em temas essenciais para quem quer atuar com a solução de Time & Attendance da
+                    WorkForce Software. Aprenda com quem vive o dia a dia de grandes projetos!
+                </p>
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 Em agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Introdução ao WorkForce e seus principais módulos">
+                        </div>
+                        <h3>Introdução ao WorkForce e seus principais módulos</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 Em agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Soft & Tech Skills essenciais para projetos de tecnologia">
+                        </div>
+                        <h3>Soft & Tech Skills essenciais para projetos de tecnologia</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 Em agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Especialização em Time & Attendance na prática">
+                        </div>
+                        <h3>Especialização em Time & Attendance na prática</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 Em agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Ciclo de vida de um projeto com WorkForce Software">
+                        </div>
+                        <h3>Ciclo de vida de um projeto com WorkForce Software</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 Em agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Sustentação e suporte contínuo (AMS)">
+                        </div>
+                        <h3>Sustentação e suporte contínuo (AMS)</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 Em agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Integrações com outros sistemas e ERPs">
+                        </div>
+                        <h3>Integrações com outros sistemas e ERPs</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 Em agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Relatórios, dashboards e análise de dados">
+                        </div>
+                        <h3>Relatórios, dashboards e análise de dados</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 Em agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Dicas de carreira e próximos passos na área">
+                        </div>
+                        <h3>Dicas de carreira e próximos passos na área</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 Em agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Desafios reais e como se preparar para o mercado">
+                        </div>
+                        <h3>Desafios reais e como se preparar para o mercado</h3>
+                    </div>
+
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <style>
+        #faq_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            padding: var(--wrapper-padding);
+            color: var(--blue);
+            margin: 0 auto;
+        }
+
+        #faq_wrapper h2 {
+            color: var(--orange);
+        }
+
+        #faq {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            margin-top: 24px;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        #faq li {
+            display: flex;
+            text-decoration: none;
+            color: var(--blue);
+            border-bottom: 1px solid var(--blue);
+            margin-bottom: 12px;
+            padding: 24px 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #faq li:hover {
+            color: var(--orange);
+        }
+
+        .answer {
+            display: none;
+            width: 100%;
+            padding: 0 12px;
+            margin-top: 24px;
+            margin-bottom: 36px;
+            color: var(--blue);
+            line-height: 24px;
+        }
+    </style>
+    <div id="faq_wrapper" class="section">
+        <h2>Dúvidas Frequentes</h2>
+        <ul id="faq">
+            <li class="question">
+                Quem pode participar do curso?
+            </li>
+            <div class="answer">
+                Estudantes, profissionais de RH e pessoas interessadas em tecnologia e gestão de tempo. Não é necessário
+                ter experiência prévia com WorkForce Software.
+            </div>
+
+            <li class="question">
+                Preciso pagar para participar?
+            </li>
+            <div class="answer">
+                Não. O curso é gratuito e oferecido pela HR Path como parte de nosso compromisso em formar novos
+                talentos.
+            </div>
+
+            <li class="question">
+                Preciso ter experiência com RH ou sistemas?
+            </li>
+            <div class="answer">
+                Não. O curso foi desenvolvido para iniciantes, mas também serve como reciclagem para profissionais da
+                área.
+            </div>
+
+            <li class="question">
+                Recebo certificado ao final do curso?
+            </li>
+            <div class="answer">
+                Sim. Todos os participantes que concluírem o curso receberão um certificado de participação da HR Path.
+            </div>
+
+            <li class="question">
+                Quanto tempo dura o curso?
+            </li>
+            <div class="answer">
+                O curso pode ser concluído no seu ritmo. O acesso aos vídeos será liberado após o início oficial da
+                turma.
+            </div>
+
+            <li class="question">
+                Como serão as aulas?
+            </li>
+            <div class="answer">
+                As aulas são gravadas e estarão disponíveis em uma plataforma digital. Você poderá assistir quando e
+                onde quiser.
+            </div>
+
+            <li class="question">
+                Posso participar mesmo sem conhecimento de inglês?
+            </li>
+            <div class="answer">
+                Sim. Todo o conteúdo é em português e adaptado à realidade do mercado brasileiro.
+            </div>
+
+        </ul>
+    </div>
+
+
+    <!-- Footer -->
+    <style>
+        #footer-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--wrapper-width);
+            padding: 36px 24px;
+            background-color: var(--blue);
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: var(--max-width);
+        }
+
+        #footer-brand {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            gap: 12px;
+            color: white;
+        }
+
+        #footer-brand .brand-bg {
+            background-color: white;
+            padding: 14px;
+            border-radius: 4px;
+        }
+
+        #footer-brand img {
+            width: 130px;
+        }
+
+        #footer-socials {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            gap: 24px;
+        }
+
+        #footer-socials img {
+            height: 20px;
+            transition: 0.3s all ease-in-out;
+        }
+
+        #footer-socials img:hover {
+            filter: opacity(0.6);
+        }
+
+        @media (max-width: 768px) {
+            #footer {
+                flex-direction: column-reverse;
+                gap: 32px;
+            }
+
+            #footer-brand {
+                font-size: 1rem;
+                flex-direction: column;
+            }
+
+            #footer-brand img {
+                width: 80%;
+            }
+
+            #footer-socials {
+                gap: 12px;
+                justify-content: center;
+            }
+
+            #footer-socials img {
+                padding: 24px;
+            }
+        }
+    </style>
+    <footer id="footer-wrapper">
+        <div id="footer">
+            <div id="footer-brand">
+                <img class="brand-bg"
+                    src="https://go.pardot.com/l/707483/2025-03-19/3kzyhw/707483/1742401539WWGG25UU/itz_brazil.png"
+                    alt="Logotipo Intelligenza a HR Path Brasil Company" />
+                Intelligenza IT is an HR Path Company
+                <br />
+                © HR Path Brasil, all rights reserved.
+            </div>
+
+            <div id="footer-socials">
+                <a title="HR Path Brasil no Facebook" id="social-facebook" href="https://www.facebook.com/HRPath/">
+                    <img src="https://i.ibb.co/KKsMqTw/facebook.png" alt="Icone Facebook" />
+                </a>
+
+                <a title="HR Path Brasil no Instagram" id="social-instagram"
+                    href="https://www.instagram.com/hr_path_brasil/">
+                    <img src="https://i.ibb.co/r79gk13/instagram.png" alt="Icone Instagram" />
+                </a>
+
+                <a title="HR Path Brasil no Linkedin" id="social-linkedin"
+                    href="https://www.linkedin.com/company/hr-path">
+                    <img src="https://i.ibb.co/2NKPN6L/linkedin.png" alt="Icone Linkedin" />
+                </a>
+
+                <a title="HR Path Brasil no Youtube" id="social-youtube" href="https://www.youtube.com/@intelligenzait">
+                    <img src="https://i.ibb.co/82RkjXY/youtube.png" alt="Icone Youtube" />
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const scroll = document.querySelectorAll(".scroll");
+        scroll.forEach(function (cta) {
+            cta.addEventListener("click", function () {
+                document
+                    .getElementById("pardot-form")
+                    .scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        var floating = document.getElementById("floating-wrapper");
+        var startElement = document.getElementById("hero-wrapper");
+        var footer = document.getElementById("footer");
+
+        window.addEventListener("scroll", function () {
+            if (
+                startElement &&
+                window.screen.width <= 768 &&
+                window.scrollY >
+                startElement.getBoundingClientRect().bottom + window.scrollY
+            ) {
+                floating.classList.remove("hide");
+                floating.classList.add("show");
+                footer.style.marginBottom = floating.offsetHeight + "px";
+            } else {
+                floating.classList.remove("show");
+                floating.classList.add("hide");
+                footer.style.marginBottom = 0;
+            }
+        });
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            speed: 600,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        var questions = document.querySelectorAll(".question");
+        questions.forEach(function (question) {
+            question.addEventListener("click", function () {
+                var answer = this.nextElementSibling;
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
