@@ -75,7 +75,7 @@
             --blue: #141A3A;
             --blue-rgba: rgba(20, 26, 58, 0.8);
             --blue-rgbafull: rgba(20, 26, 58, 1);
-            --orange: #ffcb05;
+            --orange: #e87722;
             --gray: #e6e6e6;
 
             --wrapper-width: calc(100vw - (48px));
@@ -105,7 +105,7 @@
             line-height: 1.2;
             margin-bottom: 0;
             padding-bottom: 0.5rem;
-            font-weight: 700;
+            font-weight: 800;
         }
 
         h2 {
@@ -114,7 +114,7 @@
             margin-top: 1rem;
             margin-bottom: 0.5rem;
             padding-bottom: 0.25rem;
-            font-weight: 600;
+            font-weight: 400;
         }
 
         h3 {
@@ -123,7 +123,7 @@
             margin-top: 0.5rem;
             margin-bottom: 0.25rem;
             padding-bottom: 0.25rem;
-            font-weight: 500;
+            font-weight: 600;
             font-weight: bold;
         }
 
@@ -174,27 +174,33 @@
             margin-top: 0.5rem;
             margin-bottom: 1rem;
             padding: 0;
-            font-weight: 400;
+            font-weight: 300;
         }
 
         .cta {
             all: unset;
-            display: block;
+            display: flex;
+            gap: 12px;
             width: fit-content;
-            padding: 12px 16px;
             font-size: 1rem;
             text-align: center;
-            color: white;
+            text-transform: uppercase;
+            color: var(--orange);
             cursor: pointer;
-            background-color: var(--orange);
             transition: all 0.2sease-in-out;
-            outline: 1px solid transparent;
             transition: 0.2s ease-in-out all;
         }
 
+        .cta::after {
+            content: url(http://127.0.0.1:5500/arrow_orange.svg);
+            display: block;
+            width: 16px;
+            margin-top: 2px;
+            fill: white;
+        }
+
         .cta:hover {
-            outline: 2px solid var(--orange);
-            outline-offset: 5px;
+            gap: 24px;
         }
     </style>
 </head>
@@ -205,59 +211,6 @@
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
             style="display: none; visibility: hidden"></iframe>
     </noscript>
-
-    <style>
-        #floating-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: var(--wrapper-width);
-            width: 100%;
-            position: fixed;
-            z-index: 10;
-            bottom: 0;
-            padding: 18px 24px;
-            text-align: center;
-            color: white;
-            background-color: var(--orange);
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 2s;
-        }
-
-        .show {
-            visibility: visible !important;
-            animation: fadeIn 0.5s ease-in-out forwards !important;
-        }
-
-        .hide {
-            animation: fadeOut 0.5s ease-in-out forwards;
-        }
-
-        /* Fade-in animation */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0 !important;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        /* Fade-out animation */
-        @keyframes fadeOut {
-            0% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-    </style>
-    <div id="floating-wrapper" class="scroll">Garanta sua vaga!</div>
 
     <!-- Hero -->
     <style>
@@ -275,22 +228,6 @@
                     var(--blue-rgbafull) 0%,
                     var(--blue-rgba) 100%);
             overflow: hidden !important;
-        }
-
-        #hero-wrapper::after {
-            content: " ";
-            position: absolute;
-            width: 800px;
-            height: 800px;
-            z-index: 1;
-            border-radius: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-            right: -25%;
-            background-color: var(--orange);
-            outline: 20px solid var(--orange);
-            outline-offset: 20px;
-            filter: opacity(0.8);
         }
 
         #hero {
@@ -469,23 +406,26 @@
     <div id="hero-wrapper">
         <div id="hero">
             <div id="hero-content">
-                <div id="hero-date">Início das aulas: 25 de Agosto</div>
+                <div id="hero-date">Liberação das aulas: 25 de Agosto</div>
                 <h1>
-
-                    <span style="color: var(--orange);">Aprenda WorkForce Software </span><br />
+                    <span style="color: var(--orange);">Aprenda WorkForce Software</span><br />
                     Dê este passo e alavanque a sua carreira
-
                 </h1>
-                <h2>Já pensou em se destacar nos mercados de RH e Tecnologia, com uma solução Global?
-                </h2>
+
+                <h2>Conheça a solução que vai te destacar nos mercados de RH.</h2>
+
                 <p>
-                    Confira o programa educacional que a HR Path preparou deste sistema que é destaque mundial para
-                    gestão de tempo e frequência em empresas de grande porte.
+                    A HR Path Brasil preparou um programa educacional gratuito para te apresentar ao universo do
+                    WorkForce Software — uma das principais soluções globais para gestão de tempo e frequência,
+                    utilizada por grandes empresas em mais de 80 países.
                     <br /><br />
-                    Com conteúdo objetivo, ministrado por especialistas, esse treinamento oferece uma iniciação para
-                    quem deseja aprender sobre esta solução presente em mais de 80 países.
+                    Com aulas pré-gravadas objetivas e ministradas por especialistas, este treinamento oferece uma
+                    introdução prática para quem deseja começar a explorar essa tecnologia e exporar seu
+                    gigantesco ecossistema.
                 </p>
-                <p><b> 👉 Inscreva-se gratuitamente e amplie suas oportunidades.</b></p>
+
+                <p><b>👉 Inscreva-se gratuitamente e amplie suas oportunidades profissionais.</b></p>
+
 
             </div>
             <div id="hero-form">
@@ -506,88 +446,107 @@
         }
 
         #tpc {
-            display: flex;
+            display: grid;
+            position: relative;
+            grid-template-columns: 1fr 1fr;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             max-width: var(--max-width);
             color: var(--blue);
-            gap: 42px;
+            gap: 32px;
         }
+
 
         #tpc-topics {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
+            gap: 32px;
             text-align: left;
-            margin-top: 12px;
 
         }
 
         #tpc-topics li {
+            display: flex;
+            flex-direction: column;
             position: relative;
             list-style: none;
+            font-size: 1.25rem;
             font-weight: bold;
-            background-color: white;
-            padding: 12px 12px 12px 20px;
-            margin-left: 15px;
         }
 
         #tpc-topics li span {
-            position: absolute;
-            left: -20px;
-            top: calc(50% - (20px));
-            background-color: white;
-            padding: 8px;
-            border-radius: 100px;
+            margin-bottom: 6px;
         }
 
         #tpc-topics div {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: white;
-            color: #3f608e;
+            color: var(--orange);
             padding: 24px;
         }
 
         #tpc-topics img {
-            max-width: 60px;
-            margin-bottom: 12px;
+            max-width: 40px;
+            height: 40px;
+            filter: invert(65%) sepia(34%) saturate(5792%) hue-rotate(346deg) brightness(94%) contrast(93%);
         }
 
         @media screen and (max-width: 900px) {
             #tpc {
                 flex-direction: column;
+                grid-template-columns: 1fr;
             }
 
             #tpc-topics {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
             }
         }
     </style>
     <!-- Topics -->
     <div id="tpc-wrapper">
         <div id="tpc">
-            <div>
-                <h2>Por que participar do programa de treinamento?</h2>
+            <div id="tpc-content">
+                <h2>Por que se inscrever no curso<b> Workforce Software?</b></h2>
                 <p class="subtitle">
-                    Mais do que um curso gratuito, esta é uma oportunidade de agregar conhecimento em sua trajetória
-                    profissional. Este programa da HR Path Brasil Brasil foi pensado <b>para quem quer dar os
-                        primeiros passos e construir autoridade</b> no ecossistema SAP (frequentemente integrado ao
+                    Mais do que um curso gratuito, este é o seu ponto de partida para entender um dos mercados que mais
+                    cresce dentro do RH Digital.Este programa da HR Path Brasil Brasil foi pensado <b>para quem quer dar
+                        esses passos,
+                        construir autoridade</b> no ecossistema SAP (frequentemente integrado ao
                     Workforce) ou iniciar uma carreira promissora no universo do RH Digital. &nbsp;
 
                 </p>
+                <div class="cta scroll">Inscreva-se gratuitamente!</div>
+
             </div>
+
             <div id="tpc-topics">
-                <li><span>✅</span> Curso 100% gratuito, início em 25 de Agosto</li>
-                <li><span>🎓</span> Entrega de certificado digital de participação e conclusão</li>
-                <li><span>🌎</span> Conteúdo rico e exclusivo sobre WorkForce Software</li>
-                <li><span>👩‍🏫</span> Aulas com especialistas atuantes em projetos no Brasil e no exterior</li>
-                <li><span>🚀</span> Destaque no mercado de RH Tech, com foco em Time & Attendance</li>
-                <li><span>📈</span> Formação prática e direcionada para quem busca inserção rápida</li>
-                <li><span>🤝</span> Conexão com o ecossistema SAP e profissionais da área</li>
-                <li><span>🔒</span> Vagas limitadas para garantir qualidade e acompanhamento</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhg/707483/175199238228Out8eA/user_graduate.svg"></span>
+                    Entrega de certificado
+                    digital de participação e conclusão</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhv/707483/1751992383LSmrZKKV/benefit.svg"></span>
+                    Conteúdo rico e exclusivo sobre
+                    WorkForce Software</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhn/707483/1751992382L6JDd2YB/earth.svg"></span>
+                    Aulas com especialistas atuantes em
+                    projetos no Brasil e no
+                    exterior</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhk/707483/1751992382cYqaMMUN/rocket.svg"></span>
+                    Destaque no mercado de RH Tech, com
+                    foco em Time & Attendance</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhr/707483/1751992382KZdVEpYf/booking.svg"></span>
+                    Formação direcionada
+                    para quem busca ingressar no ecossistema WFS</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhc/707483/1751992382zFto8hjU/population.svg"></span>
+                    Conexão com o ecossistema SAP e
+                    profissionais da área</li>
 
             </div>
         </div>
@@ -597,21 +556,45 @@
     <style>
         #desafios-wrapper {
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: flex-start;
             align-items: center;
-            padding: 86px 24px;
+            padding: 86px 24px 86px 0;
+            gap: 64px;
+            position: relative;
             background-color: #f7f7f7;
+        }
+
+        #desafios-featured {
+            display: flex;
+            justify-content: left;
+            align-items: start;
+            max-width: 50%;
+            border-radius: 0 50% 50% 0;
+            overflow: hidden;
+        }
+
+        #desafios-featured img {
+            max-width: 100%;
         }
 
         #desafios {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: start;
             justify-content: center;
             max-width: 700px;
             color: var(--blue);
             width: 100%;
-            text-align: center;
+            text-align: left;
+        }
+
+        #desafios h2 {
+            max-width: 600px;
+        }
+
+        #desafios h2 span {
+            font-weight: 800;
         }
 
         #desafios p.subtitle {
@@ -634,20 +617,40 @@
             background-color: var(--blue-rgba);
             color: white;
         }
+
+        @media screen and (max-width: 900px) {
+            #desafios-wrapper {
+                flex-direction: column;
+                padding: var(--wrapper-padding);
+            }
+
+            #desafios-featured {
+                max-width: 100%;
+                border-radius: 12px;
+            }
+        }
     </style>
     <div id="desafios-wrapper">
+        <div id="desafios-featured">
+            <img
+                src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2VtfGVufDB8fDB8fHww">
+        </div>
         <div id="desafios">
             <div id="desafios-title">
-                <h2>Vagas limitadas para a primeira turma, garanta já o seu lugar!
+                <h2>
+                    Seja um consulto Workforce Software e <span> ingresse no mundo da tecnologia para RH. </span>
                 </h2>
             </div>
             <p>
-                O Programa Educacional da HR Path é gratuito e exclusivo para quem deseja dar este passo em direção a
-                uma carreira promissora com WorkForce Software. <br /> <b>Vagas limitadas: participe da primeira
-                    turma!</b>
+                O Curso Workforce Software é um curso gratuito da HR Path Academy, exclusivo para quem deseja conhecer a
+                solução e ingressar
+                no ecossistema WorkForce Software.<br /> <br />Assista quando e onde quiser, aulas
+                liberadas a partir do dia 25 de
+                agosto!
+                Inscreva-se e não perca essa oportunidade</b>
             </p>
 
-            <div class="cta scroll">Garanta sua vaga!</div>
+            <div class="cta scroll">Inscreva-se gratuitamente!</div>
 
         </div>
     </div>
@@ -760,9 +763,10 @@
         <div id="lessons">
             <div id="lessons-title">
                 <h2>Desenvolva habilidades reais com <br /> foco no WorkForce Software</h2>
-                <p>Nosso programa educacional foi criado para te preparar para o mercado de forma prática e estratégica.
-                    Cada módulo foca em temas essenciais para quem quer atuar com a solução de Time & Attendance da
-                    WorkForce Software. Aprenda com quem vive o dia a dia de grandes projetos!
+                <p>Nosso programa educacional foi criado para te apresentar o mercado de tecnolgia para RH e a solução
+                    Workforce Software de forma simples e estratégica.
+                    Cada módulo foca em temas essenciais para quem quer ingressar nesse ecossistema e atuar como
+                    consultar WorkForce Software. Aprenda com quem vive o dia a dia de grandes projetos!
                 </p>
             </div>
 
@@ -869,14 +873,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 500px;
+            max-width: 700px;
             padding: var(--wrapper-padding);
             color: var(--blue);
             margin: 0 auto;
         }
 
         #faq_wrapper h2 {
-            color: var(--orange);
+            text-align: center;
         }
 
         #faq {
@@ -886,35 +890,53 @@
             margin-top: 24px;
             padding: 0;
             list-style-type: none;
+            position: relative;
         }
 
         #faq li {
             display: flex;
             text-decoration: none;
             color: var(--blue);
-            border-bottom: 1px solid var(--blue);
             margin-bottom: 12px;
             padding: 24px 16px;
             cursor: pointer;
-            font-weight: bold;
+            font-weight: 600;
+            transition: 0.1s ease-in-out all;
         }
 
         #faq li:hover {
             color: var(--orange);
+            transform: scale(0.97);
+        }
+
+        .question::after {
+            content: url(https://go.pardot.com/l/707483/2025-07-08/3rqjhy/707483/1751992383eNIloptl/arrow_orange.svg);
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 16px;
+            margin-top: 2px;
+            fill: white;
+            transition: 0.3s ease-in-out all;
+        }
+
+        #faq li:hover::after {
+            color: var(--orange);
+            transform: rotate(90deg);
         }
 
         .answer {
             display: none;
             width: 100%;
             padding: 0 12px;
-            margin-top: 24px;
+            margin-top: 6px;
             margin-bottom: 36px;
             color: var(--blue);
             line-height: 24px;
         }
     </style>
     <div id="faq_wrapper" class="section">
-        <h2>Dúvidas Frequentes</h2>
+        <h2>Ainda tem Dúvidas? <br /> <b>Confira nossas Perguntas Frequentes</b></h2>
         <ul id="faq">
             <li class="question">
                 Quem pode participar do curso?
@@ -1097,27 +1119,6 @@
                     .getElementById("pardot-form")
                     .scrollIntoView({ behavior: "smooth" });
             });
-        });
-
-        var floating = document.getElementById("floating-wrapper");
-        var startElement = document.getElementById("hero-wrapper");
-        var footer = document.getElementById("footer");
-
-        window.addEventListener("scroll", function () {
-            if (
-                startElement &&
-                window.screen.width <= 768 &&
-                window.scrollY >
-                startElement.getBoundingClientRect().bottom + window.scrollY
-            ) {
-                floating.classList.remove("hide");
-                floating.classList.add("show");
-                footer.style.marginBottom = floating.offsetHeight + "px";
-            } else {
-                floating.classList.remove("show");
-                floating.classList.add("hide");
-                footer.style.marginBottom = 0;
-            }
         });
 
         const swiper = new Swiper('.swiper', {
