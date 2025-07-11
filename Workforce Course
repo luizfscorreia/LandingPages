@@ -1,20 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 
 <head>
     <base href="https://go.pardot.com">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="%%description%%" />
     <title>%%title%%</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "%%title%%",
+        "description": "Curso gratuito sobre a solução WorkForce Software focado em Time & Attendance. Voltado para estudantes, profissionais de RH e interessados em tecnologia aplicada à gestão de pessoas.",
+        "url": "https://click.hr-path.com/brasil/programa-educacional-workforce",
+        "image": "https://go.pardot.com/l/707483/2025-03-26/3lcxy1/707483/1743030437C4CmAGWz/bg2.jpg",
+        "provider": {
+            "@type": "Organization",
+            "name": "HR Path Brasil",
+            "logo": {
+            "@type": "ImageObject",
+            "url": "https://go.pardot.com/l/707483/2025-03-26/3lcxxx/707483/1743030437yGArSe7T/logo_medium_dark.webp"
+            }
+        },
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "student"
+        }
+        }
+    </script> -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-WVV39X6");
+    </script>
+    <!-- End Google Tag Manager -->
 
     <style>
         :root {
@@ -152,7 +191,11 @@
 </head>
 
 <body>
-
+    <noscript>
+        <!-- Google Tag Manager (noscript) -->
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe>
+    </noscript>
 
     <!-- Hero -->
     <style>
@@ -1055,56 +1098,57 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-        const scroll = document.querySelectorAll(".scroll");
-        scroll.forEach(function (cta) {
-            cta.addEventListener("click", function () {
-                document
-                    .getElementById("pardot-form")
-                    .scrollIntoView({ behavior: "smooth" });
-            });
-        });
-
-        const swiper = new Swiper('.swiper', {
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-            },
-            speed: 600,
-            spaceBetween: 24,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 1,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-
-        var questions = document.querySelectorAll(".question");
-        questions.forEach(function (question) {
-            question.addEventListener("click", function () {
-                var answer = this.nextElementSibling;
-                if (answer.style.display === "block") {
-                    answer.style.display = "none";
-                } else {
-                    answer.style.display = "block";
-                }
-            });
-        });
-    </script>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const scroll = document.querySelectorAll(".scroll");
+    scroll.forEach(function (cta) {
+        cta.addEventListener("click", function () {
+            document
+                .getElementById("pardot-form")
+                .scrollIntoView({ behavior: "smooth" });
+        });
+    });
+
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        speed: 600,
+        spaceBetween: 24,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+    var questions = document.querySelectorAll(".question");
+    questions.forEach(function (question) {
+        question.addEventListener("click", function () {
+            var answer = this.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        });
+    });
+</script>
 
 </html>
