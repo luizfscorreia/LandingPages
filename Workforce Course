@@ -1,440 +1,1163 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WVV39X6');
-    </script>
-    <!-- End Google Tag Manager -->
-
     <base href="https://go.pardot.com">
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="%%description%%" />
+    <link rel="canonical" href="https://click.hr-path.com/brasil/programa-educacional-workforce" />
+    <meta property="og:title" content="%%title%%" />
+    <meta property="og:description" content="%%description%%" />
+    <meta property="og:image"
+        content="https://go.pardot.com/l/707483/2025-03-26/3lcxy1/707483/1743030437C4CmAGWz/bg2.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="HR Path Brasil" />
+    <meta property="og:url" content="https://click.hr-path.com/brasil/programa-educacional-workforce" />
+
     <title>%%title%%</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "%%title%%",
+  "description": "Curso gratuito sobre a solução WorkForce Software focado em Time & Attendance. Voltado para estudantes, profissionais de RH e interessados em tecnologia aplicada à gestão de pessoas.",
+  "url": "https://click.hr-path.com/brasil/programa-educacional-workforce",
+  "image": "https://go.pardot.com/l/707483/2025-03-26/3lcxy1/707483/1743030437C4CmAGWz/bg2.jpg",
+  "provider": {
+    "@type": "Organization",
+    "name": "HR Path Brasil",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://go.pardot.com/l/707483/2025-03-26/3lcxxx/707483/1743030437yGArSe7T/logo_medium_dark.webp"
+    }
+  },
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "student"
+  }
+}
+</script>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-WVV39X6");
+    </script>
+    <!-- End Google Tag Manager -->
 
     <style>
         :root {
+            --blue: #141A3A;
+            --blue-rgba: rgba(20, 26, 58, 0.8);
+            --blue-rgbafull: rgba(20, 26, 58, 1);
+            --orange: #e87722;
+            --gray: #e6e6e6;
+
+            --wrapper-width: calc(100vw - (48px));
+            --wrapper-padding: 64px 24px;
             --max-width: 1200px;
-            --blue: #3f608e;
-            --orange: #df803b;
-            --gray: #ededed;
-            --mobile: '800px';
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-block: 0;
         }
 
         html,
         body {
-            font-family: "Open Sans", sans-serif;
+            font-family: "Urbanist", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
             margin: 0;
             padding: 0;
+            font-size: 16px;
         }
 
         h1 {
-            margin: 0;
-            padding: 0;
-            font-size: 4.5rem;
-            margin: 0.67rem 0;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 0;
+            padding-bottom: 0.5rem;
+            font-weight: 800;
         }
 
         h2 {
-            margin: 0;
-            padding: 0;
-            font-size: 2rem;
-            margin: 0.67em 0;
+            font-size: 2.25rem;
+            line-height: 1.3;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.25rem;
+            font-weight: 400;
         }
 
         h3 {
-            margin: 0;
-            padding: 0;
-            font-size: 1.5em;
-            margin: 0.67em 0;
+            font-size: 1.5rem;
+            line-height: 1.35;
+            margin-top: 0.5rem;
+            margin-bottom: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: 600;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        .subtitle {
+            max-width: 800px;
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                font-weight: 800;
+            }
+
+            h2 {
+                font-size: 2rem;
+                line-height: 1.35;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }
+
+            h4 {
+                font-size: 1.25rem;
+                line-height: 1.45;
+            }
         }
 
         p {
-            margin: 0;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
             padding: 0;
-            font-size: 1em;
-            margin: 0.67em 0;
+            font-weight: 300;
         }
 
         .cta {
             all: unset;
-            display: block;
-            width: calc(100% -(32px));
-            padding: 12px 16px;
-            font-size: 16px;
+            display: flex;
+            gap: 12px;
+            width: fit-content;
+            font-size: 1rem;
             text-align: center;
-            color: white;
+            text-transform: uppercase;
+            color: var(--orange);
             cursor: pointer;
-            background-color: #df803b;
             transition: all 0.2sease-in-out;
-            outline: 1px solid transparent;
-            transition: .2s ease-in-out all;
+            transition: 0.2s ease-in-out all;
+        }
+
+        .cta::after {
+            content: url(https://go.pardot.com/l/707483/2025-07-11/3ryxnr/707483/1752238242Upbi54UN/arrow_orange.svg);
+            display: block;
+            width: 16px;
+            margin-top: 2px;
+            fill: white;
         }
 
         .cta:hover {
-            outline: 2px solid var(--orange);
-            outline-offset: 5px;
-            transform: scale(1.1);
+            gap: 24px;
         }
+    </style>
+</head>
 
+<body>
+    <noscript>
+        <!-- Google Tag Manager (noscript) -->
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe>
+    </noscript>
+
+    <!-- Hero -->
+    <style>
         #hero-wrapper {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 86px 24px;
-            background-color: #56608e;
+            position: relative;
+            max-width: var(--wrapper-width);
+            padding: var(--wrapper-padding);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to bottom,
+                    var(--blue-rgbafull) 0%,
+                    var(--blue-rgba) 100%);
+            overflow: hidden !important;
         }
 
         #hero {
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
+            gap: 36px;
+            width: 100%;
             max-width: var(--max-width);
-            gap: 64px;
+            z-index: 2;
         }
 
         #hero-content {
             display: flex;
             flex-direction: column;
             flex: 1;
-            gap: 12px;
+            color: white;
+            max-width: 650px;
+        }
+
+        #hero-date {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: var(--orange);
+            color: var(--blue);
+            width: fit-content;
+            font-weight: bold;
+        }
+
+        #hero-content {
+            max-width: 550px;
+
         }
 
         #hero-content h1 {
             color: white;
+            line-height: 2.5rem;
+        }
+
+
+        #hero-content h2 {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 0 12px 0;
         }
 
         #hero-content p {
-            font: 26px;
-            color: white;
-            font-size: 16px;
+            max-width: 600px;
         }
 
-        #hero-content span {
-            padding: 12px 0;
-            line-height: auto;
+        #hero-content .featured {
+            font-size: 1.2rem;
             font-weight: bold;
-            font-size: 1.3rem;
-            color: #df803b;
+
+            width: fit-content;
+            padding: 6px 12px;
+            margin-bottom: 16px;
+
+            background-color: var(--gray);
+            color: var(--orange);
+        }
+
+        #hero-content img {
+            width: 300px;
+            padding: 24px;
+            background-color: white;
         }
 
         #hero-form {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
             max-width: 400px;
-            padding: 24px;
+            width: calc(100% - (64px));
+            height: fit-content;
             background-color: white;
+            padding: 32px;
+            color: var(--blue);
         }
 
-        #product-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 86px 24px;
-        }
-
-        #product {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 64px;
-            max-width: var(--max-width);
-        }
-
-        #product-content ul {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-            margin-top: 32px;
-            padding: 0;
-        }
-
-        #product-content li {
-            list-style: none;
-            padding: 12px 12px;
-            background-color: #b5e3ff;
-        }
-
-        #product-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #problems-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 86px 24px;
-            background-color: #b5e3ff;
-        }
-
-        #problems {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        #hero-form h2 {
+            font-size: 1.7rem;
+            line-height: 1;
             text-align: center;
-            max-width: var(--max-width);
-            gap: 32px;
+            margin: 0;
+            color: var(--orange);
         }
 
-        #problems h2 {}
-
-        #problems-topics {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 64px;
-            text-align: left;
+        #hero-form p {
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 32px;
         }
 
-        #problems-topics div {
-            background-color: white;
-            color: #3f608e;
-            padding: 24px;
+        @media screen and (max-width: 768px) {
+            #hero-content .featured {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            #hero-wrapper::after {
+                bottom: -25%;
+                left: -25%;
+                display: none;
+            }
+
+            #hero {
+                flex-direction: column;
+            }
         }
 
-        #problems-topics h3 {}
-
-        #problems-topics p {}
-
-        #problems-topics img {
-            max-width: 60px;
-            margin-bottom: 12px;
-        }
-
-        #cases-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 86px 24px;
-            overflow: hidden;
-        }
-
-        #cases {
+        #pardot-form {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            max-width: var(--max-width);
+            gap: 16px;
         }
 
-        #cases-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 24px;
+        #pardot-form p {
+            all: unset;
+            display: flex;
+            flex-direction: column;
+            font-weight: normal;
         }
 
-        #cases-content iframe {
-            width: 100%;
-            aspect-ratio: 3/1.5;
+        #pardot-form label {
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 6px;
         }
 
-        #faq {}
+        #pardot-form input,
+        #pardot-form select {
+            all: unset;
+            text-align: left;
+            font-size: 0.9rem;
+            padding: 8px;
+            border: 1px solid var(--blue);
+            background-color: white;
+        }
 
-        #talk {}
+        #pardot-form input[type="submit"] {
+            all: unset;
+            display: block;
+            width: calc(100% - (32px));
+            padding: 12px 16px;
+            font-size: 1rem;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: var(--orange);
+            transition: all 0.2sease-in-out;
+            outline: 1px solid transparent;
+            transition: 0.2s ease-in-out all;
+        }
 
-        #footer {}
+        #pardot-form input[type="submit"]:hover {
+            outline: 2px solid var(--orange);
+            outline-offset: 4px;
+            transform: scale(1.02);
+        }
+
+        #pardot-form .error {
+            margin-top: -1rem;
+            color: white;
+            font-size: 0.8rem;
+            padding: 6px 0;
+            background-color: red;
+
+            display: none;
+        }
     </style>
-</head>
-
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Head -->
-    <div style="display:flex; justify-content: space-around; padding: 20px 12px; background-color: white;">
-        <img style="width: 200px;" src="http://127.0.0.1:5500/sap_successfactors/sap-successfactors.png"
-            alt="Intelligenza by HR Path">
-        <img style="width: 200px;" src="https://intelligenzait.com/wp-content/uploads/2024/07/randoncorp_logo.webp"
-            alt="SAP SuccessFactors">
-    </div>
-
-    <!-- Hero -->
     <div id="hero-wrapper">
         <div id="hero">
             <div id="hero-content">
-                <p>
-                    Desafios com conformidade, folha de pagamento, gestão e desenvolvimento de talentos?
-                </p>
-                <h1>Solucione os principais problemas do seu RH com uma tecnologia líder mundial!</h1>
-                <span>UTILIZADO POR MAIS DE 242 MILHÕES DE USUÁRIOS AO REDOR DO MUNDO</span>
-                <p>
-                    Automatize, comande a gestão de pessoas e transforme seu RH em PROTAGONISTA nas tomadas de decisão e
-                    resultados do seu negócio.
-                </p>
-            </div>
+                <div id="hero-date">Liberação das aulas: 25 de Agosto</div>
+                <h1>
+                    <span style="color: var(--orange);">Aprenda WorkForce Software</span><br />
+                    Dê este passo e alavanque a sua carreira
+                </h1>
 
+                <h2>Conheça a solução que vai te destacar nos mercados de RH.</h2>
+
+                <p>
+                    A HR Path Brasil preparou um programa educacional gratuito para te apresentar ao universo do
+                    WorkForce Software — uma das principais soluções globais para gestão de tempo e frequência,
+                    utilizada por grandes empresas em mais de 80 países.
+                    <br /><br />
+                    Com aulas pré-gravadas objetivas e ministradas por especialistas, este treinamento oferece uma
+                    introdução prática para quem deseja começar a explorar esta tecnologia e seu gigantesco ecossistema
+                </p>
+
+                <p><b>👉 Inscreva-se gratuitamente e amplie suas oportunidades profissionais.</b></p>
+
+
+            </div>
             <div id="hero-form">
-                <h2>Fale com um especialista!</h2>
-                <p>Conheça a solução ideal para um RH mais estratégico e integrado</p>
-                %%content%%
+                <h2>Inscreva-se gratuitamente!</h2>
+                <form id="pardot-form">%%content%%</form>
             </div>
         </div>
     </div>
 
-    <!-- Sobre o produto  -->
-    <div id="product-wrapper">
-        <div id="product">
-            <div id="product-content">
-                <h2>A solução ideal para o seu RH!</h2>
-                <p>
-                    Criado em 2001 para auxiliar na digitalização e automação dos processos de RH, o SAP SuccessFactors
-                    é utilizado por mais de 242 milhões de usuários em 200 países diferentes, sendo a solução líder em
-                    qualidade e inovação.
-                    <br /> O software funciona totalmente em nuvem, sem a necessidade de instalação e é acessível em
-                    todos os disposítivos. Ele é capaz de gerir o núcleo de RH, folha de pagamento, gestão de talentos,
-                    análises específicas de gestão de pessoas, bem como metas e produtividade de cada colaborador,
-                    auxiliando na rotina de feedbacks, gestão individual de membros da equipe e tomadas de decisão com
-                    relátorios, gráficos e planilhas, tudo em um só lugar!
+
+    <style>
+        #tpc-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: var(--gray);
+        }
+
+        #tpc {
+            display: grid;
+            position: relative;
+            grid-template-columns: 1fr 1fr;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--max-width);
+            color: var(--blue);
+            gap: 32px;
+        }
+
+
+        #tpc-topics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            text-align: left;
+
+        }
+
+        #tpc-topics li {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            list-style: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        #tpc-topics li span {
+            margin-bottom: 6px;
+        }
+
+        #tpc-topics div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--orange);
+            padding: 24px;
+        }
+
+        #tpc-topics img {
+            max-width: 40px;
+            height: 40px;
+            filter: invert(65%) sepia(34%) saturate(5792%) hue-rotate(346deg) brightness(94%) contrast(93%);
+        }
+
+        @media screen and (max-width: 900px) {
+            #tpc {
+                flex-direction: column;
+                grid-template-columns: 1fr;
+            }
+
+            #tpc-topics {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+    <!-- Topics -->
+    <div id="tpc-wrapper">
+        <div id="tpc">
+            <div id="tpc-content">
+                <h2>Por que se inscrever no curso<b> Workforce Software?</b></h2>
+                <p class="subtitle">
+                    Mais do que um curso gratuito, este é o seu ponto de partida para entender um dos mercados que mais
+                    cresce dentro do RH Digital. Este programa da HR Path Brasil foi pensado <b>para quem quer
+                        dar
+                        esses passos,
+                        construir autoridade</b> no ecossistema SAP (frequentemente integrado ao
+                    Workforce) ou iniciar uma carreira promissora no universo do RH Digital. &nbsp;
+
                 </p>
-                <ul>
-                    <li>Estrutura em Nuvem</li>
-                    <li>Totalmente customizável</li>
-                    <li>Automatização de Burocracias</li>
-                    <li>Elimina erros de conformidades</li>
-                    <li>Redução de Custos</li>
-                    <li>Indicadores de Desempenho</li>
-                </ul>
+                <div class="cta scroll">Inscreva-se gratuitamente!</div>
+
             </div>
 
-            <div id="product-image"> a<img src="" alt=""></div>
+            <div id="tpc-topics">
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhg/707483/175199238228Out8eA/user_graduate.svg"></span>
+                    Entrega de certificado
+                    digital de participação e conclusão</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhv/707483/1751992383LSmrZKKV/benefit.svg"></span>
+                    Conteúdo rico e exclusivo sobre
+                    WorkForce Software</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhn/707483/1751992382L6JDd2YB/earth.svg"></span>
+                    Aulas com especialistas atuantes em
+                    projetos no Brasil e no
+                    exterior</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhk/707483/1751992382cYqaMMUN/rocket.svg"></span>
+                    Destaque no mercado de RH Tech, com
+                    foco em Time & Attendance</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhr/707483/1751992382KZdVEpYf/booking.svg"></span>
+                    Formação direcionada
+                    para quem busca ingressar no ecossistema WorkForce Software</li>
+                <li><span><img
+                            src="https://go.pardot.com/l/707483/2025-07-08/3rqjhc/707483/1751992382zFto8hjU/population.svg"></span>
+                    Conexão com o ecossistema SAP e
+                    profissionais da área</li>
+
+            </div>
         </div>
     </div>
 
 
-    <!-- Problemas RH -->
-    <div id="problems-wrapper">
-        <div id="problems">
-            <div>
-                <h2>RESOLVA OS PRINCIPAIS DESAFIOS DE RH</h2>
-                <p>Escolha o módulo de SuccessFactors que a sua empresa precisa</p>
+    <style>
+        #desafios-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 86px 24px 86px 0;
+            gap: 64px;
+            position: relative;
+            background-color: #f7f7f7;
+        }
+
+        #desafios-featured {
+            display: flex;
+            justify-content: left;
+            align-items: start;
+            max-width: 50%;
+            border-radius: 0 50% 50% 0;
+            overflow: hidden;
+        }
+
+        #desafios-featured img {
+            max-width: 100%;
+        }
+
+        #desafios {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            max-width: 700px;
+            color: var(--blue);
+            width: 100%;
+            text-align: left;
+        }
+
+        #desafios h2 {
+            max-width: 600px;
+        }
+
+        #desafios h2 span {
+            font-weight: 800;
+        }
+
+        #desafios p.subtitle {
+            color: #555;
+            font-weight: 400;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        #desafios-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        #desafios-list span {
+            padding: 12px;
+            border-radius: 6px;
+            background-color: var(--blue-rgba);
+            color: white;
+        }
+
+        @media screen and (max-width: 900px) {
+            #desafios-wrapper {
+                flex-direction: column;
+                padding: var(--wrapper-padding);
+            }
+
+            #desafios-featured {
+                max-width: 100%;
+                border-radius: 12px;
+            }
+        }
+    </style>
+    <div id="desafios-wrapper">
+        <div id="desafios-featured">
+            <img src="https://go.pardot.com/l/707483/2025-07-08/3rqm8y/707483/1751992978R5GBtfm4/2149241224.jpg">
+        </div>
+        <div id="desafios">
+            <div id="desafios-title">
+                <h2>
+                    Tem interesse em ser um consultor WorkForce Software?<br /><span> Ingresse seus estudos conosco!
+                    </span>
+                </h2>
+
+
             </div>
-            <div id="problems-topics">
-                <div>
-                    <img src="https://hr-path.com/wp-content/uploads/2021/10/059-manager.png"
-                        alt="Recrutamento descomplicado  com o SAP SuccessFactors na HR Path Brasil">
-                    <h3>Recrutamento descomplicado</h3>
-                    <p>Conte com ferramentas desenvolvidas exclusivamente para o gerenciamento de todo o processo de
-                        recrutamento. Desde a criação de site personalizado de recrutamento e disponibilização de vagas
-                        até a contratação efetiva dos novos colaboradores.</p>
-                </div>
+            <p>
+                O Curso Workforce Software é um curso gratuito da HR Path Academy, exclusivo para quem deseja conhecer a
+                solução e ingressar
+                no ecossistema WorkForce Software.<br /> <br />Assista quando e onde quiser, aulas
+                liberadas a partir do dia 25 de
+                agosto!
+                Inscreva-se e não perca essa oportunidade</b>
+            </p>
 
-                <div>
-                    <img src="https://hr-path.com/wp-content/uploads/2021/10/007-eye.png"
-                        alt="Análise de dados e Gestão de Desempenho  com o SAP SuccessFactors na HR Path Brasil">
-                    <h3>Análise de dados e Gestão de desempenho</h3>
-                    <p>Gere análises e relatórios detalhados sobre o desempenho dos colaboradores, fornecendo aos
-                        líderes dados para tomarem as melhores decisões relacionadas a treinamento, promoções, definição
-                        de metas claras e objetivas e feedbacks precisos.</p>
-                </div>
+            <div class="cta scroll">Inscreva-se gratuitamente!</div>
 
-                <div>
-                    <img src="https://hr-path.com/wp-content/uploads/2021/10/041-development.png"
-                        alt="Gerenciamento e desenvolvimento de talentos  com o SAP SuccessFactors na HR Path Brasil">
-                    <h3>Gerenciamento e desenvolvimento de talentos</h3>
-                    <p>Tenha algoritimos que ajudam a identificar e desenvolver o potencial de cada calaborador,
-                        permitindo que sua empresa retenha os melhores talentos e expanda o resultado de desempenho do
-                        time e do negócio em geral.</p>
-                </div>
-
-                <div>
-                    <img src="https://hr-path.com/wp-content/uploads/2021/10/019-list.png"
-                        alt="Folha de Pagamentos com o SAP SuccessFactors na HR Path Brasil">
-                    <h3>Folha de pagamento</h3>
-                    <p>O SuccessFactors também conta com um poderoso módulo capaz de simplificar a folha de pagamento,
-                        unificando a gestão em uma única plataforma para processamento mais preciso e em conformidade.
-                    </p>
-                </div>
-            </div>
-            <button class="cta">RESOLVER ESSES PROBLEMAS</button>
         </div>
     </div>
 
-    <!-- Cases -->
-    <div id="cases-wrapper">
-        <div id="cases">
+    <!-- Course Lessons -->
+    <style>
+        #lessons-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: var(--gray);
+        }
 
-            <h2>Cases de Sucesso</h2>
-            <p>Empresas que confiaram na Intelligenza para o licenciamento e a implementação das soluções SAP </p>
+        #lessons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            color: var(--blue);
+        }
 
-            <div id="cases-content">
-                <div class="case">
-                    <iframe width="100%" src="https://www.youtube.com/embed/asTROBYhZkI?si=fy0JbzUVy5ucgLMN"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <h3>Shopping Iguatemi</h3>
-                    <p>A Intelligenza integrou a solução SAP SuccessFactors para uma das principais redes de shoppings
-                        do país. Trazendo mais conformidade e tecnologia para todo o R.H. da Rede Iguatemi.</p>
-                </div>
+        .swiper {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            padding: 24px 0;
+        }
 
-                <div class="case">
-                    <iframe src="https://www.youtube.com/embed/g_0AV0i4UIY" frameborder="0"
-                        allow="autoplay; accelerometer; encrypted-media; gyroscope; fullscreen; picture-in-picture"
-                        allowfullscreen="" data-gtm-yt-inspected-25="true" data-gtm-yt-inspected-31444748_15="true"
-                        data-gtm-yt-inspected-31444748_110="true" id="803147455"
-                        data-gtm-yt-inspected-31444748_136="true"
-                        title="Caso de Sucesso Pedra Agroindustrial e SAP SuccessFactors"
-                        data-gtm-yt-inspected-8="true">
-                    </iframe>
-                    <h3>Pedra Agroindustrial</h3>
-                    <p>Em uma das nossas mais recentes parcerias, ajudamos uma das maiores empresas do mercado
-                        sucroalcooleiro a otimizar seus processos de R.H. com o SuccessFactors.</p>
-                </div>
+        .swiper-wrapper {
+            display: flex;
+            max-width: 100%;
 
-                <div class="case">
-                    <img src="/sap_successfactors/portal_carreiras.png" alt="">
-                    <h3>Portal Intelligenza Carreiras</h3>
-                    <p>Utilizando o módulo SuccessFactors Recruiting Marketing, nosso time de R.H. criou de forma fácil
-                        e prática um site de carreiras completo e personalizado com a nossa cara, transmitindo nossa
-                        cultura e valores para cada candidato.</p>
-                </div>
+        }
+
+        .swiper-slide {
+            flex-shrink: 0;
+            width: auto;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: var(--blue);
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .swiper-button-prev {
+            left: -30px;
+            /* Afasta a seta da borda do swiper */
+        }
+
+        .swiper-button-next {
+            right: -30px;
+        }
+
+        .lesson-box {
+            position: relative;
+        }
+
+        @media screen and (max-width: 768px) {
+            .swiper {
+                padding: 0;
+            }
+
+            .lesson-box {
+                max-width: 100%;
+            }
+        }
+
+        .lesson-box h3 {
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .lesson-thumbnail {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lesson-thumbnail img {
+            width: 100%;
+            height: 100%;
+            filter: blur(6px);
+        }
+
+        .overlay {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            z-index: 9;
+        }
+    </style>
+    <div id="lessons-wrapper">
+        <div id="lessons">
+            <div id="lessons-title">
+                <h2>Desenvolva habilidades reais com <br /> foco no WorkForce Software</h2>
+                <p>Nosso programa educacional foi criado para te apresentar o mercado de tecnologia para RH e a solução
+                    Workforce Software de forma simples e estratégica.
+                    Cada módulo foca em temas essenciais para quem quer ingressar nesse ecossistema e entender de
+                    maneira inicial como atuam os consultores de WorkForce Software. Aprenda com quem vive o dia a dia
+                    de
+                    grandes projetos!
+                </p>
             </div>
 
-            <div id="case-carrousel">carrousel</div>
-            <button class="cta">FALE COM UM ESPECIALISTA</button>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 25 de Agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Introdução ao WorkForce e seus principais módulos">
+                        </div>
+                        <h3>Introdução ao WorkForce Software e seus principais módulos</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 25 de Agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Soft & Tech Skills essenciais para projetos de tecnologia">
+                        </div>
+                        <h3>Soft & Tech Skills essenciais para projetos de tecnologia</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 25 de Agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Especialização em Time & Attendance na prática">
+                        </div>
+                        <h3>Especialização em Time & Attendance na prática</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 25 de Agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Ciclo de vida de um projeto com WorkForce Software">
+                        </div>
+                        <h3>Ciclo de vida de um projeto com WorkForce Software</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 25 de Agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Sustentação e suporte contínuo (AMS)">
+                        </div>
+                        <h3>Sustentação e suporte contínuo (AMS)</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 25 de Agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Integrações com outros sistemas e ERPs">
+                        </div>
+                        <h3>Integrações com outros sistemas e ERPs</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 25 de Agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Relatórios, dashboards e análise de dados">
+                        </div>
+                        <h3>Relatórios, dashboards e análise de dados</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 25 de Agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Dicas de carreira e próximos passos na área">
+                        </div>
+                        <h3>Dicas de carreira e próximos passos na área</h3>
+                    </div>
+
+                    <div class="lesson-box swiper-slide">
+                        <div class="lesson-thumbnail">
+                            <span class="overlay">🔒 25 de Agosto</span>
+                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/trading-tutorial-youtube-thumbnail-design-template-d09de17e2aca2e5e7d66ed0538414f49_screen.jpg?ts=1709747853"
+                                alt="Desafios reais e como se preparar para o mercado">
+                        </div>
+                        <h3>Desafios reais e como se preparar para o mercado</h3>
+                    </div>
+
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
         </div>
     </div>
 
     <!-- FAQ -->
-    <div>
+    <style>
+        #faq_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 700px;
+            padding: var(--wrapper-padding);
+            color: var(--blue);
+            margin: 0 auto;
+        }
+
+        #faq_wrapper h2 {
+            text-align: center;
+        }
+
+        #faq {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            margin-top: 24px;
+            padding: 0;
+            list-style-type: none;
+            position: relative;
+        }
+
+        #faq li {
+            display: flex;
+            text-decoration: none;
+            color: var(--blue);
+            margin-bottom: 12px;
+            padding: 24px 16px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.1s ease-in-out all;
+        }
+
+        #faq li:hover {
+            color: var(--orange);
+            transform: scale(0.97);
+        }
+
+        .question::after {
+            content: url(https://go.pardot.com/l/707483/2025-07-08/3rqjhy/707483/1751992383eNIloptl/arrow_orange.svg);
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 16px;
+            margin-top: 2px;
+            fill: white;
+            transition: 0.3s ease-in-out all;
+        }
+
+        #faq li:hover::after {
+            color: var(--orange);
+            transform: rotate(90deg);
+        }
+
+        .answer {
+            display: none;
+            width: 100%;
+            padding: 0 12px;
+            margin-top: 6px;
+            margin-bottom: 36px;
+            color: var(--blue);
+            line-height: 24px;
+        }
+    </style>
+    <div id="faq_wrapper" class="section">
+        <h2>Ainda tem Dúvidas? <br /> <b>Confira nossas Perguntas Frequentes</b></h2>
+        <ul id="faq">
+            <li class="question">
+                Quem pode participar do curso?
+            </li>
+            <div class="answer">
+                Estudantes, profissionais de RH e pessoas interessadas em tecnologia e gestão de tempo. Não é necessário
+                ter experiência prévia com WorkForce Software.
+            </div>
+
+            <li class="question">
+                Preciso pagar para participar?
+            </li>
+            <div class="answer">
+                Não. O curso é gratuito e oferecido pela HR Path como parte de nosso compromisso em formar novos
+                talentos.
+            </div>
+
+            <li class="question">
+                Preciso ter experiência com RH ou sistemas?
+            </li>
+            <div class="answer">
+                Não. O curso foi desenvolvido para iniciantes, mas também serve como reciclagem para profissionais da
+                área.
+            </div>
+
+            <li class="question">
+                Recebo certificado ao final do curso?
+            </li>
+            <div class="answer">
+                Sim. Todos os participantes que concluírem o curso receberão um certificado de participação da HR Path.
+            </div>
+
+            <li class="question">
+                Quanto tempo dura o curso?
+            </li>
+            <div class="answer">
+                O curso pode ser concluído no seu ritmo. O acesso aos vídeos será liberado após o início oficial da
+                turma.
+            </div>
+
+            <li class="question">
+                Como serão as aulas?
+            </li>
+            <div class="answer">
+                As aulas são gravadas e estarão disponíveis em uma plataforma digital. Você poderá assistir quando e
+                onde quiser.
+            </div>
+
+            <li class="question">
+                Posso participar mesmo sem conhecimento de inglês?
+            </li>
+            <div class="answer">
+                Sim. Todo o conteúdo é em português e adaptado à realidade do mercado brasileiro.
+            </div>
+
+        </ul>
     </div>
 
-    <!-- Fale com um especialista -->
-    <div>
-        <h2>Fale com um especialista</h2>
-        <button class="cta">FALE COM UM ESPECIALISTA</button>
-    </div>
 
-    <!-- Rodapé -->
-    <footer>
-        <div></div>
-        <div>
-            <a href="" title=""> <img src="" alt=""> </a>
-            <a href="" title=""> <img src="" alt=""> </a>
-            <a href="" title=""> <img src="" alt=""> </a>
-            <a href="" title=""> <img src="" alt=""> </a>
+    <!-- Footer -->
+    <style>
+        #footer-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--wrapper-width);
+            padding: 36px 24px;
+            background-color: var(--blue);
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: var(--max-width);
+        }
+
+        #footer-brand {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            gap: 12px;
+            color: white;
+        }
+
+        #footer-brand .brand-bg {
+            background-color: white;
+            padding: 14px;
+            border-radius: 4px;
+        }
+
+        #footer-brand img {
+            width: 130px;
+        }
+
+        #footer-socials {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            gap: 24px;
+        }
+
+        #footer-socials img {
+            height: 20px;
+            transition: 0.3s all ease-in-out;
+        }
+
+        #footer-socials img:hover {
+            filter: opacity(0.6);
+        }
+
+        @media (max-width: 768px) {
+            #footer {
+                flex-direction: column-reverse;
+                gap: 32px;
+            }
+
+            #footer-brand {
+                font-size: 1rem;
+                flex-direction: column;
+            }
+
+            #footer-brand img {
+                width: 80%;
+            }
+
+            #footer-socials {
+                gap: 12px;
+                justify-content: center;
+            }
+
+            #footer-socials img {
+                padding: 24px;
+            }
+        }
+    </style>
+    <footer id="footer-wrapper">
+        <div id="footer">
+            <div id="footer-brand">
+                <img class="brand-bg"
+                    src="https://go.pardot.com/l/707483/2025-03-19/3kzyhw/707483/1742401539WWGG25UU/itz_brazil.png"
+                    alt="Logotipo Intelligenza a HR Path Brasil Company" />
+                Intelligenza IT is an HR Path Company
+                <br />
+                © HR Path Brasil, all rights reserved.
+            </div>
+
+            <div id="footer-socials">
+                <a title="HR Path Brasil no Facebook" id="social-facebook" href="https://www.facebook.com/HRPath/">
+                    <img src="https://i.ibb.co/KKsMqTw/facebook.png" alt="Icone Facebook" />
+                </a>
+
+                <a title="HR Path Brasil no Instagram" id="social-instagram"
+                    href="https://www.instagram.com/hr_path_brasil/">
+                    <img src="https://i.ibb.co/r79gk13/instagram.png" alt="Icone Instagram" />
+                </a>
+
+                <a title="HR Path Brasil no Linkedin" id="social-linkedin"
+                    href="https://www.linkedin.com/company/hr-path">
+                    <img src="https://i.ibb.co/2NKPN6L/linkedin.png" alt="Icone Linkedin" />
+                </a>
+
+                <a title="HR Path Brasil no Youtube" id="social-youtube" href="https://www.youtube.com/@intelligenzait">
+                    <img src="https://i.ibb.co/82RkjXY/youtube.png" alt="Icone Youtube" />
+                </a>
+            </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const scroll = document.querySelectorAll(".scroll");
+        scroll.forEach(function (cta) {
+            cta.addEventListener("click", function () {
+                document
+                    .getElementById("pardot-form")
+                    .scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            speed: 600,
+            spaceBetween: 24,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        var questions = document.querySelectorAll(".question");
+        questions.forEach(function (question) {
+            question.addEventListener("click", function () {
+                var answer = this.nextElementSibling;
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
+            });
+        });
+    </script>
 </body>
-
-<script>
-
-</script>
 
 </html>
