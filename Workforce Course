@@ -2,7 +2,7 @@
 <html lang="pt">
 
 <head>
-    <base href="https://click.hr-path.com/brasil/programa-educacional-workforce" />
+    <base href="https://go.pardot.com">
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,6 @@
         content="Participe gratuitamente do Programa Educacional da HR Path e aprenda tudo sobre a solução WorkForce Software para gestão de jornada. Curso online, com certificado e aulas ministradas por especialistas do setor." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://click.hr-path.com/brasil/programa-educacional-workforce" />
-    <link rel="preload" href="https://storage.pardot.com/707483/1743030437yfAzi8Tu/bg.jpg" as="image" />
 
     <meta property="og:title" content="Curso Gratuito sobre WorkForce Software | HR Path Brasil" />
     <meta property="og:description"
@@ -192,7 +191,7 @@
         }
 
         .cta::after {
-            content: url(http://127.0.0.1:5500/arrow_orange.svg);
+            content: url(https://go.pardot.com/l/707483/2025-07-11/3ryxnr/707483/1752238242Upbi54UN/arrow_orange.svg);
             display: block;
             width: 16px;
             margin-top: 2px;
