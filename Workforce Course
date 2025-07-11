@@ -3,20 +3,12 @@
 
 <head>
     <base href="https://go.pardot.com">
+    <base href="https://go.pardot.com">
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="%%description%%" />
-    <link rel="canonical" href="https://click.hr-path.com/brasil/programa-educacional-workforce" />
-    <meta property="og:title" content="%%title%%" />
-    <meta property="og:description" content="%%description%%" />
-    <meta property="og:image"
-        content="https://go.pardot.com/l/707483/2025-03-26/3lcxy1/707483/1743030437C4CmAGWz/bg2.jpg" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="HR Path Brasil" />
-    <meta property="og:url" content="https://click.hr-path.com/brasil/programa-educacional-workforce" />
-
     <title>%%title%%</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -47,23 +39,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                "gtm.start": new Date().getTime(),
-                event: "gtm.js",
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != "dataLayer" ? "&l=" + l : "";
-            j.async = true;
-            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-WVV39X6");
-    </script>
-    <!-- End Google Tag Manager -->
+
 
     <style>
         :root {
@@ -201,11 +177,6 @@
 </head>
 
 <body>
-    <noscript>
-        <!-- Google Tag Manager (noscript) -->
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
-            style="display: none; visibility: hidden"></iframe>
-    </noscript>
 
     <!-- Hero -->
     <style>
