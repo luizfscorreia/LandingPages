@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    <base href="https://click.hr-path.com/brasil/ai-analytics" />
+    <base href="https://click.hr-path.com/brasil/workforce-software" />
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://click.hr-path.com/brasil/ai-analytics"
+      href="https://click.hr-path.com/brasil/workforce-software"
     />
     <link
       rel="preload"
@@ -27,10 +27,10 @@
     <meta property="og:site_name" content="HR Path Brasil" />
     <meta
       property="og:url"
-      content="https://click.hr-path.com/brasil/ai-analytics"
+      content="https://click.hr-path.com/brasil/workforce-software"
     />
 
-    <title>Curso Gratuito WorkForce Software | HR Path Brasil</title>
+    <title>%%title%%</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script type="application/ld+json">
@@ -39,7 +39,7 @@
         "@type": "Course",
         "name": "%%title%%",
         "description": "%%description%%",
-        "url": "https://click.hr-path.com/brasil/ai-analytics",
+        "url": "https://click.hr-path.com/brasil/workforce-software",
         "image": "https://go.pardot.com/l/707483/2025-03-26/3lcxy1/707483/1743030437C4CmAGWz/bg2.jpg",
         "provider": {
           "@type": "Organization",
@@ -106,9 +106,9 @@
       }
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         line-height: 1.2;
-        margin-bottom: 0;
+        margin-bottom: 12px;
         padding-bottom: 0.5rem;
         font-weight: 800;
       }
@@ -119,7 +119,7 @@
         margin-top: 1rem;
         margin-bottom: 0.5rem;
         padding-bottom: 0.25rem;
-        font-weight: 400;
+        font-weight: bold;
       }
 
       h3 {
@@ -179,7 +179,6 @@
         margin-top: 0.5rem;
         margin-bottom: 1rem;
         padding: 0;
-        font-weight: 300;
       }
 
       .cta {
@@ -197,7 +196,7 @@
       }
 
       .cta::after {
-        content: url(http://127.0.0.1:5500/arrow_orange.svg);
+        content: url(https://storage.pardot.com/707483/1751992383eNIloptl/arrow_orange.svg);
         display: block;
         width: 16px;
         margin-top: 2px;
@@ -229,7 +228,7 @@
         align-items: center;
         gap: 64px;
         max-width: calc(100vw - (64px));
-        padding: 24px 32px 0 32px;
+        padding: 24px 32px;
         background-color: var(--blue);
       }
       #topmenu img {
@@ -238,12 +237,16 @@
     </style>
 
     <nav id="topmenu">
-      <img
-        class="brand"
-        src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
-        alt="Logotipo HR Path Brasil "
-      />
-      <div></div>
+      <a
+        href="https://hr-path.com/pt-br/"
+        title="Conheça o site da HR Path Brasil"
+      >
+        <img
+          class="brand"
+          src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
+          alt="Logotipo HR Path Brasil "
+        />
+      </a>
     </nav>
 
     <!-- Hero -->
@@ -255,15 +258,27 @@
         position: relative;
         max-width: var(--wrapper-width);
         padding: var(--wrapper-padding);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         background-image: linear-gradient(
           to bottom,
           var(--blue-rgbafull) 0%,
           var(--blue-rgba) 100%
         );
         overflow: hidden !important;
+        z-index: 2;
+      }
+      #hero-wrapper::before {
+        content: "";
+        background: url(https://go.pardot.com/l/707483/2025-07-30/3t1xxk/707483/1753886503QH7Lgz4K/workforce_bg.webp);
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        left: 0;
+        top: 0;
+        filter: opacity(0.3);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
       }
 
       #hero {
@@ -329,9 +344,8 @@
       }
 
       #hero-content img {
-        width: 300px;
-        padding: 24px;
-        background-color: white;
+        width: 150px;
+        margin-bottom: 24px;
       }
 
       #hero-form {
@@ -343,12 +357,14 @@
         background-color: white;
         padding: 32px;
         color: var(--blue);
+        z-index: 2;
       }
 
       #hero-form h2 {
         font-size: 1.5rem;
         line-height: 1;
         text-align: center;
+        align-self: center;
         margin: 0;
         color: var(--orange);
       }
@@ -376,6 +392,19 @@
 
         #hero {
           flex-direction: column;
+        }
+        #hero h1 {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 12px;
+        }
+
+        #hero h2 {
+          text-align: left;
+        }
+
+        #hero-content img {
+          align-self: center;
         }
       }
 
@@ -444,54 +473,50 @@
     <div id="hero-wrapper">
       <div id="hero">
         <div id="hero-content">
+          <img
+            src="https://go.pardot.com/l/707483/2025-07-30/3t1xxg/707483/1753886502AYEzwuiz/worforce_logo.webp"
+            alt="Logo Worforce Software"
+          />
           <h1>
-            Transforme Dados em Decisões Rápidas e Confiáveis com AI & Analytics
+            <b style="color: var(--orange)"
+              >WorkForce Software Time & Attendance</b
+            >: A solução ideal para gerenciamento de tempo e presença
           </h1>
-
-          <h2>
-            Automatize relatórios, elimine processos manuais e tenha insights
-            estratégicos para liderar com confiança
-          </h2>
-
           <p>
-            Sua empresa ainda depende de relatórios manuais demorados, planilhas
-            desatualizadas e processos que não acompanham a velocidade das
-            decisões estratégicas?
-            <b
-              >Falta de visibilidade completa de dados, dificuldade em escalar
-              análises e excesso de tarefas operacionais podem travar o
-              crescimento do seu negócio.</b
-            >
+            O WorkForce Software Time & Attendance é uma
+            <b>solução abrangente de gerenciamento de tempo e presença</b> que
+            ajuda as empresas a monitorar e gerenciar as horas trabalhadas por
+            seus funcionários de maneira eficiente e precisa.
           </p>
-          <p style="color: var(--orange)">
+          <p>
+            Com funcionalidades avançadas e integração fácil,
             <b
-              >A área AI & Analytics da HR Path está preparada para ajudar você
-              a automatizar processos, ganhar agilidade nas análises e
-              transformar dados dispersos em insights poderosos.
-            </b>
+              >essa ferramenta é essencial para empresas que buscam otimizar a
+              gestão da força de trabalho</b
+            >
+            e garantir conformidade com as regulamentações trabalhistas.
           </p>
         </div>
 
         <div id="hero-form">
-          <h2>
-            Converse com o nosso especialista sobre as soluções
-            AI&nbsp;&&nbsp;Analytics
-          </h2>
+          <h2>Fale com nossos especialistas</h2>
           %%content%%
         </div>
       </div>
     </div>
 
+    <!-- vantagens -->
+
     <style>
-      #tpc-wrapper {
+      #vantagens-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 86px 24px;
-        background-color: var(--gray);
+        background-color: white;
       }
 
-      #tpc {
+      #vantagens {
         display: grid;
         position: relative;
         grid-template-columns: 1fr 1fr;
@@ -500,34 +525,53 @@
         align-items: center;
         max-width: var(--max-width);
         color: var(--blue);
-        gap: 42px;
+        gap: 62px;
       }
 
-      #tpc-content {
-        max-width: 500px;
+      #vantagens-image {
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        background: url(https://go.pardot.com/l/707483/2025-07-30/3t1xvg/707483/1753885216zqfJ0TCM/vantagens__1_.jpg);
+        background-position: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 6px;
       }
-
-      #tpc-topics {
+      #vantagens-topics {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: 32px;
         text-align: left;
       }
+      #vantagens-topics ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
 
-      #tpc-topics li {
+      #vantagens-topics li {
         display: flex;
         flex-direction: column;
         position: relative;
         list-style: none;
-        font-size: 1.25rem;
-        font-weight: bold;
+        font-size: 1.1rem;
+      }
+      #vantagens-topics li b {
+        color: var(--orange);
       }
 
-      #tpc-topics li span {
-        margin-bottom: 6px;
+      #vantagens-topics li::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: var(--orange);
+        position: absolute;
+        left: -30px;
+        top: 8px;
+        transform: rotate(45deg);
       }
 
-      #tpc-topics div {
+      #vantagens-topics div {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -535,7 +579,7 @@
         padding: 24px;
       }
 
-      #tpc-topics img {
+      #vantagens-topics img {
         max-width: 40px;
         height: 40px;
         filter: invert(65%) sepia(34%) saturate(5792%) hue-rotate(346deg)
@@ -543,80 +587,196 @@
       }
 
       @media screen and (max-width: 900px) {
-        #tpc {
+        #vantagens {
           flex-direction: column;
           grid-template-columns: 1fr;
         }
 
-        #tpc-topics {
-          grid-template-columns: 1fr 1fr;
+        #vantagens-image {
+          display: none;
         }
       }
     </style>
-    <!-- Topics -->
-    <div id="tpc-wrapper">
-      <div id="tpc">
-        <div id="tpc-content">
-          <h2>Ganhos Reais com Soluções em&nbsp;AI&nbsp;&&nbsp;Analytics</h2>
+    <div id="vantagens-wrapper">
+      <div id="vantagens">
+        <div id="vantagens-image"></div>
+        <div id="vantagens-content">
+          <h2>Vantagens do Time & Attendance</h2>
           <p>
-            Ao adotar soluções de AI & Analytics, sua empresa transforma
-            relatórios demorados em análises automatizadas, escaláveis e em
-            tempo real. Isso significa mais agilidade para tomar decisões,
-            redução de custos com tarefas manuais, processos inteligentes que
-            crescem com o seu negócio e dados confiáveis para orientar
-            estratégias.
+            Controle total e eficiência em um só lugar. Com o WorkForce Time &
+            Attendance, gerenciar o tempo e a presença dos seus funcionários
+            nunca foi tão fácil!
           </p>
+
+          <div id="vantagens-topics">
+            <ul>
+              <li>
+                <b>Registro de Tempo Eficiente:</b> Permite que os funcionários
+                registrem suas horas de trabalho através de diversos métodos,
+                como relógios de ponto, aplicativos móveis e terminais web.
+              </li>
+              <li>
+                <b>Integração com Folha de Pagamento:</b> Integra-se facilmente
+                com sistemas de folha de pagamento, automatizando o cálculo de
+                horas trabalhadas e garantindo precisão nos pagamentos.
+              </li>
+              <li>
+                <b>Relatórios e Análises Detalhados:</b> Oferece ferramentas
+                poderosas de relatórios e análises para acompanhar métricas de
+                tempo e presença, permitindo uma tomada de decisão informada.
+              </li>
+              <li>
+                <b>Conformidade Garantida:</b> Assegura que sua empresa cumpra
+                todas as leis trabalhistas e regulamentações de horas de
+                trabalho, evitando multas e penalidades.
+              </li>
+              <li>
+                <b>Gestão de Folgas Simplificada:</b> Facilita o gerenciamento
+                de pedidos de folgas e férias, automatizando aprovações e
+                mantendo registros atualizados.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- beneficios -->
+    <style>
+      #beneficios-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 86px 24px;
+        background-color: var(--gray);
+      }
+
+      #beneficios {
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        max-width: var(--max-width);
+        color: var(--blue);
+        gap: 62px;
+      }
+
+      #beneficios-image {
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        background: url(https://go.pardot.com/l/707483/2025-07-30/3t1xvk/707483/1753885216WSq04jUN/beneficios.jpg);
+        background-position: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 6px;
+      }
+      #beneficios-topics {
+        display: grid;
+        gap: 32px;
+        text-align: left;
+      }
+      #beneficios-topics ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      #beneficios-topics li {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        list-style: none;
+        font-size: 1.1rem;
+      }
+      #beneficios-topics li b {
+        color: var(--orange);
+      }
+
+      #beneficios-topics li::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: var(--orange);
+        position: absolute;
+        left: -30px;
+        top: 8px;
+        transform: rotate(45deg);
+      }
+
+      #beneficios-topics div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--orange);
+        padding: 24px;
+      }
+
+      #beneficios-topics img {
+        max-width: 40px;
+        height: 40px;
+        filter: invert(65%) sepia(34%) saturate(5792%) hue-rotate(346deg)
+          brightness(94%) contrast(93%);
+      }
+
+      @media screen and (max-width: 900px) {
+        #beneficios {
+          flex-direction: column;
+          grid-template-columns: 1fr;
+        }
+
+        #beneficios-image {
+          display: none;
+        }
+      }
+    </style>
+    <div id="beneficios-wrapper">
+      <div id="beneficios">
+        <div id="beneficios-content">
+          <h2>Os Benefícios para sua empresa</h2>
           <p>
-            Liberte sua equipe das rotinas operacionais repetitivas e mecânicas
-            para focarem no que realmente importa, gera valor e insights que
-            impulsionam os resultados.
+            O WorkForce Software Time & Attendance resolve diversos problemas
+            comuns na gestão da força de trabalho e oferece benefícios
+            significativos:
           </p>
+
+          <div id="beneficios-topics">
+            <ul>
+              <li>
+                <b>Eficiência Operacional:</b> Automatiza processos manuais de
+                registro de tempo e presença, reduzindo erros e economizando
+                tempo. Isso permite que sua equipe de RH se concentre em tarefas
+                mais estratégicas.
+              </li>
+              <li>
+                <b>Melhoria na Satisfação dos Funcionários:</b> Facilita a
+                solicitação de folgas e a visualização de horários, aumentando a
+                satisfação e o engajamento dos funcionários.
+              </li>
+              <li>
+                <b>Transparência e Controle:</b> Proporciona visibilidade em
+                tempo real das horas trabalhadas e das folgas, permitindo melhor
+                controle e planejamento. Isso resulta em uma maior transparência
+                para a gestão e os funcionários.
+              </li>
+              <li>
+                <b>Redução de Custos:</b> Ao automatizar a coleta e o
+                processamento de dados de tempo e presença, sua empresa pode
+                reduzir os custos associados a erros de pagamento e
+                conformidade.
+              </li>
+              <li>
+                <b>Aumento da Produtividade:</b> Com uma gestão otimizada dos
+                turnos e escalas de trabalho, você pode garantir que os recursos
+                humanos sejam utilizados de maneira eficaz, melhorando a
+                produtividade geral da empresa.
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div id="tpc-topics">
-          <li>
-            <span
-              ><img
-                src="https://go.pardot.com/l/707483/2025-07-08/3rqjhk/707483/1751992382cYqaMMUN/rocket.svg"
-            /></span>
-            Relatórios em minutos, não&nbsp;semanas
-          </li>
-          <li>
-            <span
-              ><img
-                src="https://go.pardot.com/l/707483/2025-07-08/3rqjhv/707483/1751992383LSmrZKKV/benefit.svg"
-            /></span>
-            Elimine tarefas manuais e&nbsp;otimize sua equipe.
-          </li>
-          <li>
-            <span
-              ><img
-                src="https://go.pardot.com/l/707483/2025-07-08/3rqjhn/707483/1751992382L6JDd2YB/earth.svg"
-            /></span>
-            Processos escaláveis e&nbsp;inteligentes
-          </li>
-          <li>
-            <span
-              ><img
-                src="https://hr-path.com/wp-content/uploads/2021/10/056-target-150x150.png"
-            /></span>
-            Redução de custos operacionais
-          </li>
-          <li>
-            <span
-              ><img
-                src="https://go.pardot.com/l/707483/2025-07-08/3rqjhr/707483/1751992382KZdVEpYf/booking.svg"
-            /></span>
-            Decisões com dados consistentes e confiáveis
-          </li>
-          <li>
-            <span
-              ><img
-                src="https://go.pardot.com/l/707483/2025-07-08/3rqjhc/707483/1751992382zFto8hjU/population.svg"
-            /></span>
-            Foco no estratégico, não&nbsp;no&nbsp;operacional
-          </li>
-        </div>
+        <div id="beneficios-image"></div>
       </div>
     </div>
 
@@ -695,75 +855,48 @@
         <b>Confira nossas Perguntas Frequentes</b>
       </h2>
       <ul id="faq">
-        <li class="question">
-          O que diferencia as soluções de AI & Analytics da HR Path Brasil de
-          outras consultorias?
-        </li>
+        <li class="question">Qual o foco da solução Time &Attendance</li>
         <div class="answer">
-          Nossas soluções combinam expertise em ciência e engenharia de dados
-          com um entendimento profundo dos desafios de negócio. Oferecemos uma
-          abordagem completa — desde diagnóstico e arquitetura de dados até
-          visualizações avançadas e modelos preditivos — garantindo que os
-          insights sejam relevantes, escaláveis e gerem impacto direto nas
-          decisões estratégicas.
+          O WorkForce Software Time & Attendance é uma solução de gerenciamento
+          de tempo e presença que permite às empresas monitorar e gerenciar as
+          horas trabalhadas pelos funcionários de maneira eficiente e precisa,
+          garantindo conformidade com regulamentações trabalhistas e otimizando
+          processos operacionais.
         </div>
 
         <li class="question">
-          Minha empresa ainda não tem uma cultura de dados desenvolvida. A HR
-          Path Brasil pode ajudar?
+          Como os funcionários podem registrar suas horas de trabalho?
         </li>
         <div class="answer">
-          Sim! Atuamos desde a fase inicial de maturidade analítica, com
-          diagnósticos personalizados, workshops de Data Literacy e treinamentos
-          em ferramentas de BI e IA. Ajudamos sua equipe a adotar uma cultura
-          data-driven de forma prática e alinhada aos objetivos do negócio.
+          Os funcionários podem registrar suas horas de trabalho usando diversos
+          métodos, incluindo relógios de ponto físicos, aplicativos móveis e
+          terminais web. Isso oferece flexibilidade e conveniência, permitindo
+          que todos os registros sejam coletados de maneira precisa e em tempo
+          real.
         </div>
 
         <li class="question">
-          Quais áreas da empresa podem se beneficiar das soluções de AI &
-          Analytics?
+          O WorkForce Time & Attendance se integra com outros sistemas?
         </li>
         <div class="answer">
-          Nossas soluções atendem todas as áreas de negócio, incluindo RH,
-          Finanças, Vendas, Operações e Atendimento. Seja para automatizar
-          relatórios, prever turnover de colaboradores ou otimizar processos de
-          recrutamento, adaptamos nossas entregas ao contexto e necessidades de
-          cada área.
+          Sim, o WorkForce Time & Attendance se integra facilmente com sistemas
+          de folha de pagamento e outras soluções de gerenciamento de recursos
+          humanos, automatizando o cálculo de horas trabalhadas e garantindo
+          precisão nos pagamentos e na conformidade com as regulamentações.
         </div>
 
-        <li class="question">
-          A HR Path Brasil trabalha apenas com Power BI ou oferece outras
-          tecnologias?
-        </li>
+        <li class="question">Qual o tempo de implementação?</li>
         <div class="answer">
-          Embora o Power BI seja uma das plataformas que utilizamos para
-          visualização de dados, nosso ecossistema inclui ferramentas como
-          Python, GenAI, Databricks, MS Fabric, Apache Spark, além de
-          integrações com Workday, SAP, Oracle HCM, ERPs e CRMs. Nossa abordagem
-          é flexível e orientada à melhor solução para cada projeto.
+          O tempo varia de projeto para projeto. A HR Path Brasil é experiente
+          no processo de planejamento e implementação, nossos profissionais
+          estão prontos para desenhar uma solução sob medida para sua empresa.
         </div>
 
-        <li class="question">
-          Quanto tempo leva a implementação de um projeto de AI & Analytics?
-        </li>
+        <li class="question">A HR Path Brasil oferece suporte técnico?</li>
         <div class="answer">
-          O prazo depende da complexidade e escopo do projeto. Trabalhamos com
-          uma metodologia própria que estrutura o projeto em fases ágeis e bem
-          definidas: entendimento, solução e implementação. Projetos focados em
-          dashboards podem ser entregues em poucas semanas, enquanto projetos
-          mais complexos de machine learning podem demandar ciclos mais longos
-          de desenvolvimento e testes.
-        </div>
-
-        <li class="question">
-          Após a implementação, a HR Path Brasil oferece suporte e evolução
-          contínua?
-        </li>
-        <div class="answer">
-          Sim. Nosso compromisso vai além da entrega inicial. Oferecemos
-          suporte, monitoramento de performance e evolução contínua das
-          soluções, garantindo que a empresa acompanhe as mudanças no mercado e
-          extraia valor máximo dos dados ao longo do tempo.
+          Sim, a equipe de consultores da HR Path Brasil está de prontidão para
+          ajudar com quaisquer dúvidas ou problemas que possam surgir antes,
+          durante e depois dos processo de implementação.
         </div>
       </ul>
     </div>
@@ -797,14 +930,13 @@
         color: white;
       }
 
-      #footer-brand .brand-bg {
-        /* background-color: white;
-            padding: 14px;
-            border-radius: 4px; */
+      #footer-brand .brand-bg img {
+        padding: 14px;
+        border-radius: 4px;
       }
 
       #footer-brand img {
-        width: 100px;
+        max-width: 100px;
       }
 
       #footer-socials {
@@ -832,7 +964,7 @@
 
         #footer-brand {
           font-size: 1rem;
-          flex-direction: column;
+          flex-direction: row;
         }
 
         #footer-brand img {
@@ -852,14 +984,18 @@
     <footer id="footer-wrapper">
       <div id="footer">
         <div id="footer-brand">
-          <img
-            class="brand-bg"
-            src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
-            alt="Logotipo HR Path Brasil "
-          />
-          HR Path Brasil
-          <br />
-          © HR Path, all rights reserved.
+          <a href="https://hr-path.com/pt-br/" title="Conheça nosso site">
+            <img
+              class="brand-bg"
+              src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
+              alt="Logotipo HR Path Brasil "
+            />
+          </a>
+          <span>
+            HR Path Brasil
+            <br />
+            © HR Path, all rights reserved.
+          </span>
         </div>
 
         <div id="footer-socials">
