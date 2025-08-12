@@ -1,0 +1,94 @@
+<!-- Palestrantes -->
+<style>
+    #palestrantes-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 86px 24px;
+        background-color: var(--gray);
+    }
+
+    #palestrantes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: var(--max-width);
+        color: var(--blue);
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #palestrantes h2 {
+        margin-bottom: 34px;
+    }
+
+    #palestrantes-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .palestrante {
+        max-width: 350px;
+        background-color: white;
+        padding: 24px;
+        border-radius: 6px;
+
+    }
+
+    .palestrante img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 500px;
+    }
+
+    .palestrante h3 {
+        color: var(--orange);
+    }
+
+    .palestrante span {
+        background-color: var(--gray);
+        padding: 6px;
+    }
+
+    .palestrante p {
+        margin-top: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+        #palestrantes-list {
+            flex-direction: column;
+        }
+    }
+</style>
+<div id="palestrantes-wrapper">
+    <div id="palestrantes">
+        <h2>
+            Conheça nossos Palestrantes
+        </h2>
+
+        <div id="palestrantes-list">
+            <div class="palestrante">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQFXJ9d5E7lFUQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1641917698010?e=1756944000&v=beta&t=11SAkiaNYVX69A1HAQHCeZEK2K4LIpsRWY859vK-S1Q"
+                    alt="Palestrante Will Lima, Especialista em SAP ALM na HR Path">
+                <h3>Will Lima</h3>
+                <span> Especialista em SAP ALM | HR Path </span>
+                <p>Profissional com vasta experiência em gestão de projetos SAP, focado em soluções de ALM para garantir
+                    governança e eficiência.</p>
+            </div>
+
+            <div class="palestrante">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGkYLtZwMhXzQ/profile-displayphoto-shrink_800_800/B4DZZvSCe8G4Ac-/0/1745623722683?e=1756944000&v=beta&t=SrgekMYGhShptOX2RgGhd8ujwXi7Vb2UX9ZxozlGQjI"
+                    alt="Palestrante Renata Araujo, Consultora SAP ALM na HR Path">
+                <h3>Renata Araujo</h3>
+                <span> Consultora SAP ALM | HR Path </span>
+                <p>Especialista na implementação de soluções SAP com foco em rastreabilidade e melhoria contínua nos
+                    processos
+                    de projeto e suporte.</p>
+            </div>
+        </div>
+    </div>
+</div>
