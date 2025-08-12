@@ -1,6 +1,4 @@
 <script>
-var THANK_YOU_PAGE = "https://click.hr-path.com/l/707483/2025-03-19/3l14ys";
-
 function getCookie(name) {
   var nameEQ = name + "=";
   var cookies = document.cookie.split(";");
@@ -29,17 +27,9 @@ window.dataLayer = window.dataLayer || [];
 if (leadData) {
   window.dataLayer.push({
     event: "pardot_form_submit",
-    lead: leadData,
-    eventCallback: function() {
-      // Pequeno delay para garantir que a tag seja disparada antes do redirecionamento
-      setTimeout(function() {
-        window.location.href = THANK_YOU_PAGE;
-      }, 200);
-    }
+    lead: leadData
+    // sem eventCallback aqui
   });
   deleteCookie("lead");
-} else {
-  // Caso não tenha lead no cookie, só redireciona direto (opcional)
-  window.location.href = THANK_YOU_PAGE;
 }
 </script>
