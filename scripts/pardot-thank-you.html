@@ -17,6 +17,7 @@
 
   var leadCookie = getCookie('lead');
   var leadData = null;
+
   try {
     leadData = leadCookie ? JSON.parse(leadCookie) : null;
   } catch (e) {

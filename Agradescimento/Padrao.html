@@ -80,6 +80,43 @@
 
     %%content%%
 
+    <!-- Usar em todas as páginas de agradecimento -->
+    <script>
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var cookies = document.cookie.split(";");
+            for (var i = 0; i < cookies.length; i++) {
+                var c = cookies[i].trim();
+                if (c.indexOf(nameEQ) === 0)
+                    return decodeURIComponent(c.substring(nameEQ.length, c.length));
+            }
+            return null;
+        }
+
+        function deleteCookie(name) {
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+
+        var leadCookie = getCookie('lead');
+        var leadData = null;
+
+        try {
+            leadData = leadCookie ? JSON.parse(leadCookie) : null;
+        } catch (e) {
+            leadData = null;
+        }
+
+        window.dataLayer = window.dataLayer || [];
+
+        if (leadData) {
+            window.dataLayer.push({
+                event: "pardot_form_submit",
+                lead: leadData
+            });
+            deleteCookie("lead");
+        }
+
+    </script>
 </body>
 
 
