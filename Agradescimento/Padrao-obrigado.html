@@ -50,7 +50,6 @@
 
 <body>
     <noscript>
-        <!-- Google Tag Manager (noscript) -->
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
             style="display: none; visibility: hidden"></iframe>
     </noscript>
@@ -97,8 +96,13 @@
             document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         }
 
-        var leadCookie = getCookie('lead');
         var leadData = null;
+        var leadCookie = getCookie('lead');
+        console.log(leadCookie);
+
+        if (leadCookie && leadCookie.startsWith("'") && leadCookie.endsWith("'")) {
+            leadCookie = leadCookie.slice(1, -1);
+        }
 
         try {
             leadData = leadCookie ? JSON.parse(leadCookie) : null;
@@ -113,7 +117,8 @@
                 event: "pardot_form_submit",
                 lead: leadData
             });
-            deleteCookie("lead");
+            // deleteCookie("lead");
+            console.log(leadCookie)
         }
 
     </script>
