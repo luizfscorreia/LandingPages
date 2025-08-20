@@ -1,86 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="robots"
+      content="noindex, nofollow, noarchive, noimageindex, nosnippet"
+    />
 
     <title>%%title%%</title>
 
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                "gtm.start": new Date().getTime(),
-                event: "gtm.js",
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != "dataLayer" ? "&l=" + l : "";
-            j.async = true;
-            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-WVV39X6");
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WVV39X6");
     </script>
     <!-- End Google Tag Manager -->
 
     <style>
-        :root {
-            --blue: #141a3a;
-            --blue-rgba: rgba(20, 26, 58, 0.8);
-            --blue-rgbafull: rgba(20, 26, 58, 1);
-            --orange: #e87722;
-            --gray: #e6e6e6;
+      :root {
+        --blue: #141a3a;
+        --blue-rgba: rgba(20, 26, 58, 0.8);
+        --blue-rgbafull: rgba(20, 26, 58, 1);
+        --orange: #e87722;
+        --gray: #e6e6e6;
 
-            --wrapper-width: calc(100vw - (48px));
-            --wrapper-padding: 64px 24px;
-            --max-width: 1200px;
-        }
+        --wrapper-width: calc(100vw - (48px));
+        --wrapper-padding: 64px 24px;
+        --max-width: 1200px;
+      }
 
-        html,
-        body {
-            font-family: "Urbanist", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+      html,
+      body {
+        font-family: "Urbanist", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
-            style="display: none; visibility: hidden"></iframe>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
     </noscript>
 
     <!-- topmenu -->
     <style>
-        #topmenu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 64px;
-            max-width: calc(100vw - (64px));
-            padding: 24px 32px;
-            background-color: var(--blue);
-        }
+      #topmenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 64px;
+        max-width: calc(100vw - (64px));
+        padding: 24px 32px;
+        background-color: var(--blue);
+      }
 
-        #topmenu img {
-            max-width: 100px;
-        }
+      #topmenu img {
+        max-width: 100px;
+      }
     </style>
     <nav id="topmenu">
-        <a href="https://hr-path.com/pt-br/" title="Conheça nosso site">
-            <img class="brand" src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
-                alt="Logotipo HR Path Brasil " />
-        </a>
+      <a href="https://hr-path.com/pt-br/" title="Conheça nosso site">
+        <img
+          class="brand"
+          src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
+          alt="Logotipo HR Path Brasil "
+        />
+      </a>
     </nav>
 
     %%content%%
 
     <!-- Usar em todas as páginas de agradecimento -->
-    <script>
+    <!-- <script>
         function getCookie(name) {
             var nameEQ = name + "=";
             var cookies = document.cookie.split(";");
@@ -121,9 +130,6 @@
             console.log(leadCookie)
         }
 
-    </script>
-</body>
-
-
-
+    </script> -->
+  </body>
 </html>
