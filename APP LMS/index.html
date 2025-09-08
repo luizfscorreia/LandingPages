@@ -112,11 +112,11 @@
 
       h2 {
         font-size: 2.25rem;
-        line-height: 1.3;
+        line-height: 1.2;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
         padding-bottom: 0.25rem;
-        font-weight: bold;
+        font-weight: 800;
       }
 
       h3 {
@@ -254,10 +254,19 @@
         position: relative;
         max-width: var(--wrapper-width);
         padding: var(--wrapper-padding);
-        background-image: linear-gradient(
-          to bottom,
-          var(--blue-rgbafull) 0%,
-          var(--blue-rgba) 100%
+        /* background: #ffffff;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(230, 230, 230, 1) 100%
+        ); */
+        background: #33b8f3;
+        background: linear-gradient(
+          226deg,
+          rgba(51, 184, 243, 1) 0%,
+          rgba(70, 9, 187, 1) 28%,
+          rgba(51, 16, 137, 1) 67%,
+          rgba(20, 26, 58, 1) 100%
         );
         overflow: hidden !important;
         z-index: 2;
@@ -296,18 +305,29 @@
       }
 
       #hero-content h1 {
-        color: white;
-        line-height: 2.5rem;
+        font-size: 6rem;
+        width: fit-content;
+      }
+
+      #hero-content h1::after {
+        content: " ";
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        height: 40px;
+        background: url("https://go.pardot.com/l/707483/2025-08-12/3tkvgc/707483/1755002618mcZY8qAt/bar.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       #hero-content h2 {
-        color: white;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin: 0 0 12px 0;
       }
 
       #hero-content p {
         max-width: 600px;
+        font-size: 1.1rem;
       }
       #hero-content b {
         font-weight: bold;
@@ -377,7 +397,7 @@
         }
         #hero h1 {
           text-align: center;
-          font-size: 2rem;
+          font-size: 4rem;
           margin-bottom: 12px;
         }
 
@@ -455,10 +475,8 @@
     <div id="hero-wrapper">
       <div id="hero">
         <div id="hero-content">
-          <h1>
-            <b style="color: var(--orange)">APP LMS:</b> leve sua Gestão de
-            Treinamentos para o próximo nível com mobilidade e offline
-          </h1>
+          <h1>APP LMS</h1>
+          <h2>Leve sua Gestão de Treinamentos para o próximo nível!</h2>
           <p>
             O APP LMS, desenvolvido pela HR Path Brasil, é a solução mobile que
             <span style="color: orange"
@@ -476,9 +494,7 @@
             <span style="color: orange"
               >tome decisões estratégicas mais rápidas com visibilidade completa
               em tempo real</span
-            >. Disponível para Android e iOS, o APP LMS combina tecnologia
-            robusta, mobilidade e segurança, oferecendo padronização e
-            rastreabilidade total dos processos de capacitação da sua empresa.
+            >.
           </p>
         </div>
 
@@ -588,10 +604,6 @@
             e pode ser utilizado mesmo offline, garantindo continuidade das
             operações em qualquer situação.
           </p>
-
-          <a style="margin-top: 36px" href="" class="cta" target="_blank"
-            >Confira a apresentação técnica da solução</a
-          >
         </div>
 
         <div id="tpc-topics">
@@ -736,14 +748,12 @@
       }
 
       #desafios {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: var(--max-width);
         color: var(--blue);
         width: 100%;
-        gap: 26px;
+        gap: 46px;
       }
 
       #desafios > div:first-child {
@@ -771,6 +781,8 @@
 
       .desafios-list-wrapper {
         display: flex;
+        width: 100%;
+
         gap: 36px;
       }
 
@@ -815,7 +827,8 @@
 
       @media screen and (max-width: 768px) {
         #desafios {
-          flex-direction: column;
+          grid-template-columns: 1fr;
+          gap: 0;
         }
       }
 
@@ -830,51 +843,37 @@
         <div id="desafios-title">
           <h2>Arquitetura da Solução: robustez, integração e segurança</h2>
           <p>
-            O APP LMS foi desenvolvido sobre a SAP Business Technology Platform
-            (SAP BTP), garantindo alta performance, escalabilidade e segurança.
-            A solução se conecta de forma nativa ao SAP SuccessFactors LMS,
-            preservando as regras e fluxos já existentes no ambiente do cliente.
+            Mais do que reunir funcionalidades, essa arquitetura foi pensada
+            para oferecer uma <b>base sólida e confiável</b> à gestão de
+            treinamentos. Isso significa dados sempre
+            <b>padronizados e seguros</b>, sincronizados em tempo real,
+            reduzindo falhas operacionais e garantindo total rastreabilidade das
+            informações.
           </p>
 
           <p>
-            Essa arquitetura permite padronização e rastreabilidade total dos
-            dados de capacitação, além de assegurar conformidade com os padrões
-            de TI e governança da sua organização.
+            Além de assegurar conformidade com as práticas de TI e governança da
+            sua organização, a solução apoia o
+            <b>crescimento sustentável do negócio</b>, permitindo que a área de
+            RH atue com agilidade, visibilidade e
+            <b>confiança em cada decisão</b>.
           </p>
         </div>
 
         <div class="desafios-list-wrapper">
           <div class="desafios-list">
-            <h3>SAP BTP</h3>
-            <ul>
-              <li>Cloud Foundry: base para deploy e execução da aplicação</li>
-              <li>Mobile Service: suporte ao uso mobile e offline</li>
-              <li>Hana Cloud DB: armazenamento seguro e de alta performance</li>
-              <li>
-                Business Application Studio (BAS): ambiente de desenvolvimento e
-                extensões
-              </li>
-              <li>
-                Cloud Integration: conectividade e orquestração entre sistemas
-              </li>
-            </ul>
-          </div>
-
-          <div class="desafios-list">
             <h3>Benefícios da Arquitetura</h3>
             <ul>
+              <li>Disponível em qualquer dispositivo, inclusive offline</li>
+              <li>Ambiente seguro e confiável para armazenar informações</li>
+              <li>Espaço moderno para desenvolvimento e personalização</li>
+              <li>Conexão simples entre diferentes sistemas da empresa</li>
+              <li>Segurança corporativa com autenticação confiável</li>
+              <li>Alto desempenho mesmo em ambientes complexos</li>
+              <li>Integração nativa com SAP SuccessFactors</li>
+              <li>Escalabilidade para acompanhar o crescimento do negócio</li>
               <li>
-                Segurança corporativa: autenticação e autorização via SAP
-                IAS/SCI
-              </li>
-              <li>
-                Alta performance: operação fluida mesmo em ambientes complexos
-              </li>
-              <li>Integração nativa com SAP SuccessFactors LMS</li>
-              <li>Escalabilidade para acompanhar o crescimento da empresa</li>
-              <li>
-                Confiabilidade com logs, rastreabilidade e sincronização
-                automática de dados
+                Confiabilidade com rastreabilidade e sincronização automática
               </li>
             </ul>
           </div>
