@@ -224,17 +224,12 @@
         position: relative;
         max-width: var(--wrapper-width);
         padding: var(--wrapper-padding);
-        background-image: linear-gradient(
-          to bottom,
-          var(--blue-rgbafull) 0%,
-          var(--blue-rgba) 100%
-        );
+        background: white;
         overflow: hidden !important;
         z-index: 2;
       }
       #hero-wrapper::before {
         content: "";
-        background: url(https://go.pardot.com/l/707483/2025-09-11/3w28fm/707483/1757601972a3Hrf1sr/sap_tdf_header_bg.webp);
         position: absolute;
         width: 100vw;
         height: 100%;
@@ -262,7 +257,7 @@
         display: flex;
         flex-direction: column;
         flex: 1;
-        color: white;
+        color: #141a3a;
         max-width: 650px;
       }
 
@@ -280,18 +275,19 @@
       }
 
       #hero-content h1 {
-        color: white;
+        color: var(--orange);
         line-height: 2.5rem;
       }
 
       #hero-content h2 {
-        color: white;
+        color: #141a3a;
         font-size: 1.2rem;
         margin: 0 0 12px 0;
       }
 
       #hero-content p {
         max-width: 600px;
+        color: #141a3a;
       }
       #hero-content b {
         font-weight: bold;
@@ -310,7 +306,7 @@
       }
 
       #hero-content img {
-        width: 150px;
+        width: 650px;
         margin-bottom: 24px;
       }
 
@@ -324,6 +320,7 @@
         padding: 32px;
         color: var(--blue);
         z-index: 2;
+        border: 1px solid var(--blue);
       }
 
       #hero-form h2 {
@@ -439,6 +436,7 @@
     <div id="hero-wrapper">
       <div id="hero">
         <div id="hero-content">
+          <img src="https://go.pardot.com/l/707483/2025-09-12/3w59lf/707483/1757702840n6yv03z0/Landing_evento.png" >
           <h1>
             ¡En HR Path hacemos que las palomitas y tus Recursos humanos ¡Salten
             al siguiente nivel!
