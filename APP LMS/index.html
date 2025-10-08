@@ -280,6 +280,8 @@
       #hero {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+
         justify-content: space-between;
         align-items: center;
         gap: 36px;
@@ -739,8 +741,7 @@
       <div id="beneficios">
         <div id="beneficios-content">
           <h2>
-            O que você pode fazer com
-            o&nbsp;HR&nbsp;Path&nbsp;Training&nbsp;Management&nbsp;App
+            O que você pode fazer com o HR&nbsp;Path Training Management App
           </h2>
           <p>
             Desenvolvido para tornar a rotina de <b>instrutores</b> e
@@ -788,7 +789,6 @@
               display: flex;
               justify-content: space-between;
               align-items: center;
-              padding: 20px;
               max-width: 300px;
             "
           >
@@ -1293,10 +1293,14 @@
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
+        autoplay: {
+          delay: 2500, // muda a cada 2.5 segundos
+          disableOnInteraction: false, // continua mesmo após clique
+        },
         coverflowEffect: {
           rotate: 30,
           stretch: 0,
-          depth: 100,
+          depth: 200,
           modifier: 1,
           slideShadows: true,
         },
