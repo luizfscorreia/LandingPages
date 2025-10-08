@@ -53,7 +53,12 @@
       href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Adicione Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -305,8 +310,9 @@
       }
 
       #hero-content h1 {
-        font-size: 6rem;
+        font-size: 4rem;
         width: fit-content;
+        line-height: 4rem;
       }
 
       #hero-content h1::after {
@@ -475,26 +481,52 @@
     <div id="hero-wrapper">
       <div id="hero">
         <div id="hero-content">
-          <h1>APP LMS</h1>
-          <h2>Leve sua Gestão de Treinamentos para o próximo nível!</h2>
+          <div style="display: flex; align-items: center; gap: 12px">
+            <a
+              href="https://www.sap.com/brazil/products/hcm/partners/intelligenza-solues-em-hr-path-training-management-app.html"
+              target="_blank"
+            >
+              <img
+                src="http://127.0.0.1:5500/LandingPages/APP%20LMS/sap-store.webp"
+                title="Disponível na SAP STORE"
+                style="max-width: 120px"
+              />
+            </a>
+            <img
+              src="http://127.0.0.1:5500/LandingPages/APP%20LMS/disponivel-na-app-store-botao-5.png"
+              title="Disponível APP Store via SAP BTP"
+              style="max-width: 140px"
+            />
+            <img
+              src="http://127.0.0.1:5500/LandingPages/APP%20LMS/disponivel-google-play-badge.png"
+              title="Disponível APP Store via SAP BTP"
+              style="max-width: 140px"
+            />
+          </div>
+          <h1>HR Path Training Management App</h1>
+          <h2 style="color: var(--orange); max-width: 600px">
+            Gestão de treinamentos integrada, com operação offline,
+            sincronização automática e rastreabilidade total dos dados.
+          </h2>
           <p>
-            O APP LMS, desenvolvido pela HR Path Brasil, é a solução mobile que
-            <span style="color: orange"
-              >transforma a forma como sua empresa gerencia treinamentos</span
-            >. Com ele, instrutores e gestores podem criar, atualizar e
-            acompanhar turmas diretamente no campo, registrar presença, notas e
-            status de conclusão, mesmo sem internet, e ter todos os dados
-            <span style="color: orange"
-              >sincronizados automaticamente com o SAP SuccessFactors LMS</span
-            >.
+            Simplifique a entrega e o acompanhamento dos treinamentos com o
+            <b>HR Path Training Management App</b>. Desenvolvido na
+            <b>SAP Business Technology Platform (BTP)</b> e disponível para
+            <b>Android</b> e <b>iOS</b>, o app estende o
+            <b>SAP SuccessFactors Learning Management System (LMS)</b> com
+            recursos móveis e offline que levam eficiência para o campo.
           </p>
-
           <p>
-            Reduza o tempo operacional, aumente a confiabilidade dos dados e
-            <span style="color: orange"
-              >tome decisões estratégicas mais rápidas com visibilidade completa
-              em tempo real</span
-            >.
+            Instrutores podem <b>criar e atualizar turmas</b>,
+            <b>registrar presenças</b>, <b>lançar avaliações</b> e
+            <b>sincronizar dados automaticamente</b> com o LMS — tudo em uma
+            interface intuitiva e segura.
+          </p>
+          <p>
+            Reduza o esforço administrativo, garanta
+            <b>precisão dos dados na origem</b> e conquiste
+            <b>visibilidade em tempo real</b> sobre o progresso dos
+            treinamentos.
           </p>
         </div>
 
@@ -585,33 +617,29 @@
     <div id="tpc-wrapper">
       <div id="tpc">
         <div id="tpc-content">
-          <h2>Uma nova experiência em gestão&nbsp;de&nbsp;treinamentos</h2>
+          <h2>Uma nova experiência em gestão de treinamentos corporativos</h2>
           <p>
-            O APP LMS é a
-            <b
-              >solução mobile que simplifica e acelera a execução de
-              treinamentos em campo</b
-            >, reduzindo tempo operacional, garantindo dados confiáveis e
-            oferecendo visibilidade em tempo real para decisões mais rápidas.
+            Com o <b>HR Path Training Management App</b>, você leva para o campo
+            um modelo de execução de treinamentos mais moderno e confiável, onde
+            cada ação é registrada com precisão.
           </p>
-
           <p>
-            Disponível para
-            <b
-              >Android e iOS, o aplicativo é 100% integrado ao SAP
-              SuccessFactors LMS</b
-            >
-            e pode ser utilizado mesmo offline, garantindo continuidade das
-            operações em qualquer situação.
+            O aplicativo oferece controle completo: desde
+            <b>criação e atualização de turmas</b> até
+            <b>registro de presenças e avaliações</b> — tudo isso com
+            sincronização automática com o SAP SuccessFactors LMS, mesmo em
+            ambientes sem conexão (modo offline).
           </p>
         </div>
 
         <div id="tpc-topics">
           <ul>
-            <li>Criação e atualização de turmas de forma ágil</li>
-            <li>Registros diretos na origem, com mais confiabilidade</li>
-            <li>Visibilidade em tempo real dos treinamentos</li>
-            <li>Operação mobile com suporte offline</li>
+            <li>Turmas criadas e ajustadas em poucos cliques</li>
+            <li>Registros feitos diretamente no local, com integridade</li>
+            <li>Dados sincronizados e visibilidade em tempo real</li>
+            <li>
+              Operação mobile sem depender de rede — off-line com segurança
+            </li>
           </ul>
         </div>
       </div>
@@ -638,16 +666,6 @@
         gap: 62px;
       }
 
-      #beneficios-image {
-        width: 100%;
-        height: 100%;
-        background-color: blue;
-        background: url(https://go.pardot.com/l/707483/2025-09-08/3vvpby/707483/1757361693aORqll2A/foto__1_.jpg);
-        background-position: 80%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 6px;
-      }
       #beneficios-topics {
         display: grid;
         gap: 32px;
@@ -660,7 +678,7 @@
       }
 
       #beneficios-topics li {
-        display: flex;
+        display: inline;
         flex-direction: column;
         position: relative;
         list-style: none;
@@ -706,25 +724,56 @@
           display: none;
         }
       }
+
+      .swiper-slide {
+        transform: rotate(-5deg);
+        transition: transform 0.3s;
+      }
+
+      .swiper-slide-active {
+        transform: rotate(0deg) scale(1.05);
+        z-index: 10;
+      }
     </style>
     <div id="beneficios-wrapper">
       <div id="beneficios">
         <div id="beneficios-content">
-          <h2>O que você pode fazer com o&nbsp;APP&nbsp;LMS</h2>
+          <h2>
+            O que você pode fazer com
+            o&nbsp;HR&nbsp;Path&nbsp;Training&nbsp;Management&nbsp;App
+          </h2>
           <p>
-            O aplicativo foi desenvolvido para facilitar a rotina de instrutores
-            e gestores, reunindo em uma única interface os principais recursos
-            necessários no dia a dia:
+            Desenvolvido para tornar a rotina de <b>instrutores</b> e
+            <b>gestores de treinamento</b> mais eficiente, o aplicativo reúne em
+            uma interface única todas as funções essenciais para o gerenciamento
+            de turmas e participantes.
           </p>
 
           <div id="beneficios-topics">
             <ul>
-              <li>Criar e alterar turmas em poucos cliques</li>
-              <li>Incluir alunos (com identificação via QR Code)</li>
-              <li>Registrar presença, notas e status de conclusão</li>
-              <li>Cancelar ou encerrar turmas facilmente</li>
-              <li>Visualizar todas as turmas atribuídas ao instrutor</li>
-              <li>Trabalhar mesmo sem internet, com sincronização posterior</li>
+              <li>
+                <b>Criar e editar turmas</b> com seleção de cursos, datas e
+                participantes
+              </li>
+              <li>
+                <b>Incluir alunos rapidamente</b>, com suporte a identificação
+                via QR&nbsp;Code
+              </li>
+              <li>
+                <b>Registrar presenças, notas e conclusões</b> de forma
+                intuitiva
+              </li>
+              <li>
+                <b>Encerrar ou cancelar turmas</b> com apenas alguns toques
+              </li>
+              <li>
+                <b>Visualizar todas as turmas atribuídas</b> no calendário ou em
+                lista
+              </li>
+              <li>
+                <b>Trabalhar sem conexão</b> com sincronização automática
+                posterior
+              </li>
             </ul>
           </div>
 
@@ -733,7 +782,50 @@
           >
         </div>
 
-        <div id="beneficios-image"></div>
+        <div id="beneficios-image" style="overflow: hidden">
+          <section
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 20px;
+              max-width: 300px;
+            "
+          >
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="http://127.0.0.1:5500/LandingPages/APP%20LMS/1.jpg"
+                    alt="Imagem 1"
+                    style="width: 100%; border-radius: 8px"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="http://127.0.0.1:5500/LandingPages/APP%20LMS/2.jpg"
+                    alt="Imagem 2"
+                    style="width: 100%; border-radius: 8px"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="http://127.0.0.1:5500/LandingPages/APP%20LMS/3.jpg"
+                    alt="Imagem 3"
+                    style="width: 100%; border-radius: 8px"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="http://127.0.0.1:5500/LandingPages/APP%20LMS/4.jpg"
+                    alt="Imagem 3"
+                    style="width: 100%; border-radius: 8px"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
 
@@ -842,38 +934,46 @@
       <div id="desafios">
         <div id="desafios-title">
           <h2>Arquitetura da Solução: robustez, integração e segurança</h2>
+
           <p>
-            Mais do que reunir funcionalidades, essa arquitetura foi pensada
-            para oferecer uma <b>base sólida e confiável</b> à gestão de
-            treinamentos. Isso significa dados sempre
-            <b>padronizados e seguros</b>, sincronizados em tempo real,
-            reduzindo falhas operacionais e garantindo total rastreabilidade das
-            informações.
+            Construída sobre a <b>SAP Business Technology Platform (BTP)</b>, a
+            arquitetura do <b>HR Path Training Management App</b> garante uma
+            <b>base sólida e confiável</b> para a gestão de treinamentos. Cada
+            componente foi projetado para assegurar
+            <b>padronização, rastreabilidade e proteção total dos dados</b>.
           </p>
 
           <p>
-            Além de assegurar conformidade com as práticas de TI e governança da
-            sua organização, a solução apoia o
-            <b>crescimento sustentável do negócio</b>, permitindo que a área de
-            RH atue com agilidade, visibilidade e
-            <b>confiança em cada decisão</b>.
+            Com sincronização em tempo real e suporte offline, a solução entrega
+            <b>alta disponibilidade</b> e reduz falhas operacionais, mantendo a
+            <b>conformidade com as políticas de TI e governança</b> da sua
+            organização. Isso permite que o RH atue com <b>agilidade</b>,
+            <b>visibilidade</b> e <b>confiança</b> em cada decisão.
           </p>
         </div>
 
         <div class="desafios-list-wrapper">
           <div class="desafios-list">
-            <h3>Benefícios da Arquitetura</h3>
+            <h3 style="margin-bottom: 12px">Benefícios da Arquitetura</h3>
             <ul>
-              <li>Disponível em qualquer dispositivo, inclusive offline</li>
-              <li>Ambiente seguro e confiável para armazenar informações</li>
-              <li>Espaço moderno para desenvolvimento e personalização</li>
-              <li>Conexão simples entre diferentes sistemas da empresa</li>
-              <li>Segurança corporativa com autenticação confiável</li>
+              <li>
+                Disponibilidade em qualquer dispositivo, inclusive offline
+              </li>
+              <li>
+                Ambiente seguro para armazenamento e processamento de dados
+              </li>
+              <li>
+                Espaço moderno para desenvolvimento e personalização contínua
+              </li>
+              <li>Conexão simplificada com outros sistemas corporativos</li>
+              <li>
+                Segurança corporativa com autenticação via SAP Cloud Identity
+                Service (IAS)
+              </li>
               <li>Alto desempenho mesmo em ambientes complexos</li>
-              <li>Integração nativa com SAP SuccessFactors</li>
               <li>Escalabilidade para acompanhar o crescimento do negócio</li>
               <li>
-                Confiabilidade com rastreabilidade e sincronização automática
+                Rastreabilidade e sincronização automática de todas as ações
               </li>
             </ul>
           </div>
@@ -1186,6 +1286,21 @@
             answer.style.display = "block";
           }
         });
+      });
+
+      const swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 30,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
       });
     </script>
   </body>
