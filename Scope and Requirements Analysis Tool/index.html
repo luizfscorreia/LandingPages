@@ -633,6 +633,7 @@
       align-items: center;
       padding: 86px 24px;
       background-color: var(--gray);
+      gap: 32px;
     }
 
     #beneficios {
@@ -979,7 +980,6 @@
 
     #beneficios-topics {
       display: grid;
-      gap: 32px;
       text-align: left;
     }
 
@@ -1040,6 +1040,7 @@
       grid-template-columns: 1fr 1fr 1fr;
       gap: 24px;
       text-align: left;
+      max-width: var(--max-width);
     }
 
     .diferentes-topics div {
@@ -1048,7 +1049,7 @@
     }
 
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 767px) {
       #beneficios {
         flex-direction: column;
         grid-template-columns: 1fr;
@@ -1056,6 +1057,11 @@
 
       #beneficios-image {
         display: none;
+      }
+
+      .diferentes-topics {
+        grid-template-columns: 1fr;
+
       }
     }
   </style>
@@ -1106,6 +1112,467 @@
           <b>Knowledge Base Coverage Assessment</b> See instantly whether your "gap" is
           genuinely custom or just poorly documented in your requirements. The platform
           knows what's possible—even when your team doesn't.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Touches SuccessFactors -->
+  <style>
+    #touches-successfactors-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 86px 24px;
+      background-color: white;
+    }
+
+    .touches-successfactors {
+      display: grid;
+      position: relative;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      max-width: var(--max-width);
+      color: var(--blue);
+      gap: 62px;
+    }
+
+    .touches-successfactors h2 {
+      font-size: 4rem;
+      position: sticky;
+      top: 150px;
+      /* distância do topo ao rolar — ajuste conforme seu layout */
+      align-self: start;
+    }
+
+    .touches-successfactors-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .touches-successfactors-card {
+      border: 1px solid var(--orange);
+      padding: 16px 24px;
+    }
+
+    .touches-successfactors-card h3 {
+      color: var(--orange);
+    }
+
+    @media screen and (max-width: 769px) {
+      .touches-successfactors h2 {
+        position: relative;
+        top: 0;
+        text-align: center;
+        font-size: 2.25rem;
+      }
+
+      .touches-successfactors {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+    }
+  </style>
+  <div id="touches-successfactors-wrapper">
+    <div class="touches-successfactors">
+      <h2><span style="color: var(--orange);">Built for Everyone</span> Who Touches SuccessFactors</h2>
+      <div class="touches-successfactors-cards">
+        <div class="touches-successfactors-card">
+          <h3>SuccessFactors Consultants</h3>
+          <p>
+            Transform IDP research from 40 hours of manual reading to instant access.
+            Spend less time searching, more time solving. Deliver higher quality
+            recommendations with confidence scoring that backs up your expertise.
+          </p>
+        </div>
+
+        <div class="touches-successfactors-card">
+          <h3>Project Managers & Implementation Leads</h3>
+          <p>
+            Real-time visibility into project risk. Objective metrics for Fit-to-Standard
+            adherence. No more wondering if your team missed something. Make data-driven
+            decisions instead of gut-feel calls.
+          </p>
+        </div>
+
+        <div class="touches-successfactors-card">
+          <h3>HR Transformation Leaders</h3>
+          <p>
+            Strategic alignment with Clean Core principles isn't aspirational—it's measurable.
+            See exactly where your implementation stands. Prevent technical debt before it's
+            baked into production. Maximize ROI from your SuccessFactors investment.
+          </p>
+        </div>
+
+        <div class="touches-successfactors-card">
+          <h3>IT Directors & CIOs</h3>
+          <p>
+            Governance and quality assurance, automated. Compliance with SAP best
+            practices, validated. Sustainable, maintainable SuccessFactors environment,
+            guaranteed. Sleep better knowing your implementation won't become a
+            maintenance nightmare.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Features -->
+  <style>
+    #the-features-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 86px 24px;
+      background-color: var(--gray);
+    }
+
+    .the-features {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      max-width: var(--max-width);
+      color: var(--blue);
+      gap: 36px;
+    }
+
+    .the-features h2 {
+      text-align: center;
+    }
+
+    .the-features-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+
+    .the-features-card {
+      border: 1px solid var(--orange);
+      padding: 16px 24px;
+    }
+
+    .the-features-card h3 {
+      color: var(--orange);
+    }
+
+    @media screen and (max-width: 769px) {
+      .the-features h2 {}
+
+      .the-features {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .the-features-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media screen and (max-width: 676px) {
+      .the-features-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <div id="the-features-wrapper">
+    <div class="the-features">
+      <h2>The Features That Deliver Results</h2>
+      <div class="the-features-cards">
+        <div class="the-features-card">
+          <h3>SAP Cloud ALM Integration</h3>
+          <p>
+            <strong>What it means:</strong> Automatic extraction from live projects. No manual data entry.
+            Seamless workflow that fits how you already work.
+          </p>
+        </div>
+
+        <div class="the-features-card">
+          <h3>Comprehensive IDP Knowledge Base</h3>
+          <p>
+            <strong>What it means:</strong> Every Implementation Design Principle at your fingertips. Instant
+            access to knowledge that normally takes weeks to research. Eliminate knowledge
+            gaps that lead to bad decisions.
+          </p>
+        </div>
+
+        <div class="the-features-card">
+          <h3>Intelligent Classification Engine</h3>
+          <p>
+            <strong>What it means:</strong> Every requirement automatically categorized as Standard,
+            Configuration, Customization, or Integration. Objective decision-making that
+            removes consultant bias.
+          </p>
+        </div>
+
+        <div class="the-features-card">
+          <h3>Confidence Scoring (up to 95%)</h3>
+          <p>
+            <strong>What it means:</strong> Know the reliability of recommendations. Trust the analysis.
+            Reduce risk. Focus human review where uncertainty exists.
+          </p>
+        </div>
+
+        <div class="the-features-card">
+          <h3>Business Priority Weighting</br>(1–10 scale)</h3>
+          <p>
+            <strong>What it means:</strong> Understand true business impact, not just technical complexity.
+            Focus resources on what matters most to stakeholders.
+          </p>
+        </div>
+
+        <div class="the-features-card">
+          <h3>Technical Complexity Rating (1–10 scale)</h3>
+          <p>
+            <strong>What it means:</strong> Assess implementation effort realistically. Plan accurately.
+            Avoid surprises that blow budgets and timelines.
+          </p>
+        </div>
+
+        <div class="the-features-card">
+          <h3>Risk Indicators & Alerts</h3>
+          <p>
+            <strong>What it means:</strong> Early identification of high-complexity requirements. Proactive
+            risk mitigation. Prevent project delays before they cascade.
+          </p>
+        </div>
+
+        <div class="the-features-card">
+          <h3>Executive Summary Reports</h3>
+          <p>
+            <strong>What it means:</strong> Stakeholder-ready insights in presentation format. Clear
+            communication to leadership. Informed decisions at the executive level.
+          </p>
+        </div>
+
+        <div class="the-features-card">
+          <h3>Real-Time Analysis</h3>
+          <p>
+            <strong>What it means:</strong> Instant feedback during requirements gathering. Agile course
+            correction. Prevent downstream issues while changes are still cheap.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- competitive -->
+  <style>
+    #competitive-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 86px 24px;
+    }
+
+    #competitive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: var(--max-width);
+      color: var(--blue);
+      gap: 42px;
+    }
+
+    .competitive-section {
+      display: flex;
+      align-items: stretch;
+      /* altura igual entre imagem e conteúdo */
+      justify-content: space-between;
+      gap: 48px;
+      width: 100%;
+    }
+
+    .competitive-section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .competitive-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0px;
+      width: 50%;
+    }
+
+    .competitive-content h3 {
+      color: var(--blue);
+      margin-bottom: 0px;
+    }
+
+    .competitive-content p {
+      line-height: 1.6;
+    }
+
+    .competitive-image {
+      width: 50%;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .competitive-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .competitive-topics-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .competitive-topics {
+      display: grid;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+
+    .competitive-topics h4 {
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .competitive-topics ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0 0 0 12px;
+      gap: 16px;
+    }
+
+    .competitive-topics li {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      list-style: none;
+      font-size: 1.1rem;
+      padding-left: 24px;
+    }
+
+    .competitive-topics li b {
+      color: var(--orange);
+    }
+
+    .competitive-topics li::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background-color: var(--orange);
+      position: absolute;
+      left: 0;
+      top: 6px;
+      transform: rotate(45deg);
+    }
+
+    /* Responsivo */
+    @media screen and (max-width: 991px) {
+      #competitive h2 {
+        text-align: center;
+      }
+
+      .competitive-section,
+      .competitive-section.reverse {
+        flex-direction: column;
+      }
+
+      .competitive-content {}
+
+      .competitive-topics-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .competitive-content,
+      .competitive-image {
+        width: 100%;
+      }
+
+      .competitive-image {
+        height: 240px;
+      }
+    }
+
+    @media screen and (max-width: 676px) {
+      .competitive-topics-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div id="competitive-wrapper">
+    <div id="competitive">
+      <h2>The Competitive Advantage You Can't Ignore</h2>
+
+      <div class="competitive-section">
+        <div class="competitive-content">
+          <h3>The Status Quo Is Expensive</h3>
+          <div class="competitive-topics-wrapper">
+            <div class="competitive-topics">
+              <h4>Manual Analysis:</h4>
+              <ul>
+                <li>3 weeks of consultant time</li>
+                <li>Subjective and inconsistent</li>
+                <li>Dependent on individual expertise</li>
+                <li>Knowledge gaps guaranteed</li>
+              </ul>
+            </div>
+
+            <div class="competitive-topics">
+              <h4>Our Platform:</h4>
+              <ul>
+                <li>Minutes, not weeks</li>
+                <li>Objective and consistent</li>
+                <li>Democratizes expertise</li>
+                <li>Comprehensive IDP coverage</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="competitive-image">
+          <img src="https://storage.pardot.com/707483/1760974075ycff8EFL/b.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="competitive-section reverse">
+        <div class="competitive-content">
+          <h3>The Depth Advantage</h3>
+          <p>
+            Generic project management tools don't understand SuccessFactors. They can't
+            guide you toward Clean Core compliance. They don't know the difference between
+            a genuine gap and a missed configuration option.
+          </p>
+          <p>
+            <b>Our intelligent moat:</b> The depth of our IDP knowledge base combined with native
+            SAP integration creates advantages competitors cannot easily replicate.
+          </p>
+        </div>
+        <div class="competitive-image">
+          <img src="https://storage.pardot.com/707483/1760974075ycff8EFL/b.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="competitive-section">
+        <div class="competitive-content">
+          <h3>It's Not About Replacing Consultants</h3>
+          <p>
+            This platform empowers your experts to be more effective. It brings junior
+            consultants up to speed faster. It scales best practices across your entire team.
+          </p>
+          <p>
+            <b>Think of it as an intelligent IDP consultant that never sleeps</b>, never forgets,
+            and never gets overwhelmed by 200+ documents.
+          </p>
+        </div>
+        <div class="competitive-image">
+          <img src="https://storage.pardot.com/707483/1760974075ycff8EFL/b.jpg" alt="">
         </div>
       </div>
     </div>
