@@ -1601,9 +1601,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      max-width: 700px;
       padding: var(--wrapper-padding);
       color: var(--blue);
+      background-color: var(--gray);
       margin: 0 auto;
     }
 
@@ -1613,7 +1613,7 @@
 
     #faq {
       width: 100%;
-      max-width: var(--max-width);
+      max-width: 700px;
       margin: 0 auto;
       margin-top: 24px;
       padding: 0;
@@ -1718,7 +1718,7 @@
   </div>
 
   <style>
-    #experts-wrapper {
+    #market-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -1726,6 +1726,80 @@
       max-width: var(--max-width);
       padding: var(--wrapper-padding);
       color: var(--blue);
+      margin: 0 auto;
+    }
+
+    #market {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 24px;
+      padding: 0;
+      position: relative;
+      gap: 24px;
+    }
+
+    .market-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .market-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 12px;
+    }
+
+    .market-content-title {
+      padding: 12px 24px;
+      border: 1px solid var(--orange);
+      position: relative;
+    }
+
+    .trofeu {
+      position: absolute;
+      top: -18px;
+      left: -18px;
+      padding: 2px;
+      background-color: white;
+      font-size: 32px;
+    }
+  </style>
+  <div id="market-wrapper">
+    <div id="market">
+      <div class="market-title">
+        <h2>The Market Is Moving—Fast</h2>
+      </div>
+
+      <div class="market-content">
+        <p>
+          <b>Hundreds SuccessFactors implementations</b> happen annually in EMEA alone.
+          Every single one requires Fit-to-Standard analysis. Every single one faces gap
+          management challenges. Every single one risks unnecessary customizations. </br></br>
+          As SAP's Clean Core initiative becomes the standard, implementations that ignore
+          IDP guidance will face mounting technical debt, upgrade complications, and
+          ballooning Total Cost of Ownership. </br></br>
+          <b>The question isn't whether to adopt intelligent analysis</b>. The question is
+          whether you'll lead or follow.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #experts-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: var(--wrapper-padding);
+      color: var(--blue);
+      background-color: var(--gray);
       margin: 0 auto;
     }
 
@@ -1742,13 +1816,21 @@
     .experts-title {
       display: flex;
       align-items: center;
-      width: 50%;
+      width: 40%;
+      position: relative;
+    }
+
+    .experts-title h2 {
+      position: sticky;
+      top: 150px;
+      /* distância do topo ao rolar — ajuste conforme seu layout */
+      align-self: start;
     }
 
     .experts-content {
       display: flex;
       flex-direction: column;
-      width: 50%;
+      width: 60%;
       gap: 24px;
       padding: 12px;
     }
@@ -1763,12 +1845,34 @@
       position: absolute;
       top: -18px;
       left: -18px;
-      padding: 2px;
-      background-color: white;
+      padding: 4px 0;
+      background-color: var(--gray);
       font-size: 32px;
     }
-  </style>
 
+    @media screen and (max-width: 768px) {
+      #experts {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 0;
+      }
+
+      .experts-title,
+      .experts-content {
+        width: 100%;
+        padding: 0;
+        position: relative;
+
+      }
+
+      .experts-title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  </style>
   <div id="experts-wrapper">
     <div id="experts">
       <div class="experts-title">
@@ -1791,6 +1895,148 @@
             Management. Validated by SAP experts. Production-ready with customer proof
             points. Not a concept—a proven solution.</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #talk-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: var(--max-width);
+      padding: var(--wrapper-padding);
+      color: var(--blue);
+      margin: 0 auto;
+    }
+
+    #talk {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 24px;
+      padding: 0;
+      position: relative;
+      gap: 24px;
+    }
+
+    .talk-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      padding: 12px;
+    }
+
+    .talk-content p {
+      margin: 0;
+    }
+
+    .talk-content ul {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin: 24px 0;
+    }
+
+    .talk-content li {
+      display: inline;
+      flex-direction: column;
+      position: relative;
+      list-style: none;
+      font-size: 1.1rem;
+    }
+
+    .talk-content li::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background-color: var(--orange);
+      position: absolute;
+      left: -30px;
+      top: 8px;
+      transform: rotate(45deg);
+    }
+
+    .talk-content-right {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+
+      background-color: var(--gray);
+      border-radius: 6px;
+      border: 1px solid var(--orange);
+    }
+
+    .talk-content span {
+      display: flex;
+      width: fit-content;
+      padding: 8px 36px;
+      border-top: 1px solid var(--orange);
+      border-bottom: 1px solid var(--orange);
+    }
+
+    .talk-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .talk-links-link {}
+
+    .talk-links-link a {
+      text-decoration: none;
+      color: var(--orange);
+    }
+
+    @media screen and (max-width:767px) {
+      #talk {
+        flex-direction: column;
+      }
+
+      .talk-content {
+        width: calc(100% - (24px));
+      }
+    }
+  </style>
+  <div id="talk-wrapper">
+    <div id="talk">
+      <div class="talk-content">
+        <h2>The talk Is Moving—Fast</h2>
+        <p>
+          Every day you rely on manual IDP research is another day you risk:
+        </p>
+        <ul>
+          <li>Missing standard configurations that could save $50,000+</li>
+          <li>Violating Clean Core principles that will haunt you during upgrades</li>
+          <li>Wasting weeks on analysis that could take minutes</li>
+          <li>Making subjective decisions when objective data exists</li>
+          <li>Building technical debt into production systems</li>
+
+        </ul>
+        <p><b>The intelligence exists. The integration is ready. The results are proven.</b></p>
+      </div>
+
+      <div class="talk-content talk-content-right">
+        <h2>See Your SAP Cloud ALM Data Analyzed in Real-Time</h2>
+        <a class="cta" href="https://claude.ai/chat/b0b3ce17-cf13-449f-9f6d-5ecd8be2de5f#demo">Schedule Your
+          Personalized Demo</a>
+
+        <span>Or contact us directly:</span>
+
+        <div class="talk-links">
+          <div class="talk-links-link"><b>Email:</b> <a href="contact@hr-path.com">contact@hr-path.com</a></div>
+          <div class="talk-links-link"><b>Website:</b> <a href="https://hr-path.com/">hr-path.com</a></div>
+        </div>
+
+        <p style="background-color: var(--gray); padding: 12px;">
+          "In SuccessFactors implementations, the most expensive mistakes are the ones
+          you make because you didn't know a standard configuration existed. <b>Our
+            platform ensures you'll never make that mistake again.</b>"
+        </p>
       </div>
     </div>
   </div>
