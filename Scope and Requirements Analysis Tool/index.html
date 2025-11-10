@@ -273,6 +273,21 @@
       max-width: 650px;
     }
 
+    #hero-content a {
+      display: inline-flex;
+      background-color: var(--orange);
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      margin-top: 6px;
+      transition: .2s ease-in-out all;
+    }
+
+    #hero-content a:hover {
+      background-color: white;
+      color: var(--orange);
+    }
+
     #hero-badges {
       display: flex;
       width: fit-content;
@@ -489,8 +504,10 @@
           SuccessFactors mistakes before they happen
         </h2>
         <div>
-          <a href="">Schedule Your Demo</a>
-          <a href="">See How It Works</a>
+          <a href="https://claude.ai/chat/b0b3ce17-cf13-449f-9f6d-5ecd8be2de5f#demo"
+            title="Agende uma demonstração">Schedule Your Demo</a>
+          <a href="https://claude.ai/chat/b0b3ce17-cf13-449f-9f6d-5ecd8be2de5f#solution" title="Veja como funciona">See
+            How It Works</a>
         </div>
       </div>
 
@@ -1506,7 +1523,6 @@
       }
     }
   </style>
-
   <div id="competitive-wrapper">
     <div id="competitive">
       <h2>The Competitive Advantage You Can't Ignore</h2>
@@ -1699,6 +1715,73 @@
         cost of one mistake you'll never make.
       </div>
     </ul>
+  </div>
+
+  <style>
+    #experts-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: var(--max-width);
+      padding: var(--wrapper-padding);
+      color: var(--blue);
+      margin: 0 auto;
+    }
+
+    #experts {
+      display: flex;
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      margin-top: 24px;
+      padding: 0;
+      position: relative;
+    }
+
+    .experts-title {
+      display: flex;
+      align-items: center;
+      width: 50%;
+    }
+
+    .experts-content {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 24px;
+      padding: 12px;
+    }
+
+    .experts-content-title {
+      padding: 12px 24px;
+      border: 1px solid var(--orange);
+    }
+  </style>
+
+  <div id="experts-wrapper">
+    <div id="experts">
+      <div class="experts-title">
+        <h2>Built by Experts, </br>Validated by Results</h2>
+      </div>
+
+      <div class="experts-content">
+        <div class="experts-content-title">
+          <h3>HR Path Brazil</h3>
+          <p>Leading SAP SuccessFactors implementation partner with deep expertise in HCM
+            transformations. Years of hands-on implementation experience. Unwavering
+            commitment to SAP's Clean Core strategy. Local presence in Brazilian market
+            with global reach.</p>
+        </div>
+
+        <div class="experts-content-title">
+          <h3>ALMAthon 2025 Recognition</h3>
+          <p>🏆 <b>2nd Place Winner</b> among the best innovations in SAP Application Lifecycle
+            Management. Validated by SAP experts. Production-ready with customer proof
+            points. Not a concept—a proven solution.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
