@@ -211,8 +211,8 @@
       align-items: center;
       gap: 64px;
       max-width: calc(100vw - (64px));
-      padding: 24px 32px;
-      background-color: var(--blue);
+      padding: 0 32px;
+      z-index: 9;
     }
 
     #topmenu img {
@@ -220,26 +220,23 @@
     }
   </style>
 
-  <nav id="topmenu">
-    <a href="https://hr-path.com/pt-br/" title="Conheça o site da HR Path Brasil">
-      <img class="brand" src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
-        alt="Logotipo HR Path Brasil " />
-    </a>
-  </nav>
-
   <!-- Hero -->
   <style>
     #hero-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       position: relative;
       max-width: var(--wrapper-width);
       padding: var(--wrapper-padding);
       padding-top: 24px;
-      background-image: linear-gradient(to bottom,
-          var(--blue-rgbafull) 0%,
-          var(--blue-rgba) 100%);
+      background: #33b8f3;
+      background: linear-gradient(226deg,
+          rgba(51, 184, 243, 1) 0%,
+          rgba(70, 9, 187, 1) 28%,
+          rgba(51, 16, 137, 1) 67%,
+          rgba(20, 26, 58, 1) 100%);
       overflow: hidden !important;
       z-index: 2;
     }
@@ -469,6 +466,12 @@
     }
   </style>
   <div id="hero-wrapper">
+    <nav id="topmenu">
+      <a href="https://hr-path.com/pt-br/" title="Conheça o site da HR Path Brasil">
+        <img class="brand" src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
+          alt="Logotipo HR Path Brasil " />
+      </a>
+    </nav>
     <div id="hero">
       <div id="hero-content">
         <div class="caso">Caso de Sucesso</div>
@@ -561,8 +564,7 @@
       <div class="info-block"><b>Indústria:</b>Papel e Celulose</div>
       <div class="info-block">
         <b>Solução Aplicada:</b>
-        <a href="https://click.hr-path.com/brasil/successfactors">Aplicativo Customizado Integrado ao SAP SuccessFactors
-          LMS</a>
+        <a href="https://click.hr-path.com/brasil/hr-path-training-management-app">HR Path Training Management App</a>
       </div>
       <div class="info-block"><b>Tipo de negócio:</b>B2B</div>
       <div class="info-block">
@@ -594,7 +596,7 @@
     #dores-cards-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 56px;
+      gap: 36px;
       counter-reset: dores;
     }
 
@@ -655,8 +657,8 @@
               conexão à internet, garantindo que todos os colaboradores</b>,
             inclusive os que atuam em campo, pudessem realizar seus
             treinamentos com praticidade. <br /><br />O novo ambiente deveria ser
-            <b>altamente integrado ao SAP SuccessFactors LMS</b>, mantendo a
-            confiabilidade dos dados e o controle total dos resultados de
+            <b>altamente integrado</b>, mantendo a
+            <b>confiabilidade dos dados e o controle total</b> dos resultados de
             aprendizagem.
           </p>
         </div>
