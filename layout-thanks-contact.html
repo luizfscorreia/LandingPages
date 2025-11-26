@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>%%title%%</title>
+    <base href="https://click.hr-path.com/brasil/successfactors-ai-thanks" />
+
+    <title>%%title%%</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WVV39X6");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        font-family: "Urbanist", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      p {
+        margin: 0;
+        padding: 0 0 0 0;
+      }
+      h1 {
+        font-size: 62px;
+        padding-bottom: 0px;
+      }
+      h2 {
+        font-size: 36px;
+        padding-bottom: 12px;
+      }
+      p {
+        padding-bottom: 24px;
+      }
+      #head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: white;
+        background-color: #141a3a;
+      }
+      #head img {
+        max-width: 250px;
+        padding: 0 20px;
+        border-radius: 12px;
+        margin-bottom: 24px;
+      }
+      #head h1 {
+        color: white;
+        margin-bottom: 8px;
+      }
+
+      #head h2 {
+        font-size: 28px;
+        margin-bottom: 12px;
+      }
+
+      #head p {
+        color: white;
+        text-align: center;
+      }
+
+      .lineLink {
+        all: unset;
+        display: flex;
+        width: fit-content;
+        padding: 12px 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #df803b !important;
+        cursor: pointer;
+      }
+
+      .lineLink::after {
+        content: " > ";
+        margin-left: 12px;
+        color: #df803b !important;
+        transition: all 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <!-- Google Tag Manager (noscript) -->
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+
+    <div id="head">
+      <img
+        class="brand-bg"
+        src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
+        alt="Logotipo HR Path Brasil "
+      />
+      <h1>Obrigado entrar em contato!</h1>
+      <h2>Um dos nossos especialistas irá entrar em contato com você!</h2>
+      <p>
+        Em <span id="count">10</span> segundos você será redirecionado para
+        nosso site.
+      </p>
+    </div>
+  </body>
+  <script>
+    const count = document.getElementById("count");
+    let value = parseInt(count.innerText);
+
+    const counter = setInterval(() => {
+      if (value == 1) {
+        window.location.href = "https://hr-path.com/pt-br/";
+        clearInterval(counter);
+      }
+      count.innerText = value - 1;
+      value = count.innerText = value - 1;
+    }, 1000);
+  </script>
+</html>
