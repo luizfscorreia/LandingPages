@@ -1,135 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="robots"
-      content="noindex, nofollow, noarchive, noimageindex, nosnippet"
-    />
 
-    <title>%%title%%</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet" />
 
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-WVV39X6");
-    </script>
-    <!-- End Google Tag Manager -->
+  <title>%%title%%</title>
 
-    <style>
-      :root {
-        --blue: #141a3a;
-        --blue-rgba: rgba(20, 26, 58, 0.8);
-        --blue-rgbafull: rgba(20, 26, 58, 1);
-        --orange: #e87722;
-        --gray: #e6e6e6;
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-WVV39X6");
+  </script>
+  <!-- End Google Tag Manager -->
 
-        --wrapper-width: calc(100vw - (48px));
-        --wrapper-padding: 64px 24px;
-        --max-width: 1200px;
-      }
+  <style>
+    :root {
+      --blue: #141a3a;
+      --blue-rgba: rgba(20, 26, 58, 0.8);
+      --blue-rgbafull: rgba(20, 26, 58, 1);
+      --orange: #e87722;
+      --gray: #e6e6e6;
 
-      html,
-      body {
-        font-family: "Urbanist", sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
+      --wrapper-width: calc(100vw - (48px));
+      --wrapper-padding: 64px 24px;
+      --max-width: 1200px;
+    }
 
-  <body>
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe>
-    </noscript>
+    html,
+    body {
+      font-family: "Urbanist", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
 
-    <!-- topmenu -->
-    <style>
-      #topmenu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 64px;
-        max-width: calc(100vw - (64px));
-        padding: 24px 32px;
-        background-color: var(--blue);
-      }
+<body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVV39X6" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe>
+  </noscript>
 
-      #topmenu img {
-        max-width: 100px;
-      }
-    </style>
-    <nav id="topmenu">
-      <a href="https://hr-path.com/pt-br/" title="Conheça nosso site">
-        <img
-          class="brand"
-          src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
-          alt="Logotipo HR Path Brasil "
-        />
-      </a>
-    </nav>
+  <!-- topmenu -->
+  <style>
+    #topmenu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 64px;
+      max-width: calc(100vw - (64px));
+      padding: 24px 32px;
+      background-color: var(--blue);
+    }
 
+    #topmenu img {
+      max-width: 100px;
+    }
+  </style>
+  <nav id="topmenu">
+    <a href="https://hr-path.com/pt-br/" title="Conheça nosso site">
+      <img class="brand" src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
+        alt="Logotipo HR Path Brasil " />
+    </a>
+  </nav>
+
+  <style>
+    #thank-you {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <div id="thank-you">
     %%content%%
+  </div>
 
-    <!-- Usar em todas as páginas de agradecimento -->
-    <!-- <script>
-        function getCookie(name) {
-            var nameEQ = name + "=";
-            var cookies = document.cookie.split(";");
-            for (var i = 0; i < cookies.length; i++) {
-                var c = cookies[i].trim();
-                if (c.indexOf(nameEQ) === 0)
-                    return decodeURIComponent(c.substring(nameEQ.length, c.length));
-            }
-            return null;
-        }
+</body>
 
-        function deleteCookie(name) {
-            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-        }
-
-        var leadData = null;
-        var leadCookie = getCookie('lead');
-        console.log(leadCookie);
-
-        if (leadCookie && leadCookie.startsWith("'") && leadCookie.endsWith("'")) {
-            leadCookie = leadCookie.slice(1, -1);
-        }
-
-        try {
-            leadData = leadCookie ? JSON.parse(leadCookie) : null;
-        } catch (e) {
-            leadData = null;
-        }
-
-        window.dataLayer = window.dataLayer || [];
-
-        if (leadData) {
-            window.dataLayer.push({
-                event: "pardot_form_submit",
-                lead: leadData
-            });
-            // deleteCookie("lead");
-            console.log(leadCookie)
-        }
-
-    </script> -->
-  </body>
 </html>
