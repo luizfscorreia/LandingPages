@@ -236,7 +236,6 @@
         max-width: 100px;
       }
     </style>
-
     <!-- Hero -->
     <style>
       #hero-wrapper {
@@ -603,254 +602,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Dores -->
-    <style>
-      #dores-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: var(--wrapper-padding);
-        background-color: white;
-        color: var(--blue);
-      }
-
-      #dores {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: var(--max-width);
-        gap: 62px;
-      }
-
-      #dores-cards-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 36px;
-        counter-reset: dores;
-      }
-
-      .dor {
-        position: relative;
-        padding: 24px;
-        background-color: var(--gray);
-      }
-
-      .dor ul {
-        padding-left: 12px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .dor::after {
-        counter-increment: dores;
-
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 10px 14px;
-        content: counter(dores);
-
-        color: #ffffff;
-        background-color: var(--orange);
-      }
-
-      @media screen and (max-width: 900px) {
-        #dores-cards-wrapper {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-    <div id="dores-wrapper">
-      <div id="dores">
-        <h2>Entendendo as dores e traçando a estratégia</h2>
-        <div id="dores-cards-wrapper">
-          <div class="dor">
-            <h3>Dores</h3>
-            <p>
-              Em uma operação de grande porte, a São Martinho enfrentava uma
-              rotina de RH e folha de pagamento marcada por processos manuais,
-              checagens demoradas e atividades distribuídas entre diferentes
-              transações.
-              <br /><br />
-              A dependência de planilhas e o tempo dedicado ao cálculo e à
-              conferência da folha evidenciavam a necessidade de transformar
-              esses processos para acompanhar as demandas do negócio.
-            </p>
-          </div>
-          <div class="dor">
-            <h3>Necessidade</h3>
-            <p>
-              Mais do que implementar tecnologia, o projeto precisava
-              simplificar a operação, automatizar validações e fortalecer os
-              processos de RH e folha com uma solução aderente à realidade da
-              São Martinho.
-              <br /><br />
-              Para isso, era essencial unir expertise técnica e boas práticas de
-              mercado ao conhecimento das equipes de RH, Operações
-              Administrativas e TI. A HR Path apoiou a empresa na construção
-              dessa jornada.
-            </p>
-          </div>
-          <div class="dor">
-            <h3>Solução</h3>
-            <p>
-              Com SAP SuccessFactors e a parceria da HR Path, o projeto integrou
-              processos, automatizou verificações e levou atividades antes
-              realizadas em planilhas para o ambiente SAP.
-              <br /><br />
-              A transformação trouxe mais agilidade ao cálculo e à conferência
-              da folha, além de preparar a operação para novas etapas de
-              evolução. Baixe o PDF do projeto e confira soluções implementadas
-              e os resultados alcançados.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- resultado -->
-    <style>
-      #resultado-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 86px 24px;
-        background-color: #e6e6e6;
-      }
-
-      #resultado {
-        display: grid;
-        position: relative;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        max-width: var(--max-width);
-        color: var(--blue);
-        gap: 62px;
-      }
-
-      #resultado-image {
-        width: 100%;
-        height: 100%;
-        background-color: blue;
-        background: url(https://media.investnews.com.br/uploads/2025/09/WhatsApp-Image-2025-09-29-at-16.28.20.jpeg);
-        background-position: 30%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 6px;
-      }
-
-      #resultado-topics {
-        display: grid;
-        gap: 32px;
-        text-align: left;
-      }
-
-      #resultado-topics ul {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
-
-      #resultado-topics li {
-        position: relative;
-        list-style: none;
-        font-size: 1.1rem;
-      }
-
-      #resultado-topics li b {
-        color: var(--orange);
-      }
-
-      #resultado-topics li::before {
-        content: "";
-        width: 12px;
-        height: 12px;
-        background-color: var(--orange);
-        position: absolute;
-        left: -30px;
-        top: 8px;
-        transform: rotate(45deg);
-      }
-
-      #resultado-topics div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: var(--orange);
-        padding: 24px;
-      }
-
-      #resultado-topics img {
-        max-width: 40px;
-        height: 40px;
-        filter: invert(65%) sepia(34%) saturate(5792%) hue-rotate(346deg)
-          brightness(94%) contrast(93%);
-      }
-
-      @media screen and (max-width: 900px) {
-        #resultado {
-          flex-direction: column;
-          grid-template-columns: 1fr;
-        }
-
-        #resultado-image {
-          display: none;
-        }
-      }
-    </style>
-    <div id="resultado-wrapper">
-      <div id="resultado">
-        <div id="resultado-image"></div>
-        <div id="resultado-content">
-          <h2>Resultados</h2>
-
-          <p>
-            A parceria entre São Martinho, HR Path e as equipes internas trouxe
-            ganhos concretos para o RH e a folha de pagamento. Com SAP
-            SuccessFactors, rotinas demoradas deram lugar a processos mais
-            ágeis, automatizados e integrados.
-            <br /><br />
-            Confira algumas das mudanças que marcaram essa transformação:
-          </p>
-
-          <div id="resultado-topics">
-            <ul>
-              <li>
-                <b>Mais agilidade na folha de pagamento</b>, com redução do
-                tempo dedicado ao cálculo e às checagens;
-              </li>
-              <li>
-                <b>Rotinas simplificadas</b>, com a consolidação de transações
-                em um único aplicativo;
-              </li>
-              <li>
-                <b>Validações automatizadas</b>, substituindo verificações antes
-                realizadas manualmente;
-              </li>
-              <li>
-                <b>Avanço na digitalização do RH</b>, com a migração de
-                processos do Excel para o SAP.
-              </li>
-            </ul>
-          </div>
-
-          <p>
-            Além dos ganhos operacionais, o projeto fortaleceu a base para novas
-            etapas de evolução da gestão de pessoas.
-            <br /><br />
-            <b
-              >Baixe o PDF completo para conhecer os números, os detalhes da
-              implementação e os próximos passos dessa jornada.</b
-            >
-          </p>
-        </div>
-      </div>
-    </div>
-
     <!-- Footer -->
     <style>
       #footer-wrapper {
@@ -996,4 +747,28 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    function resizeHero() {
+      const hero = document.getElementById("hero");
+      const bar = document.getElementById("info-wrapper");
+
+      if (!hero || !bar) return;
+
+      const heroHeight = parseFloat(getComputedStyle(hero).height);
+      const barBottom = bar.getBoundingClientRect().bottom + window.scrollY;
+      const overflow = barBottom - window.innerHeight;
+
+      hero.style.height = `${Math.max(0, heroHeight - overflow)}px`;
+    }
+
+    window.addEventListener("resize", resizeHero);
+    window.addEventListener("load", resizeHero);
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", resizeHero);
+    } else {
+      resizeHero();
+    }
+  </script>
 </html>
