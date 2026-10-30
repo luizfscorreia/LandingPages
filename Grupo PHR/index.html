@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <style>
+        :root {
+            --blue: #141a3a;
+            --blue-rgba: rgba(20, 26, 58, 0.8);
+            --blue-rgbafull: rgba(20, 26, 58, 1);
+            --orange: #e87722;
+            --gray: #e6e6e6;
+
+            --wrapper-width: calc(100vw - (48px));
+            --wrapper-padding: 64px 24px;
+            --max-width: 1200px;
+        }
+    </style>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Grupo PHR, agora HR Path — referência em SAP SuccessFactors e Workforce Software na América Latina. 28 anos de experiência, 300+ implementações, premiado pela SAP." />
+    <meta name="robots" content="index, follow" />
+    <title>Grupo PHR | Agora HR Path — Especialistas em SAP SuccessFactors na América Latina</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-block: 0;
+        }
+
+        html,
+        body {
+            font-family: "Urbanist", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            padding-bottom: 0.5rem;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            line-height: 1.2;
+            margin-top: 1.1rem;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.25rem;
+            font-weight: 800;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.35;
+            margin-top: 0.5rem;
+            margin-bottom: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            margin-top: 0.25rem;
+            margin-bottom: 0.25rem;
+            padding-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+                font-weight: 800;
+            }
+
+            h2 {
+                font-size: 2rem;
+                line-height: 1.35;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }
+
+            h4 {
+                font-size: 1.25rem;
+                line-height: 1.45;
+            }
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            margin-bottom: 1.1rem;
+            padding: 0;
+        }
+
+        .cta {
+            all: unset;
+            display: flex;
+            gap: 12px;
+            width: fit-content;
+            font-size: 1.1rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--orange);
+            cursor: pointer;
+            transition: 0.2s ease-in-out all;
+        }
+
+        .cta::after {
+            content: "→";
+            display: block;
+            width: 16px;
+            margin-top: 2px;
+        }
+
+        .cta:hover {
+            gap: 24px;
+        }
+
+        .cta-button {
+            all: unset;
+            display: block;
+            width: fit-content;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: var(--orange);
+            transition: 0.2s ease-in-out all;
+        }
+
+        .cta-button:hover {
+            background-color: var(--blue);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <style>
+        #topmenu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 64px;
+            max-width: calc(100vw - 64px);
+            padding: 20px 32px;
+            background-color: var(--blue);
+        }
+
+        #topmenu .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        #topmenu img {
+            max-width: 110px;
+        }
+
+        #topmenu .nav-tag {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+            padding-left: 16px;
+        }
+
+        #topmenu .nav-cta {
+            all: unset;
+            font-size: 0.9rem;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid var(--orange);
+            color: var(--orange);
+            transition: 0.2s ease-in-out all;
+        }
+
+        #topmenu .nav-cta:hover {
+            background-color: var(--orange);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            #topmenu .nav-tag {
+                display: none;
+            }
+
+            #topmenu .nav-cta {
+                display: none;
+            }
+        }
+    </style>
+    <nav id="topmenu">
+        <div class="nav-brand">
+            <a href="https://hr-path.com/pt-br/" title="Conheça o site da HR Path Brasil">
+                <img src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
+                    alt="Logotipo HR Path Brasil" />
+            </a>
+            <span class="nav-tag">Grupo PHR é HR Path</span>
+        </div>
+        <button class="nav-cta scroll">Fale com um especialista</button>
+    </nav>
+
+    <!-- HERO -->
+    <style>
+        #hero-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            max-width: var(--wrapper-width);
+            padding: var(--wrapper-padding);
+            background: #141a3a;
+            background: linear-gradient(226deg, rgba(51, 184, 243, 1) 0%, rgba(70, 9, 187, 1) 28%, rgba(51, 16, 137, 1) 67%, rgba(20, 26, 58, 1) 100%);
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        #hero {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 36px;
+            width: 100%;
+            max-width: var(--max-width);
+            z-index: 2;
+        }
+
+        #hero-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            color: white;
+            max-width: 620px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            background-color: var(--orange);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 20px;
+            width: fit-content;
+        }
+
+        #hero-content h1 {
+            font-size: 2.8rem;
+            line-height: 1.1;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        #hero-content h1 span {
+            color: var(--orange);
+        }
+
+        #hero-content p {
+            max-width: 580px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        #hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-stat strong {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--orange);
+            line-height: 1;
+        }
+
+        .hero-stat span {
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+
+        #hero-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 380px;
+            width: calc(100% - 64px);
+            height: fit-content;
+            background-color: white;
+            padding: 32px;
+            color: var(--blue);
+            z-index: 2;
+        }
+
+        #hero-form h2 {
+            font-size: 1.4rem;
+            line-height: 1.2;
+            text-align: center;
+            align-self: center;
+            margin: 0 0 6px 0;
+            color: var(--orange);
+        }
+
+        #hero-form>p {
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            font-weight: bold;
+            margin: 0 0 24px 0;
+            color: var(--blue);
+        }
+
+        #pardot-form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        #pardot-form .form-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #pardot-form label {
+            font-size: 0.78rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--blue);
+        }
+
+        #pardot-form input,
+        #pardot-form select {
+            all: unset;
+            font-size: 0.9rem;
+            padding: 9px 10px;
+            border: 1px solid #ccc;
+            background-color: white;
+            color: var(--blue);
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #pardot-form input:focus,
+        #pardot-form select:focus {
+            border-color: var(--orange);
+            outline: none;
+        }
+
+        #pardot-form .submit-btn {
+            all: unset;
+            display: block;
+            width: 100%;
+            padding: 13px 16px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: var(--orange);
+            transition: 0.2s ease-in-out all;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        #pardot-form .submit-btn:hover {
+            background-color: var(--blue);
+        }
+
+        .form-disclaimer {
+            font-size: 0.72rem !important;
+            color: #888 !important;
+            text-align: center;
+            margin-top: 4px !important;
+            margin-bottom: 0 !important;
+            font-weight: normal !important;
+        }
+
+        @media screen and (max-width: 900px) {
+            #hero {
+                flex-direction: column;
+            }
+
+            #hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            #hero-form {
+                max-width: 100%;
+                width: calc(100% - 64px);
+            }
+        }
+    </style>
+
+    <div id="hero-wrapper">
+        <div id="hero">
+            <div id="hero-content">
+                <div class="hero-badge">Grupo PHR agora é HR Path</div>
+                <h1>
+                    Especialistas em <span>SAP SuccessFactors</span> e Gestão de Pessoas na América Latina
+                </h1>
+                <p>
+                    Há <strong>28 anos</strong> transformando a gestão de Recursos Humanos de grandes empresas — agora
+                    com a força global da HR Path, presente em <strong>28 países</strong> com mais de <strong>2.900
+                        profissionais</strong>.
+                </p>
+                <div id="hero-stats">
+                    <div class="hero-stat">
+                        <strong>300+</strong>
+                        <span>Implementações SAP HCM<br>e WFS realizadas</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>150+</strong>
+                        <span>Consultores certificados<br>em SAP HCM e WFS</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>60+</strong>
+                        <span>Clientes ativos no<br>centro de suporte AMS</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>13</strong>
+                        <span>Países em projetos<br>multi-país realizados</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hero-form">
+                <h2>Fale com nossos especialistas</h2>
+                <p>Entenda como podemos transformar o RH da sua empresa</p>
+                %%content%%
+            </div>
+        </div>
+    </div>
+
+    <!-- QUEM SOMOS -->
+    <style>
+        #quem-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: white;
+        }
+
+        #quem {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: var(--max-width);
+            color: var(--blue);
+            gap: 62px;
+            align-items: center;
+        }
+
+        #quem-content p {
+            color: #444;
+        }
+
+        .quem-destaque {
+            background-color: var(--blue);
+            color: white;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .quem-destaque h3 {
+            color: var(--orange);
+            margin: 0;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .quem-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .quem-item strong {
+            font-size: 1.8rem;
+            color: var(--orange);
+            line-height: 1;
+        }
+
+        .quem-item span {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .quem-divider {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 0;
+        }
+
+        .presenca-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .presenca-tag {
+            padding: 5px 12px;
+            background-color: rgba(232, 119, 34, 0.15);
+            color: var(--orange);
+            font-size: 0.82rem;
+            font-weight: bold;
+            border: 1px solid rgba(232, 119, 34, 0.3);
+        }
+
+        @media (max-width: 900px) {
+            #quem {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+    <div id="quem-wrapper">
+        <div id="quem">
+            <div id="quem-content">
+                <h2>O Grupo PHR que você conhecia <span style="color:var(--orange)">evoluiu.</span><br>Conheça a HR
+                    Path.</h2>
+                <p>
+                    O Grupo PHR foi durante anos a referência em implementação de SAP HCM e Workforce Software na
+                    América Latina. Em 2023, unimos forças com a <strong>HR Path</strong>, consultoria global de RH, e
+                    nos tornamos ainda mais poderosos.
+                </p>
+                <p>
+                    Se você era cliente, parceiro ou conhecia o Grupo PHR pode continuar contando com as mesmas
+                    pessoas, a mesma expertise e o mesmo compromisso. Agora com uma capacidade global muito maior.
+                </p>
+                <p>
+                    Com presença em <strong>México, Colômbia, Peru, Chile e Argentina</strong>, e toda a estrutura da HR
+                    Path com mais de 2.900 profissionais em 28 países, somos hoje o parceiro mais completo para
+                    transformação digital de RH na América Latina.
+                </p>
+                <div class="presenca-tags">
+                    <span class="presenca-tag">🇧🇷 Brasil</span>
+                    <span class="presenca-tag">🇲🇽 México</span>
+                    <span class="presenca-tag">🇨🇴 Colômbia</span>
+                    <span class="presenca-tag">🇵🇪 Peru</span>
+                    <span class="presenca-tag">🇨🇱 Chile</span>
+                    <span class="presenca-tag">🇦🇷 Argentina</span>
+                </div>
+            </div>
+            <div class="quem-destaque">
+                <h3>HR Path em números</h3>
+                <div class="quem-item">
+                    <strong>2.900+</strong>
+                    <span>Profissionais no grupo global</span>
+                </div>
+                <hr class="quem-divider" />
+                <div class="quem-item">
+                    <strong>28</strong>
+                    <span>Países com presença ativa</span>
+                </div>
+                <hr class="quem-divider" />
+                <div class="quem-item">
+                    <strong>3.000+</strong>
+                    <span>Clientes atendidos globalmente</span>
+                </div>
+                <hr class="quem-divider" />
+                <div class="quem-item">
+                    <strong>28 anos</strong>
+                    <span>De experiência em Capital Humano</span>
+                </div>
+                <hr class="quem-divider" />
+                <div class="quem-item">
+                    <strong>150+</strong>
+                    <span>Consultores certificados em SAP HCM e WFS na América Latina</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PREMIAÇÕES -->
+    <style>
+        #premios-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 24px;
+            background-color: var(--blue);
+        }
+
+        #premios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: var(--max-width);
+            width: 100%;
+            gap: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        #premios h2 {
+            color: white;
+        }
+
+        #premios h2 span {
+            color: var(--orange);
+        }
+
+        #premios-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            width: 100%;
+        }
+
+        .premio-card {
+            background-color: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+        }
+
+        .premio-icon {
+            font-size: 2rem;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(232, 119, 34, 0.15);
+            color: var(--orange);
+            font-weight: bold;
+        }
+
+        .premio-card h4 {
+            color: var(--orange);
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .premio-card p {
+            font-size: 0.9rem;
+            opacity: 0.75;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            #premios-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <div id="premios-wrapper">
+        <div id="premios">
+            <div>
+                <h2>Reconhecidos como <span>referência SAP</span> na América Latina</h2>
+                <p style="opacity:0.7; max-width:600px; margin: 0 auto;">Nossa trajetória é validada pelos números,
+                    pelos clientes e pela própria SAP.</p>
+            </div>
+            <div id="premios-cards">
+                <div class="premio-card">
+                    <div class="premio-icon">★</div>
+                    <h4>1º Parceiro da América Latina com SAP Expertise Awards</h4>
+                    <p>Primeiros a receber as certificações de expertise SAP na região — reconhecimento reservado aos
+                        parceiros com maior maturidade e resultados comprovados.</p>
+                </div>
+                <div class="premio-card">
+                    <div class="premio-icon">🏆</div>
+                    <h4>Partner Excellence Award 2024 — SuccessFactors Solutions</h4>
+                    <p>Vencedores do prêmio máximo da SAP para parceiros de SuccessFactors em 2024, reconhecendo
+                        excelência em implementação e resultados para clientes.</p>
+                </div>
+                <div class="premio-card">
+                    <div class="premio-icon">#1</div>
+                    <h4>Parceiro WFS com mais implementações na América Latina</h4>
+                    <p>Somos o parceiro WorkForce Software com maior número de implementações em toda a América Latina,
+                        com expertise comprovada em projetos complexos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOLUÇÕES -->
+    <style>
+        #solucoes-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: #f7f7f7;
+        }
+
+        #solucoes {
+            display: flex;
+            flex-direction: column;
+            max-width: var(--max-width);
+            width: 100%;
+            gap: 48px;
+            color: var(--blue);
+        }
+
+        #solucoes-header {
+            text-align: center;
+        }
+
+        #solucoes-header h2 {
+            margin-bottom: 12px;
+        }
+
+        #solucoes-header p {
+            max-width: 640px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        #solucoes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .solucao-card {
+            background: white;
+            padding: 32px 24px;
+            border-top: 3px solid var(--orange);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .solucao-card h3 {
+            font-size: 1.1rem;
+            color: var(--blue);
+            margin: 0;
+        }
+
+        .solucao-card p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0;
+            flex: 1;
+        }
+
+        .solucao-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .solucao-tag {
+            padding: 3px 10px;
+            background-color: var(--gray);
+            color: var(--blue);
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            #solucoes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            #solucoes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <div id="solucoes-wrapper">
+        <div id="solucoes">
+            <div id="solucoes-header">
+                <h2>Soluções e <span style="color:var(--orange)">Serviços</span></h2>
+                <p>Do recrutamento à folha de pagamento, cobrimos toda a jornada do colaborador com as melhores
+                    tecnologias do mercado.</p>
+            </div>
+            <div id="solucoes-grid">
+                <div class="solucao-card">
+                    <h3>Talent Management</h3>
+                    <p>Implementação e configuração completa do módulo de gestão de talentos do SAP SuccessFactors, do
+                        recrutamento ao desenvolvimento de carreira.</p>
+                    <div class="solucao-tags">
+                        <span class="solucao-tag">SmartRecruiters</span>
+                        <span class="solucao-tag">Onboarding</span>
+                        <span class="solucao-tag">Learning</span>
+                        <span class="solucao-tag">Performance & Goals</span>
+                        <span class="solucao-tag">Compensation</span>
+                    </div>
+                </div>
+                <div class="solucao-card">
+                    <h3>HR Core & Payroll</h3>
+                    <p>Gestão completa do core de RH e folha de pagamento em nuvem, incluindo migração do ambiente
+                        On-Premise para SAP ECP.</p>
+                    <div class="solucao-tags">
+                        <span class="solucao-tag">Time Tracking</span>
+                        <span class="solucao-tag">Payroll / Folha</span>
+                        <span class="solucao-tag">Document Management</span>
+                        <span class="solucao-tag">HR Service Delivery</span>
+                        <span class="solucao-tag">Migração para ECP</span>
+                    </div>
+                </div>
+                <div class="solucao-card">
+                    <h3>Workforce Software (WFS)</h3>
+                    <p>Líderes em implementações WFS na América Latina. Controle de jornada, previsão de demanda e
+                        gestão de escalas para operações complexas.</p>
+                    <div class="solucao-tags">
+                        <span class="solucao-tag">Time & Attendance</span>
+                        <span class="solucao-tag">Forecasting</span>
+                        <span class="solucao-tag">Scheduling</span>
+                    </div>
+                </div>
+                <div class="solucao-card">
+                    <h3>Suporte AMS</h3>
+                    <p>Centro de suporte especializado para 60+ clientes ativos — correções, melhorias contínuas,
+                        suporte funcional e técnico para o seu ambiente SAP.</p>
+                    <div class="solucao-tags">
+                        <span class="solucao-tag">Suporte Funcional</span>
+                        <span class="solucao-tag">Suporte Técnico</span>
+                        <span class="solucao-tag">ABAP</span>
+                        <span class="solucao-tag">Melhorias Contínuas</span>
+                    </div>
+                </div>
+                <div class="solucao-card">
+                    <h3>Business AI & Joule</h3>
+                    <p>Implementação de soluções de Inteligência Artificial integradas ao SAP SuccessFactors:
+                        contratação, desenvolvimento, folha e upskilling.</p>
+                    <div class="solucao-tags">
+                        <span class="solucao-tag">Joule</span>
+                        <span class="solucao-tag">SAP Business AI</span>
+                        <span class="solucao-tag">Joule Skills + TAM</span>
+                        <span class="solucao-tag">WFS AI</span>
+                    </div>
+                </div>
+                <div class="solucao-card">
+                    <h3>Business Data Cloud & Analytics</h3>
+                    <p>Modelagem e integração de dados de RH com SAP Datasphere, Analytics Cloud e Databricks para
+                        decisões baseadas em dados confiáveis.</p>
+                    <div class="solucao-tags">
+                        <span class="solucao-tag">SAP Datasphere</span>
+                        <span class="solucao-tag">Analytics Cloud</span>
+                        <span class="solucao-tag">Databricks</span>
+                        <span class="solucao-tag">People Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- METODOLOGIA JUMP -->
+    <style>
+        #jump-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: white;
+        }
+
+        #jump {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: var(--max-width);
+            color: var(--blue);
+            gap: 62px;
+            align-items: center;
+        }
+
+        #jump-visual {
+            background-color: var(--blue);
+            padding: 48px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .jump-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .jump-step:last-child {
+            border-bottom: none;
+        }
+
+        .jump-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--orange);
+            line-height: 1;
+            min-width: 40px;
+        }
+
+        .jump-step-content {
+            color: white;
+        }
+
+        .jump-step-content strong {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .jump-step-content span {
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        #jump-content h2 {
+            margin-bottom: 12px;
+        }
+
+        #jump-content h2 span {
+            color: var(--orange);
+        }
+
+        #jump-content p {
+            color: #555;
+        }
+
+        .jump-badge {
+            display: inline-block;
+            background-color: var(--orange);
+            color: white;
+            padding: 6px 14px;
+            font-size: 0.78rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 900px) {
+            #jump {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+    <div id="jump-wrapper">
+        <div id="jump">
+            <div id="jump-visual">
+                <div
+                    style="color:var(--orange); font-size:2.5rem; font-weight:800; letter-spacing:0.05em; margin-bottom:24px;">
+                    JUMP</div>
+                <div class="jump-step">
+                    <div class="jump-number">01</div>
+                    <div class="jump-step-content">
+                        <strong>Pacotes pré-configurados</strong>
+                        <span>Melhores práticas prontas para o seu segmento, acelerando o início do projeto</span>
+                    </div>
+                </div>
+                <div class="jump-step">
+                    <div class="jump-number">02</div>
+                    <div class="jump-step-content">
+                        <strong>Implementação rápida</strong>
+                        <span>Cronogramas reduzidos sem abrir mão de qualidade e aderência ao processo</span>
+                    </div>
+                </div>
+                <div class="jump-step">
+                    <div class="jump-number">03</div>
+                    <div class="jump-step-content">
+                        <strong>Escalabilidade garantida</strong>
+                        <span>A solução cresce junto com o seu negócio, modularmente</span>
+                    </div>
+                </div>
+                <div class="jump-step">
+                    <div class="jump-number">04</div>
+                    <div class="jump-step-content">
+                        <strong>Go-live seguro</strong>
+                        <span>Suporte estruturado no pós-implantação para garantir adoção e resultados</span>
+                    </div>
+                </div>
+            </div>
+            <div id="jump-content">
+                <div class="jump-badge">Nossa metodologia</div>
+                <h2>Implementações mais rápidas e seguras com a metodologia <span>JUMP</span></h2>
+                <p>
+                    O <strong>JUMP</strong> é a metodologia exclusiva desenvolvida pelo Grupo PHR — agora HR Path — para
+                    implementação acelerada, escalável e pré-empacotada do SAP SuccessFactors.
+                </p>
+                <p>
+                    Com o JUMP, reduzimos riscos, aceleramos o tempo de valor e garantimos que o projeto seja entregue
+                    dentro do prazo e escopo, mesmo em organizações complexas e multi-país.
+                </p>
+                <p>
+                    É a combinação de <strong>150+ consultores certificados</strong> com uma metodologia testada em
+                    <strong>300+ implementações</strong> ao longo de 28 anos.
+                </p>
+                <a class="cta scroll" style="margin-top:16px;" href="#">Conheça o JUMP com nossos especialistas</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIFERENCIAIS -->
+    <style>
+        #diferenciais-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: var(--gray);
+        }
+
+        #diferenciais {
+            display: flex;
+            flex-direction: column;
+            max-width: var(--max-width);
+            width: 100%;
+            gap: 48px;
+            color: var(--blue);
+        }
+
+        #diferenciais-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        #diferenciais-header h2 {
+            margin: 0;
+        }
+
+        #diferenciais-header p {
+            color: #555;
+            margin: 0;
+        }
+
+        #diferenciais-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2px;
+            background-color: #ccc;
+        }
+
+        .diferencial-item {
+            background: white;
+            padding: 32px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .diferencial-num {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--orange);
+            min-width: 36px;
+            line-height: 1;
+        }
+
+        .diferencial-text h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            color: var(--blue);
+        }
+
+        .diferencial-text p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0;
+        }
+
+        @media (max-width: 900px) {
+            #diferenciais-header {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            #diferenciais-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <div id="diferenciais-wrapper">
+        <div id="diferenciais">
+            <div id="diferenciais-header">
+                <h2>Por que as maiores empresas da <span style="color:var(--orange)">América Latina</span> escolhem o
+                    Grupo PHR / HR Path?</h2>
+                <p>Nossa expertise vai muito além da tecnologia. Entendemos os desafios reais do RH latino-americano —
+                    da complexidade da legislação trabalhista brasileira a projetos multi-país envolvendo múltiplas
+                    moedas, idiomas e culturas.</p>
+            </div>
+            <div id="diferenciais-list">
+                <div class="diferencial-item">
+                    <div class="diferencial-num">01</div>
+                    <div class="diferencial-text">
+                        <h4>Parceiro SAP premiado com maior expertise na América Latina</h4>
+                        <p>Primeiros parceiros da LatAm a receber o SAP Expertise Award e vencedores do Partner
+                            Excellence Award 2024 em SuccessFactors — reconhecimento pelos melhores resultados.</p>
+                    </div>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-num">02</div>
+                    <div class="diferencial-text">
+                        <h4>150+ consultores certificados em SAP HCM e Workforce Software</h4>
+                        <p>Time especializado com certificações funcionais, técnicas, ABAP e gerenciais — com profundo
+                            conhecimento de processos de RH e da legislação local.</p>
+                    </div>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-num">03</div>
+                    <div class="diferencial-text">
+                        <h4>Experiência real em projetos multi-país e multi-moeda</h4>
+                        <p>Mais de 13 países envolvidos em projetos que exigiram gestão de múltiplas legislações,
+                            idiomas e contextos culturais — com entrega dentro do prazo e escopo.</p>
+                    </div>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-num">04</div>
+                    <div class="diferencial-text">
+                        <h4>Suporte contínuo com AMS para 60+ clientes ativos</h4>
+                        <p>Mais de 60 empresas contam com nosso centro de suporte especializado para correções,
+                            melhorias e evolução contínua dos seus ambientes SAP.</p>
+                    </div>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-num">05</div>
+                    <div class="diferencial-text">
+                        <h4>Líderes em Workforce Software na América Latina</h4>
+                        <p>O maior número de implementações WFS da região — com domínio comprovado em controle de
+                            jornada, escalas complexas e forecasting de mão de obra.</p>
+                    </div>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-num">06</div>
+                    <div class="diferencial-text">
+                        <h4>Força global com DNA local</h4>
+                        <p>Toda a capacidade da HR Path — 2.900+ profissionais em 28 países, 3.000+ clientes — com a
+                            proximidade, o contexto cultural e o conhecimento do mercado latino-americano.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA FINAL -->
+    <style>
+        #cta-final-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 86px 24px;
+            background-color: var(--blue);
+        }
+
+        #cta-final {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: var(--max-width);
+            gap: 62px;
+            align-items: center;
+            color: white;
+            width: 100%;
+        }
+
+        #cta-final h2 {
+            color: white;
+        }
+
+        #cta-final h2 span {
+            color: var(--orange);
+        }
+
+        #cta-final p {
+            opacity: 0.8;
+        }
+
+        #cta-final ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        #cta-final li {
+            position: relative;
+            padding-left: 24px;
+            font-size: 1.05rem;
+            opacity: 0.9;
+        }
+
+        #cta-final li::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: var(--orange);
+            position: absolute;
+            left: 0;
+            top: 7px;
+            transform: rotate(45deg);
+        }
+
+        #cta-final-action {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+        }
+
+        #cta-final-action h3 {
+            color: var(--orange);
+            margin: 0;
+            font-size: 1.4rem;
+        }
+
+        #cta-final-action p {
+            opacity: 0.8;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .cta-button-white {
+            all: unset;
+            display: block;
+            width: fit-content;
+            padding: 14px 28px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            color: var(--blue);
+            cursor: pointer;
+            background-color: white;
+            transition: 0.2s ease-in-out all;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .cta-button-white:hover {
+            background-color: var(--orange);
+            color: white;
+        }
+
+        @media (max-width: 900px) {
+            #cta-final {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+    </style>
+    <div id="cta-final-wrapper">
+        <div id="cta-final">
+            <div>
+                <h2>Pronto para levar o RH da sua empresa ao <span>próximo nível</span>?</h2>
+                <p>Seja você um cliente antigo do Grupo PHR, um prospect que chegou aqui pelo site, ou alguém que quer
+                    entender melhor o que fazemos — nosso time está pronto para conversar.</p>
+                <ul>
+                    <li>Diagnóstico gratuito do seu ambiente SAP atual</li>
+                    <li>Apresentação das soluções mais adequadas ao seu cenário</li>
+                    <li>Roadmap personalizado para transformação digital do RH</li>
+                    <li>Cases de referência no seu setor e porte de empresa</li>
+                </ul>
+            </div>
+            <div id="cta-final-action">
+                <h3>Fale com um especialista</h3>
+                <p>Preencha o formulário no início desta página ou clique abaixo para iniciar a conversa agora mesmo.
+                </p>
+                <button class="cta-button-white scroll">Quero falar com um especialista</button>
+                <p style="font-size:0.8rem; opacity:0.5;">Retornaremos o mais rápido possíevl. Sem compromisso.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <style>
+        #faq_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 760px;
+            padding: var(--wrapper-padding);
+            color: var(--blue);
+            margin: 0 auto;
+        }
+
+        #faq_wrapper h2 {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        #faq_wrapper>p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        #faq {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 24px auto 0;
+            padding: 0;
+            list-style-type: none;
+            position: relative;
+        }
+
+        #faq li {
+            display: flex;
+            text-decoration: none;
+            color: var(--blue);
+            margin-bottom: 4px;
+            padding: 20px 40px 20px 16px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            background-color: var(--gray);
+            transition: 0.15s ease-in-out all;
+            position: relative;
+        }
+
+        #faq li:hover {
+            color: var(--orange);
+            background-color: #ddd;
+        }
+
+        .question::after {
+            content: "+";
+            display: block;
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.4rem;
+            color: var(--orange);
+            transition: 0.3s ease-in-out all;
+            font-weight: 400;
+        }
+
+        .question.open::after {
+            content: "−";
+        }
+
+        .answer {
+            display: none;
+            padding: 20px 20px 24px;
+            margin-bottom: 4px;
+            color: #444;
+            line-height: 1.7;
+            border-left: 3px solid var(--orange);
+            background-color: white;
+            font-size: 0.95rem;
+        }
+    </style>
+    <div id="faq_wrapper">
+        <h2>Perguntas <span style="color:var(--orange)">Frequentes</span></h2>
+        <p>Tire suas dúvidas sobre a HR Path, o Grupo PHR e nossas soluções.</p>
+        <ul id="faq">
+            <li class="question">O Grupo PHR deixou de existir?</li>
+            <div class="answer">
+                Não. O Grupo PHR se uniu à <strong>HR Path</strong>, uma consultoria global de RH com presença em 28
+                países. A equipe, a expertise e o portfólio de soluções continuam — agora com uma capacidade global
+                ainda maior. Todos os compromissos, projetos e contratos de clientes foram mantidos.
+            </div>
+
+            <li class="question">O que é a HR Path e o que ela faz?</li>
+            <div class="answer">
+                A HR Path é uma consultoria global especializada em transformação digital de Recursos Humanos, com mais
+                de <strong>2.900 profissionais em 28 países</strong> e <strong>3.000+ clientes</strong> ao redor do
+                mundo. Na América Latina, o Grupo PHR é a operação da HR Path — com foco em SAP SuccessFactors,
+                Workforce Software e soluções de IA para RH.
+            </div>
+
+            <li class="question">Quais soluções o Grupo PHR / HR Path implementa?</li>
+            <div class="answer">
+                Implementamos e suportamos o portfólio completo de SAP para RH: <strong>SAP SuccessFactors</strong>
+                (Talent Management, HR Core, Payroll), <strong>WorkForce Software</strong> (controle de jornada, escalas
+                e forecasting), <strong>SAP Business AI e Joule</strong>, <strong>Business Data Cloud</strong>
+                (Analytics, Datasphere, Databricks), além de integrações, desenvolvimentos customizados (ABAP) e
+                DocuSign.
+            </div>
+
+            <li class="question">O que é o suporte AMS e como funciona?</li>
+            <div class="answer">
+                O AMS (Application Management Services) é o nosso centro de suporte especializado para clientes SAP.
+                Mais de <strong>60 empresas</strong> contam com o AMS para correções, melhorias contínuas, suporte
+                funcional e técnico, garantindo que o ambiente SAP esteja sempre atualizado e funcionando com máxima
+                performance.
+            </div>
+
+            <li class="question">O que é a metodologia JUMP?</li>
+            <div class="answer">
+                O <strong>JUMP</strong> é a metodologia exclusiva do Grupo PHR / HR Path para implementação acelerada do
+                SAP SuccessFactors. Por meio de pacotes pré-configurados com melhores práticas, reduzimos o tempo de
+                implementação, os riscos do projeto e o investimento inicial — sem abrir mão de qualidade e aderência
+                aos processos da empresa.
+            </div>
+
+            <li class="question">Vocês atendem projetos multi-país?</li>
+            <div class="answer">
+                Sim. Temos experiência comprovada em projetos envolvendo <strong>13 países</strong>, com gestão de
+                múltiplas moedas, idiomas, legislações e culturas. Atendemos clientes com operações no Brasil, México,
+                Colômbia, Peru, Chile, Argentina e outros países da América Latina — sempre com squads locais e suporte
+                global da HR Path.
+            </div>
+
+            <li class="question">Era cliente do Grupo PHR. O que muda para mim?</li>
+            <div class="answer">
+                Para clientes existentes, a transição é <strong>transparente</strong>: seu contrato, ponto de contato e
+                nível de serviço são mantidos. O que muda é para melhor — você agora tem acesso a uma rede global de
+                mais de 2.900 profissionais e às mais recentes inovações em IA e Analytics que a HR Path traz ao
+                portfólio.
+            </div>
+        </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <style>
+        #footer-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: var(--wrapper-width);
+            padding: 36px 24px;
+            background-color: var(--blue);
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: var(--max-width);
+            align-items: center;
+        }
+
+        #footer-brand {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.85rem;
+            gap: 24px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        #footer-brand img {
+            max-width: 100px;
+        }
+
+        #footer-socials {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            gap: 24px;
+        }
+
+        #footer-socials img {
+            height: 20px;
+            transition: 0.3s all ease-in-out;
+            filter: brightness(10);
+            opacity: 0.6;
+        }
+
+        #footer-socials img:hover {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            #footer {
+                flex-direction: column-reverse;
+                gap: 32px;
+            }
+
+            #footer-brand {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #footer-socials {
+                gap: 20px;
+            }
+        }
+    </style>
+    <footer id="footer-wrapper">
+        <div id="footer">
+            <div id="footer-brand">
+                <a href="https://hr-path.com/pt-br/" title="Conheça nosso site">
+                    <img src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
+                        alt="Logotipo HR Path Brasil" />
+                </a>
+                <span>
+                    HR Path Brasil — Grupo PHR<br />
+                    © HR Path, todos os direitos reservados.
+                </span>
+            </div>
+            <div id="footer-socials">
+                <a title="HR Path Brasil no Facebook" href="https://www.facebook.com/HRPath/">
+                    <img src="https://i.ibb.co/KKsMqTw/facebook.png" alt="Facebook" />
+                </a>
+                <a title="HR Path Brasil no Instagram" href="https://www.instagram.com/hr_path_brasil/">
+                    <img src="https://i.ibb.co/r79gk13/instagram.png" alt="Instagram" />
+                </a>
+                <a title="HR Path Brasil no LinkedIn" href="https://www.linkedin.com/company/hr-path">
+                    <img src="https://i.ibb.co/2NKPN6L/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a title="HR Path Brasil no YouTube" href="https://www.youtube.com/@hrpathbrasil">
+                    <img src="https://i.ibb.co/82RkjXY/youtube.png" alt="YouTube" />
+                </a>
+            </div>
+        </div>
+
+        <style>
+            #balao-wrapper {
+                position: fixed;
+                display: flex;
+                left: 32px;
+                bottom: 32px;
+                z-index: 9999;
+                gap: 12px;
+                cursor: pointer;
+            }
+
+            #balao {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: wheat;
+                max-width: 280px;
+                padding: 12px 16px;
+                font-weight: bold;
+                border-radius: 6px 6px 0 6px;
+                font-size: 0.9rem;
+                color: var(--blue);
+            }
+
+            #avatar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                background-color: var(--blue);
+                flex-shrink: 0;
+            }
+
+            #avatar img {
+                width: 70%;
+            }
+
+            @media screen and (max-width: 767px) {
+                #balao-wrapper {
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+        </style>
+        <div id="balao-wrapper" class="scroll">
+            <div id="avatar">
+                <img src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
+                    alt="Fale com nossos especialistas" />
+            </div>
+            <div id="balao">Fale com nossos especialistas e transforme o RH da sua empresa!</div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll suave para o form
+        const scrollBtns = document.querySelectorAll(".scroll");
+        scrollBtns.forEach(function (btn) {
+            btn.addEventListener("click", function () {
+                document.getElementById("hero-form").scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        // FAQ accordion
+        var questions = document.querySelectorAll(".question");
+        questions.forEach(function (question) {
+            question.addEventListener("click", function () {
+                var answer = this.nextElementSibling;
+                var isOpen = answer.style.display === "block";
+                // Fecha todos
+                document.querySelectorAll(".answer").forEach(a => a.style.display = "none");
+                document.querySelectorAll(".question").forEach(q => q.classList.remove("open"));
+                // Abre o clicado (se estava fechado)
+                if (!isOpen) {
+                    answer.style.display = "block";
+                    this.classList.add("open");
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
