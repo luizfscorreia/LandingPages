@@ -14,13 +14,14 @@
     </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- [NÚMEROS HR PATH] -->
     <meta
       name="description"
-      content="Grupo PHR, agora HR Path — referência em SAP SuccessFactors e Workforce Software na América Latina. 28 anos de experiência, 300+ implementações, premiado pela SAP."
+      content="Grupo PHR, an HR Path Company. HR Path es una consultora global de RR.HH. y soluciones HRIS con 2.600 consultores, 3.000 clientes, presencia en 30 países y 25 años de experiencia."
     />
     <title>
-      Grupo PHR | Agora HR Path — Especialistas em SAP SuccessFactors na América
-      Latina
+      Grupo PHR, an HR Path Company | Especialistas en tecnologías globales para
+      la Gestión de Personas
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,6 +35,12 @@
       h3,
       h4 {
         margin-block: 0;
+        text-wrap: balance;
+      }
+      p,
+      li,
+      .answer {
+        text-wrap: pretty;
       }
       html,
       body {
@@ -43,6 +50,7 @@
         margin: 0;
         padding: 0;
         font-size: 16px;
+        scroll-behavior: smooth;
       }
       h1 {
         font-size: 2.3rem;
@@ -116,6 +124,7 @@
         color: var(--orange);
         cursor: pointer;
         transition: 0.2s ease-in-out all;
+        font-weight: bold;
       }
       .cta::after {
         content: "→";
@@ -199,18 +208,15 @@
     </style>
     <nav id="topmenu">
       <div class="nav-brand">
-        <a
-          href="https://hr-path.com/pt-br/"
-          title="Conheça o site da HR Path Brasil"
-        >
+        <a href="https://hr-path.com/pt-br/" title="Conoce el sitio de HR Path">
           <img
             src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
-            alt="Logotipo HR Path Brasil"
+            alt="Logotipo HR Path"
           />
         </a>
-        <span class="nav-tag">Grupo PHR é HR Path</span>
+        <span class="nav-tag">Grupo PHR, an HR Path Company</span>
       </div>
-      <button class="nav-cta scroll">Fale com um especialista</button>
+      <button class="nav-cta scroll">Habla con un especialista</button>
     </nav>
 
     <!-- HERO -->
@@ -262,7 +268,7 @@
         width: fit-content;
       }
       #hero-content h1 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         line-height: 1.1;
         text-transform: uppercase;
         margin-bottom: 20px;
@@ -275,10 +281,20 @@
         font-size: 1.1rem;
         opacity: 0.9;
       }
+      .hero-stats-label {
+        margin-top: 20px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: rgba(255, 255, 255, 0.75);
+      }
       #hero-stats {
         display: flex;
         gap: 32px;
-        margin-top: 24px;
+        margin-top: 14px;
         flex-wrap: wrap;
       }
       .hero-stat {
@@ -290,11 +306,16 @@
         font-weight: 800;
         color: var(--orange);
         line-height: 1;
+        font-variant-numeric: tabular-nums;
       }
       .hero-stat span {
         font-size: 0.85rem;
         opacity: 0.8;
         margin-top: 4px;
+      }
+      .hero-link {
+        margin-top: 28px;
+        font-size: 0.95rem;
       }
       #hero-form {
         display: flex;
@@ -385,7 +406,7 @@
           flex-direction: column;
         }
         #hero-content h1 {
-          font-size: 2.2rem;
+          font-size: 2.1rem;
         }
         #hero-form {
           max-width: 100%;
@@ -396,73 +417,383 @@
     <div id="hero-wrapper">
       <div id="hero">
         <div id="hero-content">
-          <div class="hero-badge">Grupo PHR agora é HR Path</div>
+          <div class="hero-badge">Grupo PHR, an HR Path Company</div>
           <h1>
-            Especialistas em <span>SAP SuccessFactors</span> e Gestão de Pessoas
-            na América Latina
+            Especialistas en las <span>mejores tecnologías globales</span> para
+            la Gestión de&nbsp;Personas
           </h1>
           <p>
-            Há <strong>28 anos</strong> transformando a gestão de Recursos
-            Humanos de grandes empresas, agora com a força global da HR Path,
-            presente em <strong>28 países</strong> com mais de
-            <strong>2.900 profissionais</strong>.
+            Grupo PHR ahora forma parte de <strong>HR Path</strong>, consultora
+            global en transformación de RR.HH. y soluciones HRIS. El mismo
+            equipo que ya conoces, con el respaldo de una estructura
+            verdaderamente&nbsp;global.
           </p>
+          <!-- [NÚMEROS HR PATH] -->
+          <div class="hero-stats-label">HR Path en cifras</div>
           <div id="hero-stats">
             <div class="hero-stat">
-              <strong>300+</strong
-              ><span>Implementações SAP HCM<br />e WFS realizadas</span>
+              <strong>2.600</strong><span>Consultores<br />de HRIS</span>
             </div>
             <div class="hero-stat">
-              <strong>150+</strong
-              ><span>Consultores certificados<br />em SAP HCM e WFS</span>
+              <strong>30</strong><span>Países con<br />presencia activa</span>
             </div>
             <div class="hero-stat">
-              <strong>60+</strong
-              ><span>Clientes ativos no<br />centro de suporte AMS</span>
+              <strong>3.000</strong
+              ><span>Clientes en<br />diferentes sectores</span>
             </div>
             <div class="hero-stat">
-              <strong>13</strong
-              ><span>Países em projetos<br />multi-país realizados</span>
+              <strong>25</strong><span>Años de<br />experiencia</span>
             </div>
           </div>
+          <a class="cta hero-link" href="#adquisicion">Conoce la adquisición</a>
         </div>
         <div id="hero-form">
-          <h2>Fale com nossos especialistas</h2>
-          <p>Entenda como podemos transformar o RH da sua empresa</p>
+          <h2>Habla con nuestros especialistas</h2>
+          <p>
+            Descubre cómo podemos transformar el área de RR.HH. de tu empresa
+          </p>
           %%content%%
         </div>
       </div>
     </div>
 
-    <!-- QUEM SOMOS -->
+    <!-- ADQUISIÇÃO -->
     <style>
-      #quem-wrapper {
+      #adq-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 86px 24px;
         background-color: white;
       }
-      #quem {
+      #adq {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        max-width: var(--max-width);
+        width: 100%;
+        color: var(--blue);
+      }
+      #adq-top {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
+        gap: 62px;
+        align-items: start;
+      }
+      .adq-eyebrow {
+        font-size: 0.78rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--orange);
+        margin-bottom: 14px;
+      }
+      #adq-content h2 {
+        line-height: 1.15;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      #adq-content h2 span {
+        color: var(--orange);
+      }
+      #adq-content p {
+        color: #444;
+        line-height: 1.7;
+        max-width: 54ch;
+        margin: 0 0 16px;
+      }
+      .adq-keep-title {
+        font-size: 0.78rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--blue);
+        margin: 28px 0 14px;
+      }
+      .adq-keep {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .adq-keep li {
+        position: relative;
+        padding-left: 24px;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #444;
+      }
+      .adq-keep li::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        background-color: var(--orange);
+        position: absolute;
+        left: 0;
+        top: 7px;
+        transform: rotate(45deg);
+      }
+      .adq-link {
+        font-size: 0.95rem;
+      }
+      #adq-timeline {
+        background-color: var(--blue);
+        color: white;
+        padding: 40px;
+      }
+      #adq-timeline h3 {
+        font-size: 1rem;
+        color: var(--orange);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin: 0 0 8px;
+      }
+      .tl-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .tl-item {
+        display: grid;
+        grid-template-columns: 68px 1fr;
+        gap: 20px;
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .tl-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .tl-year {
+        font-size: 1.35rem;
+        font-weight: 800;
+        color: var(--orange);
+        line-height: 1.1;
+        font-variant-numeric: tabular-nums;
+      }
+      .tl-text strong {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.3;
+        margin-bottom: 4px;
+      }
+      .tl-text span {
+        display: block;
+        font-size: 0.88rem;
+        line-height: 1.55;
+        opacity: 0.75;
+        text-wrap: pretty;
+      }
+      .tl-item.current .tl-text strong {
+        color: var(--orange);
+      }
+      #adq-quotes {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+      .adq-quote {
+        margin: 0;
+        padding: 32px;
+        background-color: #f7f7f7;
+        border-left: 3px solid var(--orange);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 18px;
+      }
+      .adq-quote p {
+        font-size: 1.05rem;
+        line-height: 1.65;
+        font-style: italic;
+        color: var(--blue);
+        margin: 0;
+      }
+      .adq-author {
+        font-size: 0.88rem;
+        line-height: 1.4;
+        color: #555;
+      }
+      .adq-author strong {
+        display: block;
+        color: var(--blue);
+        font-size: 0.95rem;
+      }
+      @media (max-width: 900px) {
+        #adq-top,
+        #adq-quotes {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+        #adq-content p {
+          max-width: none;
+        }
+        #adq-timeline {
+          padding: 32px 24px;
+        }
+      }
+    </style>
+    <div id="adq-wrapper">
+      <div id="adq">
+        <div id="adq-top">
+          <div id="adq-content" id="adquisicion">
+            <div class="adq-eyebrow" id="adquisicion">
+              Agosto de 2026 | Adquisición estratégica
+            </div>
+            <h2>Grupo PHR ahora es parte de <span>HR&nbsp;Path</span></h2>
+            <p>
+              HR Path, líder global en consultoría de RR.HH. y soluciones HRIS,
+              anunció la adquisición estratégica de Grupo PHR, especialista en
+              SAP SuccessFactors, SAP HCM y soluciones de gestión de tiempo y
+              asistencia en América&nbsp;Latina.
+            </p>
+            <p>
+              La unión combina las capacidades globales de HR Path con la
+              experiencia regional de Grupo PHR, para acompañar a los clientes
+              con conocimiento local y una transformación de RR.HH. de punta
+              a&nbsp;punta.
+            </p>
+            <div class="adq-keep-title">Lo que se mantiene</div>
+            <ul class="adq-keep">
+              <li>El mismo equipo directivo y los mismos colaboradores</li>
+              <li>
+                Los mismos contratos, puntos de contacto y niveles de servicio
+              </li>
+              <li>La marca, ahora como "Grupo PHR, an HR Path Company"</li>
+            </ul>
+            <a
+              class="cta adq-link"
+              href="https://hr-path.com/en/our-news/hr-path-strengthens-global-presence-with-strategic-acquisition-of-grupo-phr-in-latin-america/2026/08/18/"
+              target="_blank"
+              rel="noopener"
+              >Leer el comunicado oficial</a
+            >
+          </div>
+
+          <div id="adq-timeline">
+            <h3>Una trayectoria en común</h3>
+            <ol class="tl-list">
+              <li class="tl-item">
+                <div class="tl-year">1999</div>
+                <div class="tl-text">
+                  <strong>Nace Grupo PHR</strong>
+                  <span
+                    >Especialistas en soluciones de gestión del capital humano
+                    en la&nbsp;región.</span
+                  >
+                </div>
+              </li>
+              <li class="tl-item">
+                <div class="tl-year">2001</div>
+                <div class="tl-text">
+                  <strong>Fundación de HR Path</strong>
+                  <span
+                    >Con la misión de transformar los Recursos Humanos a
+                    escala&nbsp;global.</span
+                  >
+                </div>
+              </li>
+              <li class="tl-item">
+                <div class="tl-year">2018</div>
+                <div class="tl-text">
+                  <strong>HR Path llega a América Latina</strong>
+                  <span>Inicio de operaciones en la&nbsp;región.</span>
+                </div>
+              </li>
+              <li class="tl-item">
+                <div class="tl-year">2024</div>
+                <div class="tl-text">
+                  <strong>Expansión regional</strong>
+                  <span
+                    >Crecen la presencia y el equipo local en
+                    la&nbsp;región.</span
+                  >
+                </div>
+              </li>
+              <li class="tl-item current">
+                <div class="tl-year">2026</div>
+                <div class="tl-text">
+                  <strong>Grupo PHR se une a HR Path</strong>
+                  <span
+                    >La especialización de Grupo PHR se suma a la cobertura
+                    global de HR&nbsp;Path.</span
+                  >
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="adq-quotes">
+          <blockquote class="adq-quote">
+            <p>
+              “Para nuestros clientes, esta integración significa seguir
+              trabajando con el mismo equipo, el mismo compromiso y la misma
+              calidad de servicio que nos han definido a lo largo de los años,
+              ahora con el respaldo de la experiencia de HR&nbsp;Path.”
+            </p>
+            <div class="adq-author">
+              <strong>Juan Carlos Lobos</strong>CEO de Grupo PHR
+            </div>
+          </blockquote>
+          <blockquote class="adq-quote">
+            <p>
+              “La adquisición de Grupo PHR es un movimiento estratégico que
+              respalda nuestra ambición de convertirnos en el líder global de la
+              transformación de Recursos&nbsp;Humanos.”
+            </p>
+            <div class="adq-author">
+              <strong>Frédéric Van Bellinghen</strong>Partner de HR Path
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- HR PATH EM NÚMEROS -->
+    <style>
+      #quem-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 56px;
+        padding: 86px 24px;
+        background-color: #f7f7f7;
+      }
+      #quem {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr;
         max-width: var(--max-width);
+        width: 100%;
         color: var(--blue);
         gap: 62px;
         align-items: center;
       }
+      #quem-content h2 {
+        line-height: 1.15;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
       #quem-content p {
         color: #444;
+        line-height: 1.7;
+        max-width: 54ch;
+        margin: 0 0 16px;
       }
       .quem-destaque {
         background-color: var(--blue);
         color: white;
-        padding: 32px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
+        padding: 36px 32px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 28px;
+        row-gap: 22px;
       }
       .quem-destaque h3 {
+        grid-column: 1 / -1;
         color: var(--orange);
         margin: 0;
         font-size: 1.1rem;
@@ -472,40 +803,73 @@
       .quem-item {
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 6px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .quem-item.full {
+        grid-column: 1 / -1;
       }
       .quem-item strong {
         font-size: 1.8rem;
         color: var(--orange);
         line-height: 1;
+        font-variant-numeric: tabular-nums;
       }
       .quem-item span {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
+        line-height: 1.45;
         opacity: 0.8;
       }
-      .quem-divider {
-        border: none;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        margin: 0;
+      #phr-strip {
+        display: grid;
+        grid-template-columns: 200px repeat(4, 1fr);
+        gap: 24px;
+        align-items: start;
+        max-width: var(--max-width);
+        width: 100%;
+        padding-top: 32px;
+        border-top: 1px solid #d6d6d6;
+        color: var(--blue);
       }
-      .presenca-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 8px;
-      }
-      .presenca-tag {
-        padding: 5px 12px;
-        background-color: rgba(232, 119, 34, 0.15);
-        color: var(--orange);
-        font-size: 0.82rem;
+      .phr-strip-label {
+        font-size: 0.78rem;
         font-weight: bold;
-        border: 1px solid rgba(232, 119, 34, 0.3);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 1.5;
+        color: #666;
+      }
+      .phr-stat {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .phr-stat strong {
+        font-size: 1.4rem;
+        font-weight: 800;
+        line-height: 1;
+        color: var(--blue);
+        font-variant-numeric: tabular-nums;
+      }
+      .phr-stat span {
+        font-size: 0.82rem;
+        line-height: 1.45;
+        color: #666;
       }
       @media (max-width: 900px) {
         #quem {
           grid-template-columns: 1fr;
           gap: 32px;
+        }
+        #quem-content p {
+          max-width: none;
+        }
+        #phr-strip {
+          grid-template-columns: 1fr 1fr;
+        }
+        .phr-strip-label {
+          grid-column: 1 / -1;
         }
       }
     </style>
@@ -513,62 +877,68 @@
       <div id="quem">
         <div id="quem-content">
           <h2>
-            O Grupo PHR que você conhecia
-            <span style="color: var(--orange)">evoluiu.</span><br />Conheça a HR
-            Path.
+            Conoce <span style="color: var(--orange)">HR Path</span>: alcance
+            global, experiencia&nbsp;local
           </h2>
           <p>
-            O Grupo PHR foi durante anos a referência em implementação de SAP
-            HCM e Workforce Software na América Latina. Em 2023, unimos forças
-            com a <strong>HR Path</strong>, consultoria global de RH, e
-            ampliamos nossa capacidade de atuação.
+            Desde su fundación en 2001, HR Path acompaña a las empresas en la
+            transformación de Recursos Humanos con servicios de consultoría,
+            implementación y gestión de nómina, diseñados para ganar eficiencia
+            e impulsar el&nbsp;crecimiento.
           </p>
+          <!-- [NÚMEROS HR PATH] -->
           <p>
-            Se você era cliente, parceiro ou conhecia o Grupo PHR, pode
-            continuar contando com as mesmas pessoas, a mesma expertise e o
-            mesmo compromisso. Agora com uma capacidade global muito maior.
+            Hoy son 2.600 consultores HRIS en 30 países y 3.000 clientes en
+            diferentes sectores. Con Grupo PHR, esa estructura global suma
+            todavía más especialización para la transformación digital
+            de&nbsp;RR.HH.
           </p>
-          <p>
-            Com presença em
-            <strong>México, Colômbia, Peru, Chile e Argentina</strong>, e toda a
-            estrutura da HR Path com mais de 2.900 profissionais em 28 países,
-            oferecemos uma estrutura ainda mais completa para transformação
-            digital de RH na América Latina.
-          </p>
-          <div class="presenca-tags">
-            <span class="presenca-tag">🇧🇷 Brasil</span>
-            <span class="presenca-tag">🇲🇽 México</span>
-            <span class="presenca-tag">🇨🇴 Colômbia</span>
-            <span class="presenca-tag">🇵🇪 Peru</span>
-            <span class="presenca-tag">🇨🇱 Chile</span>
-            <span class="presenca-tag">🇦🇷 Argentina</span>
+        </div>
+        <!-- [NÚMEROS HR PATH] -->
+        <div class="quem-destaque">
+          <h3>HR Path en cifras globales</h3>
+          <div class="quem-item">
+            <strong>2.600</strong><span>Consultores de HRIS</span>
+          </div>
+          <div class="quem-item">
+            <strong>30</strong><span>Países con presencia activa</span>
+          </div>
+          <div class="quem-item">
+            <strong>3.000</strong><span>Clientes en diferentes sectores</span>
+          </div>
+          <div class="quem-item">
+            <strong>25 años</strong><span>De experiencia</span>
+          </div>
+          <div class="quem-item">
+            <strong>350&nbsp;M€</strong
+            ><span>En ingresos hasta marzo de&nbsp;2026</span>
+          </div>
+          <div class="quem-item">
+            <strong>+900 mil</strong
+            ><span>Empleados en nuestra solución de&nbsp;eSocial</span>
+          </div>
+          <div class="quem-item full">
+            <strong>+300 mil</strong
+            ><span>Horas de soporte y sostenimiento</span>
           </div>
         </div>
-        <div class="quem-destaque">
-          <h3>HR Path em números</h3>
-          <div class="quem-item">
-            <strong>2.900+</strong><span>Profissionais no grupo global</span>
-          </div>
-          <hr class="quem-divider" />
-          <div class="quem-item">
-            <strong>28</strong><span>Países com presença ativa</span>
-          </div>
-          <hr class="quem-divider" />
-          <div class="quem-item">
-            <strong>3.000+</strong><span>Clientes atendidos globalmente</span>
-          </div>
-          <hr class="quem-divider" />
-          <div class="quem-item">
-            <strong>28 anos</strong
-            ><span>De experiência em Capital Humano</span>
-          </div>
-          <hr class="quem-divider" />
-          <div class="quem-item">
-            <strong>150+</strong
-            ><span
-              >Consultores certificados em SAP HCM e WFS na América Latina</span
-            >
-          </div>
+      </div>
+
+      <!-- [NÚMEROS GRUPO PHR] (destaque secundário) -->
+      <div id="phr-strip">
+        <div class="phr-strip-label">La experiencia que Grupo PHR suma</div>
+        <div class="phr-stat">
+          <strong>300+</strong><span>Implementaciones SAP HCM y WFS</span>
+        </div>
+        <div class="phr-stat">
+          <strong>150+</strong
+          ><span>Consultores certificados en SAP HCM y WFS</span>
+        </div>
+        <div class="phr-stat">
+          <strong>60+</strong><span>Clientes activos en soporte AMS</span>
+        </div>
+        <div class="phr-stat">
+          <strong>13</strong><span>Países en proyectos multipaís</span>
         </div>
       </div>
     </div>
@@ -629,10 +999,13 @@
         color: var(--orange);
         font-size: 1rem;
         font-weight: 700;
+        line-height: 1.35;
+        max-width: 28ch;
         margin: 0;
       }
       .premio-card p {
         font-size: 0.9rem;
+        line-height: 1.6;
         opacity: 0.75;
         margin: 0;
       }
@@ -642,43 +1015,46 @@
         }
       }
     </style>
+    <!-- [RECONOCIMIENTOS GRUPO PHR] -->
     <div id="premios-wrapper">
       <div id="premios">
         <div>
           <h2>
-            Reconhecidos como <span>referência SAP</span> na América Latina
+            La experiencia de Grupo PHR, <span>reconocida por&nbsp;SAP</span>
           </h2>
           <p style="opacity: 0.7; max-width: 600px; margin: 0 auto">
-            Nossa trajetória é validada pelos números, pelos clientes e pela
-            própria SAP.
+            Una trayectoria premiada que ahora suma su fuerza a la estructura
+            global de HR&nbsp;Path.
           </p>
         </div>
         <div id="premios-cards">
           <div class="premio-card">
             <div class="premio-icon">★</div>
-            <h4>1º Parceiro da América Latina com SAP Expertise Awards</h4>
+            <h4>1.er socio de América Latina con SAP Expertise&nbsp;Awards</h4>
             <p>
-              Primeiros a receber as certificações de expertise SAP na região,
-              reconhecimento reservado aos parceiros com maior maturidade e
-              resultados comprovados.
+              Primeros en recibir las certificaciones de expertise SAP en la
+              región, un reconocimiento reservado a los socios con mayor madurez
+              y resultados&nbsp;comprobados.
             </p>
           </div>
           <div class="premio-card">
             <div class="premio-icon">🏆</div>
-            <h4>Partner Excellence Award 2024: SuccessFactors Solutions</h4>
+            <h4>
+              Partner Excellence Award 2024: SuccessFactors&nbsp;Solutions
+            </h4>
             <p>
-              Vencedores do prêmio máximo da SAP para parceiros de
-              SuccessFactors em 2024, reconhecendo excelência em implementação e
-              resultados para clientes.
+              Ganadores del máximo premio de SAP para socios de SuccessFactors
+              en 2024, que reconoce la excelencia en implementación y los
+              resultados para&nbsp;clientes.
             </p>
           </div>
           <div class="premio-card">
             <div class="premio-icon">#1</div>
-            <h4>Parceiro WFS com mais implementações na América Latina</h4>
+            <h4>N.º 1 en implementaciones WFS en América&nbsp;Latina</h4>
             <p>
-              Somos o parceiro WorkForce Software com maior número de
-              implementações em toda a América Latina, com expertise comprovada
-              em projetos complexos.
+              El socio de WorkForce Software con mayor número de
+              implementaciones en toda América Latina, con experiencia
+              comprobada en proyectos&nbsp;complejos.
             </p>
           </div>
         </div>
@@ -759,19 +1135,21 @@
     <div id="solucoes-wrapper">
       <div id="solucoes">
         <div id="solucoes-header">
-          <h2>Soluções e <span style="color: var(--orange)">Serviços</span></h2>
+          <h2>
+            Soluciones y <span style="color: var(--orange)">Servicios</span>
+          </h2>
           <p>
-            Do recrutamento à folha de pagamento, cobrimos toda a jornada do
-            colaborador com as melhores tecnologias do mercado.
+            Del reclutamiento a la nómina, cubrimos todo el recorrido del
+            colaborador con las mejores tecnologías del&nbsp;mercado.
           </p>
         </div>
         <div id="solucoes-grid">
           <div class="solucao-card">
             <h3>Talent Management</h3>
             <p>
-              Implementação e configuração completa do módulo de gestão de
-              talentos do SAP SuccessFactors, do recrutamento ao desenvolvimento
-              de carreira.
+              Implementación y configuración completa del módulo de gestión del
+              talento de SAP SuccessFactors, del reclutamiento al desarrollo
+              de&nbsp;carrera.
             </p>
             <div class="solucao-tags">
               <span class="solucao-tag">SmartRecruiters</span
@@ -784,23 +1162,23 @@
           <div class="solucao-card">
             <h3>HR Core & Payroll</h3>
             <p>
-              Gestão completa do core de RH e folha de pagamento em nuvem,
-              incluindo migração do ambiente On-Premise para SAP ECP.
+              Gestión completa del core de RR.HH. y de la nómina en la nube,
+              incluida la migración del entorno On-Premise a SAP&nbsp;ECP.
             </p>
             <div class="solucao-tags">
               <span class="solucao-tag">Time Tracking</span
-              ><span class="solucao-tag">Payroll / Folha</span
+              ><span class="solucao-tag">Payroll / Nómina</span
               ><span class="solucao-tag">Document Management</span
               ><span class="solucao-tag">HR Service Delivery</span
-              ><span class="solucao-tag">Migração para ECP</span>
+              ><span class="solucao-tag">Migración a ECP</span>
             </div>
           </div>
           <div class="solucao-card">
             <h3>Workforce Software (WFS)</h3>
             <p>
-              Líderes em implementações WFS na América Latina. Controle de
-              jornada, previsão de demanda e gestão de escalas para operações
-              complexas.
+              Líderes en implementaciones WFS en América Latina. Control de
+              jornada, previsión de demanda y gestión de turnos para operaciones
+              complejas.
             </p>
             <div class="solucao-tags">
               <span class="solucao-tag">Time & Attendance</span
@@ -808,26 +1186,27 @@
               ><span class="solucao-tag">Scheduling</span>
             </div>
           </div>
+          <!-- [NÚMEROS GRUPO PHR: 60+ clientes AMS] -->
           <div class="solucao-card">
-            <h3>Suporte AMS</h3>
+            <h3>Soporte AMS</h3>
             <p>
-              Centro de suporte especializado para 60+ clientes ativos, com
-              correções, melhorias contínuas, suporte funcional e técnico para o
-              seu ambiente SAP.
+              Centro de soporte especializado de Grupo PHR para más de 60
+              clientes activos, con correcciones, mejoras continuas y soporte
+              funcional y técnico para tu entorno&nbsp;SAP.
             </p>
             <div class="solucao-tags">
-              <span class="solucao-tag">Suporte Funcional</span
-              ><span class="solucao-tag">Suporte Técnico</span
+              <span class="solucao-tag">Soporte Funcional</span
+              ><span class="solucao-tag">Soporte Técnico</span
               ><span class="solucao-tag">ABAP</span
-              ><span class="solucao-tag">Melhorias Contínuas</span>
+              ><span class="solucao-tag">Mejoras Continuas</span>
             </div>
           </div>
           <div class="solucao-card">
             <h3>Business AI & Joule</h3>
             <p>
-              Implementação de soluções de Inteligência Artificial integradas ao
-              SAP SuccessFactors: contratação, desenvolvimento, folha e
-              upskilling.
+              Implementación de soluciones de Inteligencia Artificial integradas
+              a SAP SuccessFactors: contratación, desarrollo, nómina
+              y&nbsp;upskilling.
             </p>
             <div class="solucao-tags">
               <span class="solucao-tag">Joule</span
@@ -839,9 +1218,9 @@
           <div class="solucao-card">
             <h3>Business Data Cloud & Analytics</h3>
             <p>
-              Modelagem e integração de dados de RH com SAP Datasphere,
-              Analytics Cloud e Databricks para decisões baseadas em dados
-              confiáveis.
+              Modelado e integración de datos de RR.HH. con SAP Datasphere,
+              Analytics Cloud y Databricks para decisiones basadas en datos
+              confiables.
             </p>
             <div class="solucao-tags">
               <span class="solucao-tag">SAP Datasphere</span
@@ -868,10 +1247,9 @@
         flex-direction: column;
         max-width: var(--max-width);
         width: 100%;
-        gap: 48px;
+        gap: 56px;
         color: var(--blue);
       }
-      /* Top row: steps + content side by side */
       #jump-top {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -895,43 +1273,59 @@
       .jump-step {
         display: flex;
         align-items: flex-start;
-        gap: 20px;
-        padding: 20px 0;
+        gap: 22px;
+        padding: 22px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       }
       .jump-step:last-child {
         border-bottom: none;
+        padding-bottom: 0;
       }
       .jump-number {
         font-size: 2rem;
         font-weight: 800;
         color: var(--orange);
         line-height: 1;
-        min-width: 40px;
+        min-width: 44px;
       }
       .jump-step-content {
         color: white;
       }
       .jump-step-content strong {
         display: block;
-        font-size: 1rem;
-        margin-bottom: 4px;
+        font-size: 1.05rem;
+        line-height: 1.3;
+        margin-bottom: 6px;
       }
       .jump-step-content span {
-        font-size: 0.85rem;
-        opacity: 0.7;
+        display: block;
+        font-size: 0.88rem;
+        line-height: 1.55;
+        opacity: 0.72;
+        text-wrap: pretty;
+      }
+      #jump-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       #jump-content h2 {
-        margin-bottom: 12px;
+        line-height: 1.15;
+        margin-top: 0;
+        margin-bottom: 20px;
       }
       #jump-content h2 span {
         color: var(--orange);
       }
       #jump-content p {
         color: #555;
+        line-height: 1.7;
+        max-width: 54ch;
+        margin: 0 0 16px;
       }
       .jump-badge {
         display: inline-block;
+        width: fit-content;
         background-color: var(--orange);
         color: white;
         padding: 6px 14px;
@@ -939,29 +1333,28 @@
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 0.08em;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
       }
-
-      /* Modules row: 3 columns x 2 rows below */
       #jump-modules {
         width: 100%;
       }
       #jump-modules h4 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 700;
+        line-height: 1.3;
         color: var(--blue);
-        margin: 0 0 16px;
+        margin: 0 0 20px;
       }
       .jump-modules-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 12px;
       }
       .jump-module-item {
         display: flex;
         align-items: flex-start;
-        gap: 10px;
-        padding: 14px;
+        gap: 14px;
+        padding: 18px 16px;
         background-color: #f7f7f7;
         border-left: 3px solid var(--orange);
       }
@@ -969,25 +1362,31 @@
         font-size: 1.2rem;
         font-weight: 800;
         color: var(--orange);
-        line-height: 1;
-        min-width: 24px;
+        line-height: 1.1;
+        min-width: 28px;
       }
       .jump-module-text strong {
         display: block;
-        font-size: 0.85rem;
+        font-size: 0.92rem;
         font-weight: 700;
+        line-height: 1.3;
         color: var(--blue);
-        margin-bottom: 2px;
+        margin-bottom: 4px;
       }
       .jump-module-text span {
-        font-size: 0.78rem;
+        display: block;
+        font-size: 0.82rem;
+        line-height: 1.5;
         color: #666;
+        text-wrap: pretty;
       }
-
       @media (max-width: 900px) {
         #jump-top {
           grid-template-columns: 1fr;
           gap: 32px;
+        }
+        #jump-content p {
+          max-width: none;
         }
         .jump-modules-grid {
           grid-template-columns: 1fr 1fr;
@@ -1001,7 +1400,6 @@
     </style>
     <div id="jump-wrapper">
       <div id="jump">
-        <!-- TOP: Steps + Content lado a lado -->
         <div id="jump-top">
           <div id="jump-visual">
             <div
@@ -1010,7 +1408,7 @@
                 font-size: 2.5rem;
                 font-weight: 800;
                 letter-spacing: 0.05em;
-                margin-bottom: 24px;
+                margin-bottom: 16px;
               "
             >
               JUMP
@@ -1018,29 +1416,30 @@
             <div class="jump-step">
               <div class="jump-number">01</div>
               <div class="jump-step-content">
-                <strong>Pacotes pré-configurados</strong>
+                <strong>Paquetes preconfigurados</strong>
                 <span
-                  >Melhores práticas prontas para o seu segmento, acelerando o
-                  início do projeto</span
+                  >Mejores prácticas listas para tu sector, que aceleran el
+                  inicio del&nbsp;proyecto</span
                 >
               </div>
             </div>
             <div class="jump-step">
               <div class="jump-number">02</div>
               <div class="jump-step-content">
-                <strong>Implementação rápida</strong>
+                <strong>Implementación rápida</strong>
                 <span
-                  >Cronogramas reduzidos sem abrir mão de qualidade e aderência
-                  ao processo</span
+                  >Cronogramas reducidos sin renunciar a la calidad ni a la
+                  adherencia al&nbsp;proceso</span
                 >
               </div>
             </div>
             <div class="jump-step">
               <div class="jump-number">03</div>
               <div class="jump-step-content">
-                <strong>Escalabilidade garantida</strong>
+                <strong>Escalabilidad garantizada</strong>
                 <span
-                  >A solução cresce junto com o seu negócio, modularmente</span
+                  >La solución crece junto con tu negocio, de
+                  forma&nbsp;modular</span
                 >
               </div>
             </div>
@@ -1049,44 +1448,45 @@
               <div class="jump-step-content">
                 <strong>Go-live seguro</strong>
                 <span
-                  >Suporte estruturado no pós-implantação para garantir adoção e
-                  resultados</span
+                  >Soporte estructurado después de la implementación para
+                  garantizar adopción y&nbsp;resultados</span
                 >
               </div>
             </div>
           </div>
           <div id="jump-content">
-            <div class="jump-badge">Nossa metodologia</div>
+            <div class="jump-badge">Nuestra metodología</div>
             <h2>
-              Implementações mais rápidas e seguras com a metodologia
+              Implementaciones más rápidas y seguras con la metodología
               <span>JUMP</span>
             </h2>
             <p>
-              O <strong>JUMP</strong> é a metodologia exclusiva desenvolvida
-              pelo Grupo PHR, agora HR Path, para implementação acelerada,
-              escalável e pré-empacotada do SAP SuccessFactors.
+              <strong>JUMP</strong> es la metodología exclusiva desarrollada por
+              Grupo PHR, an HR Path Company, para una implementación acelerada,
+              escalable y preempaquetada de SAP&nbsp;SuccessFactors.
             </p>
             <p>
-              Com o JUMP, reduzimos riscos, aceleramos o tempo de valor e
-              garantimos que o projeto seja entregue com foco em
-              previsibilidade, qualidade e cumprimento do escopo, mesmo em
-              organizações complexas e multi-país.
+              Con JUMP reducimos riesgos, aceleramos el tiempo de obtención de
+              valor y aseguramos que el proyecto se entregue con foco en
+              previsibilidad, calidad y cumplimiento del alcance, incluso en
+              organizaciones complejas y&nbsp;multipaís.
             </p>
+            <!-- [NÚMEROS GRUPO PHR: 150+, 300+, 28 años] -->
             <p>
-              É a combinação de
-              <strong>150+ consultores certificados</strong> com uma metodologia
-              testada em <strong>300+ implementações</strong> ao longo de 28
-              anos.
+              Es la combinación de los
+              <strong>150+ consultores certificados</strong> de Grupo PHR con
+              una metodología probada en
+              <strong>300+ implementaciones</strong> a lo largo de 28 años,
+              ahora con el respaldo global de HR&nbsp;Path.
             </p>
             <button class="cta-button scroll" style="margin-top: 20px">
-              Conheça o JUMP com nossos especialistas
+              Conoce JUMP con nuestros especialistas
             </button>
           </div>
         </div>
 
-        <!-- MÓDULOS: 3 colunas x 2 linhas abaixo -->
         <div id="jump-modules">
-          <h4>Módulos cobertos pela metodologia JUMP</h4>
+          <h4>Módulos cubiertos por la metodología JUMP</h4>
           <div class="jump-modules-grid">
             <div class="jump-module-item">
               <div class="jump-module-letter">SF</div>
@@ -1106,14 +1506,16 @@
               <div class="jump-module-letter">AI</div>
               <div class="jump-module-text">
                 <strong>Business AI & Joule</strong>
-                <span>Agentes de IA, automação e copilot de RH</span>
+                <span
+                  >Agentes de IA, automatización y copiloto de&nbsp;RR.HH.</span
+                >
               </div>
             </div>
             <div class="jump-module-item">
               <div class="jump-module-letter">WF</div>
               <div class="jump-module-text">
                 <strong>Workforce Software</strong>
-                <span>Jornada, escalas, forecasting e compliance</span>
+                <span>Jornada, turnos, forecasting y&nbsp;compliance</span>
               </div>
             </div>
             <div class="jump-module-item">
@@ -1126,8 +1528,10 @@
             <div class="jump-module-item">
               <div class="jump-module-letter">IN</div>
               <div class="jump-module-text">
-                <strong>Integrações & ABAP</strong>
-                <span>Middleware, customizações e conectores locais</span>
+                <strong>Integraciones & ABAP</strong>
+                <span
+                  >Middleware, personalizaciones y conectores&nbsp;locales</span
+                >
               </div>
             </div>
           </div>
@@ -1233,12 +1637,13 @@
       <div id="videos">
         <div id="videos-header">
           <h2>
-            Veja o
-            <span style="color: var(--orange)">SAP SuccessFactors</span> em ação
+            Mira
+            <span style="color: var(--orange)">SAP SuccessFactors</span> en
+            acción
           </h2>
           <p>
-            Assista aos vídeos abaixo e entenda como a plataforma e a
-            inteligência artificial transformam o dia a dia do RH.
+            Mira los videos a continuación y descubre cómo la plataforma y la
+            inteligencia artificial transforman el día a día de&nbsp;RR.HH.
           </p>
         </div>
         <div id="videos-grid">
@@ -1246,14 +1651,14 @@
             <div class="video-embed">
               <div class="video-placeholder">
                 <div class="video-placeholder-icon">▶</div>
-                <span>Link do vídeo 1<br />a confirmar</span>
+                <span>Enlace del video 1<br />por confirmar</span>
               </div>
             </div>
             <div class="video-card-info">
-              <h4>SAP SuccessFactors: visão geral da plataforma</h4>
+              <h4>SAP SuccessFactors: visión general de la plataforma</h4>
               <p>
-                Conheça os principais módulos e a proposta de valor da suíte HCM
-                da SAP.
+                Conoce los principales módulos y la propuesta de valor de la
+                suite HCM de SAP.
               </p>
             </div>
           </div>
@@ -1261,14 +1666,14 @@
             <div class="video-embed">
               <div class="video-placeholder">
                 <div class="video-placeholder-icon">▶</div>
-                <span>Link do vídeo 2<br />a confirmar</span>
+                <span>Enlace del video 2<br />por confirmar</span>
               </div>
             </div>
             <div class="video-card-info">
-              <h4>SAP Business AI e Joule no RH</h4>
+              <h4>SAP Business AI y Joule en RR.HH.</h4>
               <p>
-                Veja como os agentes de IA da SAP automatizam processos e apoiam
-                decisões de gestão de pessoas.
+                Descubre cómo los agentes de IA de SAP automatizan procesos y
+                apoyan las decisiones de gestión de personas.
               </p>
             </div>
           </div>
@@ -1276,14 +1681,14 @@
             <div class="video-embed">
               <div class="video-placeholder">
                 <div class="video-placeholder-icon">▶</div>
-                <span>Link do vídeo 3<br />a confirmar</span>
+                <span>Enlace del video 3<br />por confirmar</span>
               </div>
             </div>
             <div class="video-card-info">
-              <h4>Casos de sucesso: HR Path na América Latina</h4>
+              <h4>Casos de éxito: HR Path en América Latina</h4>
               <p>
-                Resultados reais de empresas que transformaram o RH com SAP
-                SuccessFactors e a metodologia JUMP.
+                Resultados reales de empresas que transformaron RR.HH. con SAP
+                SuccessFactors y la metodología JUMP.
               </p>
             </div>
           </div>
@@ -1366,85 +1771,97 @@
       <div id="diferenciais">
         <div id="diferenciais-header">
           <h2>
-            Por que as maiores empresas da
-            <span style="color: var(--orange)">América Latina</span> escolhem o
-            Grupo PHR / HR Path?
+            ¿Por qué elegir a
+            <span style="color: var(--orange)">HR Path</span> y Grupo&nbsp;PHR?
           </h2>
           <p>
-            Nossa expertise vai muito além da tecnologia. Entendemos os desafios
-            reais do RH latino-americano, da complexidade da legislação
-            trabalhista brasileira a projetos multi-país envolvendo múltiplas
-            moedas, idiomas e culturas.
+            Nuestra experiencia va mucho más allá de la tecnología. Entendemos
+            los desafíos reales de RR.HH., desde la complejidad de la
+            legislación laboral de cada país hasta proyectos multipaís con
+            múltiples monedas, idiomas y&nbsp;culturas.
           </p>
         </div>
         <div id="diferenciais-list">
+          <!-- [NÚMEROS HR PATH] -->
           <div class="diferencial-item">
             <div class="diferencial-num">01</div>
             <div class="diferencial-text">
-              <h4>
-                Parceiro SAP premiado com maior expertise na América Latina
-              </h4>
+              <h4>Fuerza global con ADN local</h4>
               <p>
-                Primeiros parceiros da LatAm a receber o SAP Expertise Award e
-                vencedores do Partner Excellence Award 2024 em SuccessFactors,
-                reconhecimento pelos melhores resultados.
+                Toda la capacidad global de HR Path, con 2.600 consultores HRIS
+                en 30 países y 3.000 clientes en diferentes sectores, sumada a
+                la cercanía, el contexto cultural y el conocimiento de
+                cada&nbsp;mercado.
               </p>
             </div>
           </div>
+          <!-- [RECONOCIMIENTOS GRUPO PHR] -->
           <div class="diferencial-item">
             <div class="diferencial-num">02</div>
             <div class="diferencial-text">
               <h4>
-                150+ consultores certificados em SAP HCM e Workforce Software
+                Socio SAP premiado con mayor expertise en América&nbsp;Latina
               </h4>
               <p>
-                Time especializado com certificações funcionais, técnicas, ABAP
-                e gerenciais, com profundo conhecimento de processos de RH e da
-                legislação local.
+                Grupo PHR fue el primer socio de LatAm en recibir el SAP
+                Expertise Award y ganó el Partner Excellence Award 2024 en
+                SuccessFactors, un reconocimiento a los mejores&nbsp;resultados.
               </p>
             </div>
           </div>
+          <!-- [NÚMEROS GRUPO PHR: 150+] -->
           <div class="diferencial-item">
             <div class="diferencial-num">03</div>
             <div class="diferencial-text">
-              <h4>Experiência real em projetos multi-país e multi-moeda</h4>
+              <h4>
+                150+ consultores certificados en SAP HCM y
+                Workforce&nbsp;Software
+              </h4>
               <p>
-                Mais de 13 países envolvidos em projetos que exigiram gestão de
-                múltiplas legislações, idiomas e contextos culturais, com foco
-                em previsibilidade, qualidade e cumprimento do escopo.
+                Equipo especializado de Grupo PHR con certificaciones
+                funcionales, técnicas, ABAP y de gestión, con profundo
+                conocimiento de los procesos de RR.HH. y de la
+                legislación&nbsp;local.
               </p>
             </div>
           </div>
+          <!-- [NÚMEROS GRUPO PHR: 13 países] -->
           <div class="diferencial-item">
             <div class="diferencial-num">04</div>
             <div class="diferencial-text">
-              <h4>Suporte contínuo com AMS para 60+ clientes ativos</h4>
+              <h4>
+                Experiencia real en proyectos multipaís y&nbsp;multimoneda
+              </h4>
               <p>
-                Mais de 60 empresas contam com nosso centro de suporte
-                especializado para correções, melhorias e evolução contínua dos
-                seus ambientes SAP.
+                Grupo PHR ya involucró más de 13 países en proyectos que
+                exigieron la gestión de múltiples legislaciones, idiomas y
+                contextos culturales, con foco en previsibilidad, calidad y
+                cumplimiento del&nbsp;alcance.
               </p>
             </div>
           </div>
+          <!-- [NÚMEROS GRUPO PHR: 60+] -->
           <div class="diferencial-item">
             <div class="diferencial-num">05</div>
             <div class="diferencial-text">
-              <h4>Líderes em Workforce Software na América Latina</h4>
+              <h4>
+                Soporte continuo con AMS para más de 60 clientes&nbsp;activos
+              </h4>
               <p>
-                O maior número de implementações WFS da região, com domínio
-                comprovado em controle de jornada, escalas complexas e
-                forecasting de mão de obra.
+                Más de 60 empresas cuentan con el centro de soporte
+                especializado de Grupo PHR para correcciones, mejoras y
+                evolución continua de sus entornos&nbsp;SAP.
               </p>
             </div>
           </div>
           <div class="diferencial-item">
             <div class="diferencial-num">06</div>
             <div class="diferencial-text">
-              <h4>Força global com DNA local</h4>
+              <h4>Líderes en Workforce Software en América&nbsp;Latina</h4>
               <p>
-                Toda a capacidade da HR Path, 2.900+ profissionais em 28 países,
-                3.000+ clientes, com a proximidade, o contexto cultural e o
-                conhecimento do mercado latino-americano.
+                El mayor número de implementaciones WFS de la región, con
+                dominio comprobado en control de jornada, turnos complejos y
+                forecasting de mano&nbsp;de&nbsp;obra.
               </p>
             </div>
           </div>
@@ -1551,31 +1968,34 @@
       <div id="cta-final">
         <div>
           <h2>
-            Pronto para levar o RH da sua empresa ao <span>próximo nível</span>?
+            ¿Listo para llevar el área de RR.HH. de tu empresa al
+            <span>siguiente nivel</span>?
           </h2>
           <p>
-            Seja você um cliente antigo do Grupo PHR, uma empresa que está
-            conhecendo nossas soluções, ou alguém que quer entender melhor o que
-            fazemos, nosso time está pronto para conversar.
+            Ya seas un cliente de Grupo PHR, una empresa que está conociendo
+            nuestras soluciones o alguien que quiere entender mejor lo que
+            hacemos, nuestro equipo está listo para&nbsp;conversar.
           </p>
           <ul>
-            <li>Diagnóstico gratuito do seu ambiente SAP atual</li>
-            <li>Apresentação das soluções mais adequadas ao seu cenário</li>
-            <li>Roadmap personalizado para transformação digital do RH</li>
-            <li>Cases de referência no seu setor e porte de empresa</li>
+            <li>Diagnóstico gratuito de tu entorno SAP actual</li>
+            <li>Presentación de las soluciones más adecuadas a tu escenario</li>
+            <li>
+              Roadmap personalizado para la transformación digital de RR.HH.
+            </li>
+            <li>Casos de referencia en tu sector y tamaño de empresa</li>
           </ul>
         </div>
         <div id="cta-final-action">
-          <h3>Fale com um especialista</h3>
+          <h3>Habla con un especialista</h3>
           <p>
-            Preencha o formulário no início desta página ou clique abaixo para
-            iniciar a conversa agora mesmo.
+            Completa el formulario al inicio de esta página o haz clic abajo
+            para iniciar la conversación ahora&nbsp;mismo.
           </p>
           <button class="cta-button-white scroll">
-            Quero falar com um especialista
+            Quiero hablar con un especialista
           </button>
           <p style="font-size: 0.8rem; opacity: 0.5">
-            Retornaremos o mais rápido possível. Sem compromisso.
+            Responderemos lo más rápido posible. Sin compromiso.
           </p>
         </div>
       </div>
@@ -1654,70 +2074,92 @@
       }
     </style>
     <div id="faq_wrapper">
-      <h2>Perguntas <span style="color: var(--orange)">Frequentes</span></h2>
-      <p>Tire suas dúvidas sobre a HR Path, o Grupo PHR e nossas soluções.</p>
+      <h2>Preguntas <span style="color: var(--orange)">Frecuentes</span></h2>
+      <p>Resuelve tus dudas sobre HR Path, Grupo PHR y nuestras soluciones.</p>
       <ul id="faq">
-        <li class="question">O Grupo PHR deixou de existir?</li>
+        <li class="question">¿Grupo PHR dejó de existir?</li>
         <div class="answer">
-          Não. O Grupo PHR se uniu à <strong>HR Path</strong>, uma consultoria
-          global de RH com presença em 28 países. A equipe, a expertise e o
-          portfólio de soluções continuam, agora com uma capacidade global ainda
-          maior. Todos os compromissos, projetos e contratos de clientes foram
-          mantidos.
+          No. Grupo PHR fue adquirido por <strong>HR Path</strong> en 2026 y
+          sigue operando bajo la marca
+          <strong>"Grupo PHR, an HR Path Company"</strong>. El equipo directivo,
+          los colaboradores y el portafolio de soluciones continúan, ahora con
+          una capacidad global aún mayor. Todos los compromisos, proyectos y
+          contratos de clientes se&nbsp;mantuvieron.
         </div>
-        <li class="question">O que é a HR Path e o que ela faz?</li>
+        <li class="question">¿Cuándo se concretó la adquisición?</li>
         <div class="answer">
-          A HR Path é uma consultoria global especializada em transformação
-          digital de Recursos Humanos, com mais de
-          <strong>2.900 profissionais em 28 países</strong> e
-          <strong>3.000+ clientes</strong> ao redor do mundo. Na América Latina,
-          o Grupo PHR é a operação da HR Path, com foco em SAP SuccessFactors,
-          Workforce Software e soluções de IA para RH.
+          HR Path anunció la adquisición estratégica de Grupo PHR en
+          <strong>agosto de 2026</strong>, como parte de su estrategia de
+          crecimiento en América Latina. Puedes leer el
+          <a
+            href="https://hr-path.com/en/our-news/hr-path-strengthens-global-presence-with-strategic-acquisition-of-grupo-phr-in-latin-america/2026/08/18/"
+            target="_blank"
+            rel="noopener"
+            style="color: var(--orange)"
+            >comunicado oficial</a
+          >
+          en el sitio de HR&nbsp;Path.
+        </div>
+        <!-- [NÚMEROS HR PATH] -->
+        <li class="question">¿Qué es HR Path y qué hace?</li>
+        <div class="answer">
+          HR Path es una consultora global especializada en la transformación
+          digital de Recursos Humanos, fundada en 2001, con
+          <strong>2.600 consultores HRIS en 30 países</strong> y
+          <strong>3.000 clientes</strong> en diferentes sectores. Ofrece
+          servicios de consultoría, implementación y gestión de nómina. Con
+          Grupo PHR, refuerza su foco en SAP SuccessFactors, Workforce Software
+          y soluciones de IA para&nbsp;RR.HH.
         </div>
         <li class="question">
-          Quais soluções o Grupo PHR / HR Path implementa?
+          ¿Qué soluciones implementa Grupo PHR / HR Path?
         </li>
         <div class="answer">
-          Implementamos e suportamos o portfólio completo de SAP para RH:
+          Implementamos y damos soporte a todo el portafolio de SAP para RR.HH.:
           <strong>SAP SuccessFactors</strong> (Talent Management, HR Core,
-          Payroll), <strong>WorkForce Software</strong> (controle de jornada,
-          escalas e forecasting), <strong>SAP Business AI e Joule</strong>,
+          Payroll), <strong>WorkForce Software</strong> (control de jornada,
+          turnos y forecasting), <strong>SAP Business AI y Joule</strong>,
           <strong>Business Data Cloud</strong> (Analytics, Datasphere,
-          Databricks), além de integrações, desenvolvimentos customizados (ABAP)
-          e DocuSign.
+          Databricks), además de integraciones, desarrollos personalizados
+          (ABAP) y&nbsp;DocuSign.
         </div>
-        <li class="question">O que é o suporte AMS e como funciona?</li>
+        <!-- [NÚMEROS GRUPO PHR: 60+] -->
+        <li class="question">¿Qué es el soporte AMS y cómo funciona?</li>
         <div class="answer">
-          O AMS (Application Management Services) é o nosso centro de suporte
-          especializado para clientes SAP. Mais de
-          <strong>60 empresas</strong> contam com o AMS para correções,
-          melhorias contínuas, suporte funcional e técnico, garantindo que o
-          ambiente SAP esteja sempre atualizado e funcionando com máxima
-          performance.
+          AMS (Application Management Services) es el centro de soporte
+          especializado de Grupo PHR para clientes SAP. Más de
+          <strong>60 empresas</strong> cuentan con AMS para correcciones,
+          mejoras continuas y soporte funcional y técnico, lo que garantiza que
+          el entorno SAP esté siempre actualizado y funcione con
+          máximo&nbsp;rendimiento.
         </div>
-        <li class="question">O que é a metodologia JUMP?</li>
+        <li class="question">¿Qué es la metodología JUMP?</li>
         <div class="answer">
-          O <strong>JUMP</strong> é a metodologia exclusiva do Grupo PHR / HR
-          Path para implementação acelerada do SAP SuccessFactors. Por meio de
-          pacotes pré-configurados com melhores práticas, reduzimos o tempo de
-          implementação, os riscos do projeto e o investimento inicial, sem
-          abrir mão de qualidade e aderência aos processos da empresa.
+          <strong>JUMP</strong> es la metodología exclusiva de Grupo PHR, an HR
+          Path Company, para la implementación acelerada de SAP SuccessFactors.
+          Mediante paquetes preconfigurados con mejores prácticas, reducimos el
+          tiempo de implementación, los riesgos del proyecto y la inversión
+          inicial, sin renunciar a la calidad ni a la adherencia a los procesos
+          de la&nbsp;empresa.
         </div>
-        <li class="question">Vocês atendem projetos multi-país?</li>
+        <!-- [NÚMEROS HR PATH: 30 países] + [NÚMEROS GRUPO PHR: 13 países] -->
+        <li class="question">¿Atienden proyectos multipaís?</li>
         <div class="answer">
-          Sim. Temos experiência comprovada em projetos envolvendo
-          <strong>13 países</strong>, com gestão de múltiplas moedas, idiomas,
-          legislações e culturas. Atendemos clientes com operações no Brasil,
-          México, Colômbia, Peru, Chile, Argentina e outros países da América
-          Latina, sempre com squads locais e suporte global da HR Path.
+          Sí. Contamos con el respaldo global de HR Path en
+          <strong>30 países</strong> y con la experiencia de Grupo PHR en
+          proyectos que involucran <strong>13 países</strong>, con gestión de
+          múltiples monedas, idiomas, legislaciones y culturas, siempre con
+          equipos&nbsp;locales.
         </div>
-        <li class="question">Era cliente do Grupo PHR. O que muda para mim?</li>
+        <!-- [NÚMEROS HR PATH: 2.600] -->
+        <li class="question">Era cliente de Grupo PHR. ¿Qué cambia para mí?</li>
         <div class="answer">
-          Para clientes existentes, a transição é <strong>transparente</strong>:
-          seu contrato, ponto de contato e nível de serviço são mantidos. O que
-          muda é para melhor: você agora tem acesso a uma rede global de mais de
-          2.900 profissionais e às mais recentes inovações em IA e Analytics que
-          a HR Path traz ao portfólio.
+          Para los clientes actuales, la transición es
+          <strong>transparente</strong>: tu contrato, punto de contacto y nivel
+          de servicio se mantienen. Lo que cambia es para mejor: ahora tienes
+          acceso a la red global de 2.600 consultores HRIS de HR Path y a las
+          innovaciones más recientes en IA y Analytics que HR Path suma
+          al&nbsp;portafolio.
         </div>
       </ul>
     </div>
@@ -1833,35 +2275,33 @@
     <footer id="footer-wrapper">
       <div id="footer">
         <div id="footer-brand">
-          <a href="https://hr-path.com/pt-br/" title="Conheça nosso site">
+          <a href="https://hr-path.com/pt-br/" title="Conoce nuestro sitio">
             <img
               src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
-              alt="Logotipo HR Path Brasil"
+              alt="Logotipo HR Path"
             />
           </a>
           <span
-            >HR Path Brasil | Grupo PHR<br />© HR Path, todos os direitos
+            >Grupo PHR, an HR Path Company<br />© HR Path, todos los derechos
             reservados.</span
           >
         </div>
         <div id="footer-socials">
-          <a
-            title="HR Path Brasil no Facebook"
-            href="https://www.facebook.com/HRPath/"
+          <a title="HR Path en Facebook" href="https://www.facebook.com/HRPath/"
             ><img src="https://i.ibb.co/KKsMqTw/facebook.png" alt="Facebook"
           /></a>
           <a
-            title="HR Path Brasil no Instagram"
+            title="HR Path en Instagram"
             href="https://www.instagram.com/hr_path_brasil/"
             ><img src="https://i.ibb.co/r79gk13/instagram.png" alt="Instagram"
           /></a>
           <a
-            title="HR Path Brasil no LinkedIn"
+            title="HR Path en LinkedIn"
             href="https://www.linkedin.com/company/hr-path"
             ><img src="https://i.ibb.co/2NKPN6L/linkedin.png" alt="LinkedIn"
           /></a>
           <a
-            title="HR Path Brasil no YouTube"
+            title="HR Path en YouTube"
             href="https://www.youtube.com/@hrpathbrasil"
             ><img src="https://i.ibb.co/82RkjXY/youtube.png" alt="YouTube"
           /></a>
@@ -1871,11 +2311,12 @@
         <div id="avatar">
           <img
             src="https://storage.pardot.com/707483/1753470231ZeUc1Kyy/brand_white.png"
-            alt="Fale com nossos especialistas"
+            alt="Habla con nuestros especialistas"
           />
         </div>
         <div id="balao">
-          Fale com nossos especialistas e transforme o RH da sua empresa!
+          ¡Habla con nuestros especialistas y transforma el área de RR.HH. de tu
+          empresa!
         </div>
       </div>
     </footer>
