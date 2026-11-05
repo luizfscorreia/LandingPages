@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="es">
   <head>
     <style>
       :root {
@@ -17,7 +17,7 @@
     <!-- [NÚMEROS HR PATH] -->
     <meta
       name="description"
-      content="Grupo PHR, an HR Path Company. HR Path es una consultora global de RR.HH. y soluciones HRIS con 2.600 consultores, 3.000 clientes, presencia en 30 países y 25 años de experiencia."
+      content="Grupo PHR, an HR Path Company. HR Path es una consultora global de RR.HH. y soluciones HRIS con más de 2.900 profesionales de HRIS, más de 3.000 clientes, 360 M€ en ingresos y presencia en 34 países."
     />
     <title>
       Grupo PHR, an HR Path Company | Especialistas en tecnologías globales para
@@ -432,17 +432,19 @@
           <div class="hero-stats-label">HR Path en cifras</div>
           <div id="hero-stats">
             <div class="hero-stat">
-              <strong>2.600</strong><span>Consultores<br />de HRIS</span>
+              <strong>+2.900</strong
+              ><span>Profesionales de HRIS<br />a tiempo completo</span>
             </div>
             <div class="hero-stat">
-              <strong>30</strong><span>Países con<br />presencia activa</span>
+              <strong>+3.000</strong
+              ><span>Clientes en<br />diversos sectores</span>
             </div>
             <div class="hero-stat">
-              <strong>3.000</strong
-              ><span>Clientes en<br />diferentes sectores</span>
+              <strong>360&nbsp;M€</strong
+              ><span>En ingresos hasta<br />marzo de 2026</span>
             </div>
             <div class="hero-stat">
-              <strong>25</strong><span>Años de<br />experiencia</span>
+              <strong>34</strong><span>Países con<br />presencia activa</span>
             </div>
           </div>
           <a class="cta hero-link" href="#adquisicion">Conoce la adquisición</a>
@@ -821,6 +823,126 @@
         line-height: 1.45;
         opacity: 0.8;
       }
+      /* OFERTAS HR PATH */
+      #ofertas {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        max-width: var(--max-width);
+        width: 100%;
+        padding-top: 48px;
+        border-top: 1px solid #d6d6d6;
+        color: var(--blue);
+      }
+      #ofertas-header {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      #ofertas-header h3 {
+        font-size: 1.6rem;
+        margin: 0;
+      }
+      #ofertas-header h3 span {
+        color: var(--orange);
+      }
+      #ofertas-header p {
+        color: #555;
+        margin: 0;
+        font-size: 1rem;
+        max-width: 70ch;
+      }
+      .ofertas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .oferta-card {
+        background-color: white;
+        border-top: 3px solid var(--orange);
+        padding: 32px 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+      }
+      .oferta-eyebrow {
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--orange);
+        margin-bottom: 6px;
+      }
+      .oferta-card h4 {
+        font-size: 1.25rem;
+        font-weight: 800;
+        line-height: 1.25;
+        color: var(--blue);
+        margin: 0;
+      }
+      .oferta-sub {
+        font-size: 0.88rem;
+        line-height: 1.5;
+        color: #666;
+        margin: 6px 0 0;
+      }
+      .oferta-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 16px;
+        padding-top: 18px;
+        border-top: 1px solid #e3e3e3;
+      }
+      .oferta-stat {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .oferta-stat strong {
+        font-size: 1.6rem;
+        font-weight: 800;
+        line-height: 1;
+        color: var(--orange);
+        font-variant-numeric: tabular-nums;
+      }
+      .oferta-stat span {
+        font-size: 0.82rem;
+        line-height: 1.4;
+        color: #555;
+      }
+      .oferta-specs-title {
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--blue);
+        margin-bottom: 10px;
+      }
+      .oferta-specs {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .oferta-specs li {
+        position: relative;
+        padding-left: 20px;
+        font-size: 0.9rem;
+        line-height: 1.45;
+        color: #444;
+      }
+      .oferta-specs li::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        background-color: var(--orange);
+        position: absolute;
+        left: 0;
+        top: 7px;
+        transform: rotate(45deg);
+      }
       #phr-strip {
         display: grid;
         grid-template-columns: 200px repeat(4, 1fr);
@@ -865,6 +987,12 @@
         #quem-content p {
           max-width: none;
         }
+        .ofertas-grid {
+          grid-template-columns: 1fr;
+        }
+        #ofertas-header {
+          text-align: center;
+        }
         #phr-strip {
           grid-template-columns: 1fr 1fr;
         }
@@ -888,30 +1016,31 @@
           </p>
           <!-- [NÚMEROS HR PATH] -->
           <p>
-            Hoy son 2.600 consultores HRIS en 30 países y 3.000 clientes en
-            diferentes sectores. Con Grupo PHR, esa estructura global suma
-            todavía más especialización para la transformación digital
-            de&nbsp;RR.HH.
+            Hoy son más de 2.900 profesionales de HRIS a tiempo completo en 34
+            países y más de 3.000 clientes en diversos sectores. Con Grupo PHR,
+            esa estructura global suma todavía más especialización para la
+            transformación digital de&nbsp;RR.HH.
           </p>
         </div>
         <!-- [NÚMEROS HR PATH] -->
         <div class="quem-destaque">
           <h3>HR Path en cifras globales</h3>
           <div class="quem-item">
-            <strong>2.600</strong><span>Consultores de HRIS</span>
+            <strong>+2.900</strong
+            ><span>Profesionales de HRIS a tiempo completo</span>
           </div>
           <div class="quem-item">
-            <strong>30</strong><span>Países con presencia activa</span>
+            <strong>+3.000</strong><span>Clientes en diversos sectores</span>
           </div>
           <div class="quem-item">
-            <strong>3.000</strong><span>Clientes en diferentes sectores</span>
+            <strong>360&nbsp;M€</strong
+            ><span>En ingresos hasta finales de marzo de&nbsp;2026</span>
+          </div>
+          <div class="quem-item">
+            <strong>34</strong><span>Países con presencia activa</span>
           </div>
           <div class="quem-item">
             <strong>25 años</strong><span>De experiencia</span>
-          </div>
-          <div class="quem-item">
-            <strong>350&nbsp;M€</strong
-            ><span>En ingresos hasta marzo de&nbsp;2026</span>
           </div>
           <div class="quem-item">
             <strong>+900 mil</strong
@@ -920,6 +1049,115 @@
           <div class="quem-item full">
             <strong>+300 mil</strong
             ><span>Horas de soporte y sostenimiento</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- [OFERTAS HR PATH: CONSULTORÍA / IMPLEMENTACIÓN / SAP] -->
+      <div id="ofertas">
+        <div id="ofertas-header">
+          <h3>Las ofertas de <span>HR&nbsp;Path</span></h3>
+          <p>
+            De la estrategia de RR.HH. a la implementación y el soporte de las
+            principales plataformas del mercado, con equipos especializados en
+            cada&nbsp;etapa.
+          </p>
+        </div>
+        <div class="ofertas-grid">
+          <!-- OFERTA DE CONSULTORÍA -->
+          <div class="oferta-card">
+            <div>
+              <div class="oferta-eyebrow">Oferta de consultoría</div>
+              <h4>Consultoría de RR.HH.</h4>
+            </div>
+            <div class="oferta-stats">
+              <div class="oferta-stat">
+                <strong>+200</strong><span>Consultores</span>
+              </div>
+              <div class="oferta-stat">
+                <strong>+250</strong><span>Clientes</span>
+              </div>
+              <div class="oferta-stat">
+                <strong>+25</strong><span>Años de experiencia</span>
+              </div>
+            </div>
+            <div>
+              <div class="oferta-specs-title">Especialidades</div>
+              <ul class="oferta-specs">
+                <li>Organización de RR.HH.</li>
+                <li>Personas y cambio</li>
+                <li>Digital e innovación: Core HR / Time / Payroll / Talent</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- OFERTA DE IMPLEMENTACIÓN -->
+          <div class="oferta-card">
+            <div>
+              <div class="oferta-eyebrow">Oferta de implementación</div>
+              <h4>Implementación de soluciones HRIS</h4>
+            </div>
+            <div class="oferta-stats">
+              <div class="oferta-stat">
+                <strong>+1.800</strong
+                ><span>Consultores de implementación</span>
+              </div>
+              <div class="oferta-stat">
+                <strong>+1.000</strong><span>Clientes</span>
+              </div>
+              <div class="oferta-stat">
+                <strong>+25</strong><span>Años de experiencia</span>
+              </div>
+              <div class="oferta-stat">
+                <strong>+1.000</strong><span>Certificaciones</span>
+              </div>
+            </div>
+            <div>
+              <div class="oferta-specs-title">Especialidades</div>
+              <ul class="oferta-specs">
+                <li>Implementación</li>
+                <li>Integración</li>
+                <li>AMS</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- OFERTA SAP -->
+          <div class="oferta-card">
+            <div>
+              <div class="oferta-eyebrow">SAP Gold Partner</div>
+              <h4>SAP HCM y SuccessFactors</h4>
+              <p class="oferta-sub">
+                Una de las mayores consultoras de SAP HCM y SuccessFactors
+                del&nbsp;mundo.
+              </p>
+            </div>
+            <div class="oferta-stats">
+              <div class="oferta-stat">
+                <strong>+1.000</strong><span>Consultores SAP</span>
+              </div>
+              <div class="oferta-stat">
+                <strong>+1.200</strong><span>Clientes</span>
+              </div>
+              <div class="oferta-stat">
+                <strong>+25</strong
+                ><span>Años de experiencia, partner SAP desde 2001</span>
+              </div>
+              <div class="oferta-stat">
+                <strong>+2.000</strong><span>Certificaciones</span>
+              </div>
+            </div>
+            <div>
+              <div class="oferta-specs-title">Especialidades</div>
+              <ul class="oferta-specs">
+                <li>Suite completa de SAP SuccessFactors</li>
+                <li>SAP SuccessFactors EC Cloud Payroll</li>
+                <li>Migración a Onboarding 2.0</li>
+                <li>Integraciones con otras tecnologías líderes de RR.HH.</li>
+                <li>Implementación global</li>
+                <li>Capacidades de IA</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -1788,10 +2026,10 @@
             <div class="diferencial-text">
               <h4>Fuerza global con ADN local</h4>
               <p>
-                Toda la capacidad global de HR Path, con 2.600 consultores HRIS
-                en 30 países y 3.000 clientes en diferentes sectores, sumada a
-                la cercanía, el contexto cultural y el conocimiento de
-                cada&nbsp;mercado.
+                Toda la capacidad global de HR Path, con más de 2.900
+                profesionales de HRIS en 34 países y más de 3.000 clientes en
+                diversos sectores, sumada a la cercanía, el contexto cultural y
+                el conocimiento de cada&nbsp;mercado.
               </p>
             </div>
           </div>
@@ -2105,8 +2343,8 @@
         <div class="answer">
           HR Path es una consultora global especializada en la transformación
           digital de Recursos Humanos, fundada en 2001, con
-          <strong>2.600 consultores HRIS en 30 países</strong> y
-          <strong>3.000 clientes</strong> en diferentes sectores. Ofrece
+          <strong>más de 2.900 profesionales de HRIS en 34 países</strong> y
+          <strong>más de 3.000 clientes</strong> en diversos sectores. Ofrece
           servicios de consultoría, implementación y gestión de nómina. Con
           Grupo PHR, refuerza su foco en SAP SuccessFactors, Workforce Software
           y soluciones de IA para&nbsp;RR.HH.
@@ -2142,24 +2380,24 @@
           inicial, sin renunciar a la calidad ni a la adherencia a los procesos
           de la&nbsp;empresa.
         </div>
-        <!-- [NÚMEROS HR PATH: 30 países] + [NÚMEROS GRUPO PHR: 13 países] -->
+        <!-- [NÚMEROS HR PATH: 34 países] + [NÚMEROS GRUPO PHR: 13 países] -->
         <li class="question">¿Atienden proyectos multipaís?</li>
         <div class="answer">
           Sí. Contamos con el respaldo global de HR Path en
-          <strong>30 países</strong> y con la experiencia de Grupo PHR en
+          <strong>34 países</strong> y con la experiencia de Grupo PHR en
           proyectos que involucran <strong>13 países</strong>, con gestión de
           múltiples monedas, idiomas, legislaciones y culturas, siempre con
           equipos&nbsp;locales.
         </div>
-        <!-- [NÚMEROS HR PATH: 2.600] -->
+        <!-- [NÚMEROS HR PATH: +2.900] -->
         <li class="question">Era cliente de Grupo PHR. ¿Qué cambia para mí?</li>
         <div class="answer">
           Para los clientes actuales, la transición es
           <strong>transparente</strong>: tu contrato, punto de contacto y nivel
           de servicio se mantienen. Lo que cambia es para mejor: ahora tienes
-          acceso a la red global de 2.600 consultores HRIS de HR Path y a las
-          innovaciones más recientes en IA y Analytics que HR Path suma
-          al&nbsp;portafolio.
+          acceso a la red global de más de 2.900 profesionales de HRIS de HR
+          Path y a las innovaciones más recientes en IA y Analytics que HR Path
+          suma al&nbsp;portafolio.
         </div>
       </ul>
     </div>
