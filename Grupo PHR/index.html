@@ -219,246 +219,6 @@
       <button class="nav-cta scroll">Habla con un especialista</button>
     </nav>
 
-    <!-- HERO -->
-    <style>
-      #hero-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        max-width: var(--wrapper-width);
-        padding: var(--wrapper-padding);
-        background: linear-gradient(
-          226deg,
-          rgba(51, 184, 243, 1) 0%,
-          rgba(70, 9, 187, 1) 28%,
-          rgba(51, 16, 137, 1) 67%,
-          rgba(20, 26, 58, 1) 100%
-        );
-        overflow: hidden;
-        z-index: 2;
-      }
-      #hero {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 36px;
-        width: 100%;
-        max-width: var(--max-width);
-        z-index: 2;
-      }
-      #hero-content {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        color: white;
-        max-width: 620px;
-      }
-      .hero-badge {
-        display: inline-block;
-        padding: 6px 14px;
-        background-color: var(--orange);
-        color: white;
-        font-size: 0.8rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        margin-bottom: 20px;
-        width: fit-content;
-      }
-      #hero-content h1 {
-        font-size: 2.6rem;
-        line-height: 1.1;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-      }
-      #hero-content h1 span {
-        color: var(--orange);
-      }
-      #hero-content p {
-        max-width: 580px;
-        font-size: 1.1rem;
-        opacity: 0.9;
-      }
-      .hero-stats-label {
-        margin-top: 20px;
-        padding-top: 18px;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        font-size: 0.75rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        color: rgba(255, 255, 255, 0.75);
-      }
-      #hero-stats {
-        display: flex;
-        gap: 32px;
-        margin-top: 14px;
-        flex-wrap: wrap;
-      }
-      .hero-stat {
-        display: flex;
-        flex-direction: column;
-      }
-      .hero-stat strong {
-        font-size: 2rem;
-        font-weight: 800;
-        color: var(--orange);
-        line-height: 1;
-        font-variant-numeric: tabular-nums;
-      }
-      .hero-stat span {
-        font-size: 0.85rem;
-        opacity: 0.8;
-        margin-top: 4px;
-      }
-      .hero-link {
-        margin-top: 28px;
-        font-size: 0.95rem;
-      }
-      #hero-form {
-        display: flex;
-        flex-direction: column;
-        max-width: 380px;
-        width: calc(100% - 64px);
-        height: fit-content;
-        background-color: white;
-        padding: 32px;
-        color: var(--blue);
-        z-index: 2;
-      }
-      #hero-form h2 {
-        font-size: 1.4rem;
-        line-height: 1.2;
-        text-align: center;
-        align-self: center;
-        margin: 0 0 6px;
-        color: var(--orange);
-      }
-      #hero-form > p {
-        text-align: center;
-        font-size: 0.9rem;
-        line-height: 1.4;
-        font-weight: bold;
-        margin: 0 0 24px;
-        color: var(--blue);
-      }
-      #pardot-form {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-      }
-      #pardot-form .form-field {
-        display: flex;
-        flex-direction: column;
-      }
-      #pardot-form label {
-        font-size: 0.78rem;
-        font-weight: bold;
-        margin-bottom: 5px;
-        color: var(--blue);
-      }
-      #pardot-form input,
-      #pardot-form select {
-        all: unset;
-        font-size: 0.9rem;
-        padding: 9px 10px;
-        border: 1px solid #ccc;
-        background-color: white;
-        color: var(--blue);
-        box-sizing: border-box;
-        width: 100%;
-      }
-      #pardot-form input:focus,
-      #pardot-form select:focus {
-        border-color: var(--orange);
-      }
-      #pardot-form .submit-btn {
-        all: unset;
-        display: block;
-        width: 100%;
-        padding: 13px 16px;
-        font-size: 1rem;
-        font-weight: bold;
-        text-align: center;
-        color: white;
-        cursor: pointer;
-        background-color: var(--orange);
-        transition: 0.2s ease-in-out all;
-        box-sizing: border-box;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-      }
-      #pardot-form .submit-btn:hover {
-        background-color: var(--blue);
-      }
-      .form-disclaimer {
-        font-size: 0.72rem !important;
-        color: #888 !important;
-        text-align: center;
-        margin-top: 4px !important;
-        margin-bottom: 0 !important;
-        font-weight: normal !important;
-      }
-      @media screen and (max-width: 900px) {
-        #hero {
-          flex-direction: column;
-        }
-        #hero-content h1 {
-          font-size: 2.1rem;
-        }
-        #hero-form {
-          max-width: 100%;
-          width: calc(100% - 64px);
-        }
-      }
-    </style>
-    <div id="hero-wrapper">
-      <div id="hero">
-        <div id="hero-content">
-          <div class="hero-badge">Grupo PHR, an HR Path Company</div>
-          <h1>
-            Especialistas en las <span>mejores tecnologías globales</span> para
-            la Gestión de&nbsp;Personas
-          </h1>
-          <p>
-            Grupo PHR ahora forma parte de <strong>HR Path</strong>, consultora
-            global en transformación de RR.HH. y soluciones HRIS. El mismo
-            equipo que ya conoces, con el respaldo de una estructura
-            verdaderamente&nbsp;global.
-          </p>
-          <!-- [NÚMEROS HR PATH] -->
-          <div class="hero-stats-label">HR Path en cifras</div>
-          <div id="hero-stats">
-            <div class="hero-stat">
-              <strong>+2.900</strong
-              ><span>Profesionales de HRIS<br />a tiempo completo</span>
-            </div>
-            <div class="hero-stat">
-              <strong>+3.000</strong
-              ><span>Clientes en<br />diversos sectores</span>
-            </div>
-            <div class="hero-stat">
-              <strong>360&nbsp;M€</strong
-              ><span>En ingresos hasta<br />marzo de 2026</span>
-            </div>
-            <div class="hero-stat">
-              <strong>34</strong><span>Países con<br />presencia activa</span>
-            </div>
-          </div>
-          <a class="cta hero-link" href="#adquisicion">Conoce la adquisición</a>
-        </div>
-        <div id="hero-form">
-          <h2>Habla con nuestros especialistas</h2>
-          <p>
-            Descubre cómo podemos transformar el área de RR.HH. de tu empresa
-          </p>
-          %%content%%
-        </div>
-      </div>
-    </div>
-
     <!-- ADQUISIÇÃO -->
     <style>
       #adq-wrapper {
@@ -2401,6 +2161,209 @@
         </div>
       </ul>
     </div>
+
+    <!-- UBICACIONES LATAM -->
+    <style>
+      #ubicaciones-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 86px 24px;
+        background-color: #f7f7f7;
+      }
+      #ubicaciones {
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        gap: 48px;
+        max-width: var(--max-width);
+        width: 100%;
+        color: var(--blue);
+        align-items: stretch;
+      }
+      .ubic-eyebrow {
+        font-size: 0.78rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--orange);
+        margin-bottom: 10px;
+      }
+      #ubic-content h2 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        line-height: 1.15;
+      }
+      #ubic-content h2 span {
+        color: var(--orange);
+      }
+      #ubic-content > p {
+        color: #555;
+        font-size: 1rem;
+        margin: 0 0 28px;
+        max-width: 48ch;
+      }
+      .ubic-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid #d6d6d6;
+      }
+      .ubic-item {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        gap: 16px;
+        padding: 18px 0;
+        border-bottom: 1px solid #d6d6d6;
+      }
+      .ubic-country {
+        font-size: 1.05rem;
+        font-weight: 800;
+        line-height: 1.3;
+        color: var(--blue);
+      }
+      .ubic-item.main .ubic-country {
+        color: var(--orange);
+      }
+      .ubic-tag {
+        display: block;
+        font-size: 0.68rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #888;
+        margin-top: 4px;
+      }
+      .ubic-info address {
+        font-style: normal;
+        font-size: 0.92rem;
+        line-height: 1.55;
+        color: #444;
+      }
+      .ubic-info a {
+        display: inline-block;
+        margin-top: 4px;
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: var(--blue);
+        text-decoration: none;
+        font-variant-numeric: tabular-nums;
+        transition: 0.2s ease-in-out color;
+      }
+      .ubic-info a:hover {
+        color: var(--orange);
+      }
+      #ubic-map {
+        position: relative;
+        min-height: 520px;
+        background-color: var(--blue);
+        border-top: 3px solid var(--orange);
+      }
+      #ubic-map iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      @media (max-width: 900px) {
+        #ubicaciones {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+        #ubic-content {
+          text-align: center;
+        }
+        #ubic-content > p {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .ubic-item {
+          text-align: left;
+        }
+        #ubic-map {
+          min-height: 360px;
+        }
+      }
+      @media (max-width: 480px) {
+        .ubic-item {
+          grid-template-columns: 1fr;
+          gap: 6px;
+        }
+      }
+    </style>
+    <section id="ubicaciones-wrapper">
+      <div id="ubicaciones">
+        <div id="ubic-content">
+          <div class="ubic-eyebrow">Contáctanos</div>
+          <h2>Nuestras oficinas en <span>América&nbsp;Latina</span></h2>
+          <p>
+            Equipos locales en toda la región, con el respaldo global de
+            HR&nbsp;Path.
+          </p>
+          <ul class="ubic-list">
+            <li class="ubic-item main">
+              <div class="ubic-country">
+                México<span class="ubic-tag">Oficinas corporativas</span>
+              </div>
+              <div class="ubic-info">
+                <address>
+                  Av. Javier Barros Sierra 540, Torre 1, Piso 5, Int. "A", Santa
+                  Fe, Álvaro Obregón, Ciudad de México, México.
+                </address>
+                <a href="tel:+525580008312">Tel: +(52) 55 8000 8312</a>
+              </div>
+            </li>
+            <li class="ubic-item">
+              <div class="ubic-country">Colombia</div>
+              <div class="ubic-info">
+                <address>
+                  Cra. 6 #10-42, oficina 513, Funza, Cundinamarca, Colombia.
+                </address>
+              </div>
+            </li>
+            <!-- CONFIRMAR: en la referencia, Perú tiene la misma dirección de Chile -->
+            <li class="ubic-item">
+              <div class="ubic-country">Perú</div>
+              <div class="ubic-info">
+                <address>
+                  Apoquindo 4700, Piso 8, Las Condes, Santiago, Chile.
+                </address>
+                <a href="tel:+56232455870">Tel: +(56) 2 3245 5870</a>
+              </div>
+            </li>
+            <li class="ubic-item">
+              <div class="ubic-country">Chile</div>
+              <div class="ubic-info">
+                <address>
+                  Apoquindo 4700, Piso 8, Las Condes, Santiago, Chile.
+                </address>
+                <a href="tel:+56232455870">Tel: +(56) 2 3245 5870</a>
+              </div>
+            </li>
+            <!-- CONFIRMAR: teléfono de Argentina (cortado en la referencia) -->
+            <li class="ubic-item">
+              <div class="ubic-country">Argentina</div>
+              <div class="ubic-info">
+                <address>
+                  José León Cabezón 3661, Ciudad Autónoma de Buenos Aires,
+                  Argentina.
+                </address>
+                <a href="tel:+56232455870">Tel: +(56) 2 3245 5870</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="ubic-map">
+          <iframe
+            title="Mapa: Oficinas Corporativas HR Path México"
+            src="https://www.google.com/maps?q=Av.+Javier+Barros+Sierra+540,+Torre+1,+Santa+Fe,+%C3%81lvaro+Obreg%C3%B3n,+01210+Ciudad+de+M%C3%A9xico,+CDMX&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <style>
