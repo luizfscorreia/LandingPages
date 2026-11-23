@@ -973,19 +973,125 @@
         width: 100%;
       }
       .premio-card {
+        position: relative;
+        overflow: hidden;
         background-color: rgba(255, 255, 255, 0.07);
         border: 1px solid rgba(255, 255, 255, 0.12);
-        padding: 32px 24px;
+        padding: 40px 28px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 12px;
+        gap: 14px;
         text-align: center;
       }
+
+      /* One light per card, circling the border */
+      .premio-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(
+            90deg,
+            transparent,
+            rgba(232, 119, 34, 0.9) 65%,
+            #ffd6aa
+          ),
+          /* top */
+            linear-gradient(
+              180deg,
+              transparent,
+              rgba(232, 119, 34, 0.9) 65%,
+              #ffd6aa
+            ),
+          /* right */
+            linear-gradient(
+              270deg,
+              transparent,
+              rgba(232, 119, 34, 0.9) 65%,
+              #ffd6aa
+            ),
+          /* bottom */
+            linear-gradient(
+              0deg,
+              transparent,
+              rgba(232, 119, 34, 0.9) 65%,
+              #ffd6aa
+            ); /* left */
+        background-size: 90px 2px, 2px 90px, 90px 2px, 2px 90px;
+        background-position: -90px 0, 100% -90px, calc(100% + 90px) 100%,
+          0 calc(100% + 90px);
+        filter: drop-shadow(0 0 4px rgba(232, 119, 34, 0.7));
+        animation: premio-run 8s linear infinite;
+      }
+      .premio-card:nth-child(2)::before {
+        animation-delay: -2.6s;
+      }
+      .premio-card:nth-child(3)::before {
+        animation-delay: -5.2s;
+      }
+
+      @keyframes premio-run {
+        /* order: top, right, bottom, left */
+        0% {
+          background-position: calc(100% + 90px) 0, 100% calc(28.57% - 64px),
+            calc(100% + 90px) 100%, 0 -90px;
+        }
+        15% {
+          background-position: calc(100% + 90px) 0, 100% 100%,
+            calc(100% + 90px) 100%, 0 -90px;
+        }
+        21% {
+          background-position: calc(100% + 90px) 0, 100% calc(100% + 90px),
+            calc(79.31% + 71px) 100%, 0 -90px;
+        }
+        43.99% {
+          background-position: calc(100% + 90px) 0, 100% calc(100% + 90px),
+            0 100%, 0 -90px;
+        }
+        44% {
+          background-position: calc(100% + 90px) 0, 100% calc(100% + 90px),
+            0 100%, 0 calc(100% + 90px);
+        }
+        50% {
+          background-position: calc(100% + 90px) 0, 100% calc(100% + 90px),
+            -90px 100%, 0 calc(71.43% + 64px);
+        }
+        64.99% {
+          background-position: calc(100% + 90px) 0, 100% calc(100% + 90px),
+            -90px 100%, 0 0;
+        }
+        65% {
+          background-position: -90px 0, 100% calc(100% + 90px), -90px 100%, 0 0;
+        }
+        71% {
+          background-position: calc(20.69% - 71px) 0, 100% calc(100% + 90px),
+            -90px 100%, 0 -90px;
+        }
+        93.99% {
+          background-position: 100% 0, 100% calc(100% + 90px), -90px 100%,
+            0 -90px;
+        }
+        94% {
+          background-position: 100% 0, 100% -90px, -90px 100%, 0 -90px;
+        }
+        100% {
+          background-position: calc(100% + 90px) 0, 100% calc(28.57% - 64px),
+            -90px 100%, 0 -90px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .premio-card::before {
+          animation: none;
+          display: none;
+        }
+      }
+
       .premio-icon {
-        font-size: 2rem;
-        width: 56px;
-        height: 56px;
+        font-size: 2.5rem;
+        width: 72px;
+        height: 72px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -995,9 +1101,9 @@
       }
       .premio-card h4 {
         color: var(--orange);
-        font-size: 1rem;
-        font-weight: 700;
-        line-height: 1.35;
+        font-size: 1.2rem;
+        font-weight: 800;
+        line-height: 1.3;
         max-width: 28ch;
         margin: 0;
       }
@@ -1095,13 +1201,44 @@
       .solucao-card {
         background: white;
         padding: 32px 24px;
-        border-top: 3px solid var(--orange);
+        border-top: 5px solid var(--orange);
         display: flex;
         flex-direction: column;
         gap: 12px;
+        box-shadow: 0 1px 2px rgba(20, 26, 58, 0.06);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .solucao-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 28px rgba(20, 26, 58, 0.1);
+      }
+      .solucao-icon {
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(232, 119, 34, 0.12);
+        color: var(--orange);
+        margin-bottom: 6px;
+        transition: 0.25s ease all;
+      }
+      .solucao-icon svg {
+        width: 26px;
+        height: 26px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .solucao-card:hover .solucao-icon {
+        background-color: var(--orange);
+        color: white;
       }
       .solucao-card h3 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        line-height: 1.25;
         color: var(--blue);
         margin: 0;
       }
@@ -1143,6 +1280,14 @@
         </div>
         <div id="solucoes-grid">
           <div class="solucao-card">
+            <div class="solucao-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
             <h3>Talent Management</h3>
             <p>
               Implementación y configuración completa del módulo de gestión del
@@ -1158,6 +1303,12 @@
             </div>
           </div>
           <div class="solucao-card">
+            <div class="solucao-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
             <h3>HR Core & Payroll</h3>
             <p>
               Gestión completa del core de RR.HH. y de la nómina en la nube,
@@ -1172,6 +1323,12 @@
             </div>
           </div>
           <div class="solucao-card">
+            <div class="solucao-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
             <h3>Workforce Software (WFS)</h3>
             <p>
               Líderes en implementaciones WFS en América Latina. Control de
@@ -1186,6 +1343,14 @@
           </div>
           <!-- [NÚMEROS GRUPO PHR: 60+ clientes AMS] -->
           <div class="solucao-card">
+            <div class="solucao-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                <path
+                  d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
+                />
+              </svg>
+            </div>
             <h3>Soporte AMS</h3>
             <p>
               Centro de soporte especializado de Grupo PHR para más de 60
@@ -1200,6 +1365,20 @@
             </div>
           </div>
           <div class="solucao-card">
+            <div class="solucao-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
+                <rect x="9" y="9" width="6" height="6" />
+                <line x1="9" y1="1" x2="9" y2="4" />
+                <line x1="15" y1="1" x2="15" y2="4" />
+                <line x1="9" y1="20" x2="9" y2="23" />
+                <line x1="15" y1="20" x2="15" y2="23" />
+                <line x1="20" y1="9" x2="23" y2="9" />
+                <line x1="20" y1="14" x2="23" y2="14" />
+                <line x1="1" y1="9" x2="4" y2="9" />
+                <line x1="1" y1="14" x2="4" y2="14" />
+              </svg>
+            </div>
             <h3>Business AI & Joule</h3>
             <p>
               Implementación de soluciones de Inteligencia Artificial integradas
@@ -1214,6 +1393,13 @@
             </div>
           </div>
           <div class="solucao-card">
+            <div class="solucao-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg>
+            </div>
             <h3>Business Data Cloud & Analytics</h3>
             <p>
               Modelado e integración de datos de RR.HH. con SAP Datasphere,
@@ -2355,7 +2541,13 @@
         </div>
 
         <div id="ubic-map">
+          <!--
+            Single map with ALL offices: paste your Google My Maps ID into
+            MY_MAPS_ID (script at the end of the page). While it is empty,
+            the Mexico office map below is shown as a fallback.
+          -->
           <iframe
+            id="ubic-map-frame"
             title="Mapa: Oficinas Corporativas HR Path México"
             src="https://www.google.com/maps?q=Av.+Javier+Barros+Sierra+540,+Torre+1,+Santa+Fe,+%C3%81lvaro+Obreg%C3%B3n,+01210+Ciudad+de+M%C3%A9xico,+CDMX&z=16&output=embed"
             loading="lazy"
@@ -2528,7 +2720,7 @@
       scrollBtns.forEach(function (btn) {
         btn.addEventListener("click", function () {
           document
-            .getElementById("hero-form")
+            .getElementById("ubicaciones-wrapper")
             .scrollIntoView({ behavior: "smooth" });
         });
       });
@@ -2549,6 +2741,16 @@
           }
         });
       });
+
+      // Single map with ALL offices (Google My Maps).
+      // Paste the "mid" value of your My Maps embed link between the quotes.
+      // While it is empty, the Mexico office map stays as the fallback.
+      var MY_MAPS_ID = "";
+      if (MY_MAPS_ID) {
+        var mapFrame = document.getElementById("ubic-map-frame");
+        mapFrame.src = "https://www.google.com/maps/d/embed?mid=" + MY_MAPS_ID;
+        mapFrame.title = "Mapa: oficinas de HR Path en América Latina";
+      }
     </script>
   </body>
 </html>
